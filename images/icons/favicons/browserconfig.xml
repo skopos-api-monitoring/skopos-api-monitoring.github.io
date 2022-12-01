@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square150x150logo src="/images/logos/favicons/Favicon_inverted_with_circle.png"/>
+            <TileColor>#ee6f57</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>
