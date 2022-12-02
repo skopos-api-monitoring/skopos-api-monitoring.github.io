@@ -7,36 +7,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap');
 
 @font-face {
-  font-family: 'Nunito';
+  font-family: 'Oswald';
   /* src: url('/fonts/FoundersGrotesk-Semibold.otf') format('opentype'); */
-  src: url('../fonts/Nunito-Light.ttf') format('truetype');
-  font-weight: light;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Nunito';
-  /* src: url('/fonts/FoundersGrotesk-Semibold.otf') format('opentype'); */
-  src: url('../fonts/Nunito-LightItalic.ttf') format('truetype');
+  src: url('../fonts/Oswald-Light.ttf') format('truetype');
   font-weight: lighter;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: 'Raleway';
-  /* src: url('/fonts/FoundersGrotesk-SemiboldItalic.otf') format('opentype'); */
-  src: url('../fonts/Raleway-Bold.ttf') format('truetype');
-  font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Raleway';
+  font-family: 'Oswald';
+  /* src: url('/fonts/FoundersGrotesk-Semibold.otf') format('opentype'); */
+  src: url('../fonts/Oswald-Medium.ttf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
   /* src: url('/fonts/FoundersGrotesk-SemiboldItalic.otf') format('opentype'); */
-  src: url('../fonts/Raleway-BoldItalic.ttf') format('truetype');
-  font-weight: bold;
-  font-style: italic;
-} 
+  src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: medium;
+  font-style: normal;
+}
 
 
 /* ---------------------------------
@@ -47,8 +39,8 @@
 
 
 :root {
-  --font-family-header: 'Oswald', bold, sans-serif, medium;
-  --font-family-body: 'Oswald', sans-serif, medium;
+  --font-family-header: 'Oswald', medium;
+  --font-family-body: 'Oswald', lighter;
   --color-black: #000000;
   --color-skopos-dark-jungle-green: #172729;
   --color-skopos-cadmium-orange: #E28027;
@@ -106,11 +98,11 @@ a,
 a:link,
 a:visited,
 a:active {
-  color: var(--color-skopos-cadmium-orange);
+  color: var(--color-skopos-cedar-chest);
 }
 
 a:hover {
-  color: var(--color-skopos-cadmium-orange);
+  color: var(--color-skopos-cedar-chest);
 }
 
 .strikethrough {
@@ -123,20 +115,21 @@ a:hover {
 }
 
 .integration:first-of-type {
-  background: var(--color-skopos-veridian-green);
-  color: var(--color-skopos-dark-jungle-green);
+  background: var(--color-skopos-dark-jungle-green);
+  color: var(--color-white);
   padding-top: 20px;
   padding-bottom: 40px;
 }
 
 .integration:nth-of-type(2) {
-  background: var(--color-skopos-powder-blue);
+  background: var(--color-skopos-veridian-green);
+  color: var(--color-white);
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
 .integration:nth-of-type(3) {
-  background: var(--color-skopos-veridian-green);
+  background: var(--color-skopos-powder-blue);
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -200,7 +193,7 @@ main > section {
 }
 
 blockquote {
-  border-left: 0.3rem solid var(--color-skopos-cadmium-orange);
+  border-left: 0.3rem solid var(--color-skopos-cedar-chest);
   color: #999;
   margin: 0.9rem 1rem;
   padding: 0.7rem;
@@ -230,7 +223,7 @@ sup a {
 }
 
 sup a:hover {
-  color: var(--color-skopos-cadmium-orange);
+  color: var(--color-skopos-cedar-chest);
 }
 
 /* ---------------------------------
@@ -298,7 +291,6 @@ img {
 
 #case-study img {
   margin: 50px auto;
-
   margin-bottom: 10px;
   max-width: 50vw;
   height: auto;
@@ -412,7 +404,7 @@ header h1 {
 }
 
 header p {
-  color: var(--color-skopos-powder-blue);
+  color: var(--color-skopos-dark-jungle-green);
   font-family: var(--font-family-header);
   font-size: 4rem;
   letter-spacing: 0.1rem;
@@ -432,10 +424,10 @@ header span {
 
 header h1 img {
   display: block;
-  width: 60%;
+  width: 40%;
   max-width: 800px;
   margin: 0 auto;
-  padding: 80px 0;
+  padding: 10px 0;
 }
 
 /* ---------------------------------
@@ -445,7 +437,7 @@ header h1 img {
 ------------------------------------ */
 #side-nav {
   display: none;
-  left: 4rem;
+  left: 10rem;
   position: fixed;
   top: 5%;
   height: 25%;
@@ -506,7 +498,7 @@ header h1 img {
 }
 
 #case-study nav a:hover {
-  color: var(--color-skopos-cadmium-orange);
+  color: var(--color-skopos-cedar-chest);
 }
 
 #case-study h3,
@@ -524,7 +516,7 @@ header h1 img {
 }
 
 #case-study h2 {
-  color: var(--color-skopos-dark-jungle-green);
+  color: var(--color-skopos-cedar-chest);
   font-family: var(--font-family-header);
   margin: 75px auto 20px auto;
 }
@@ -541,7 +533,7 @@ h3 {
 #case-study h3,
 #case-study h4,
 #case-study h5 {
-  color: var(--color-skopos-dark-jungle-green);
+  color: var(--color-skopos-cedar-chest);
   font-family: var(--font-family-header);
   margin-top: 75px;
 }
@@ -713,7 +705,7 @@ h2#references {
 }
 
 #footnotes a:hover {
-  color: var(--color-skopos-cadmium-orange);
+  color: var(--color-skopos-cedar-chest);
 }
 
 /* ---------------------------------
@@ -787,8 +779,6 @@ h2#references {
   width: 15vw;
   max-width: 250px;
 }
-
-
 
 #our-team .individual ul {
   margin: 0;
@@ -905,7 +895,7 @@ small {
   }
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 500px) {
   header h1 img {
     width: 300px;
   }

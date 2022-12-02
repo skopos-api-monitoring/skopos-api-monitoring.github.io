@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const skoposWhite = '#FFFFFF';
   const skoposOrange = '#E28027';
   const skoposBlue = '#2E939E';
+  const skoposRed = '#D3593D'
   const skoposLogo = document.querySelector('#skopos-logo');
   const nav = document.querySelector('nav');
   const navLinks = document.querySelectorAll('#site-navigation a');
@@ -80,8 +81,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const highlightSection = (li, a) => {
     li.style.listStyle = 'disc';
 
-    li.style.color = skoposOrange;
-    a.style.color = skoposOrange;
+    li.style.color = skoposRed;
+    a.style.color = skoposRed;
   };
 
   const mobileCaseStudyLinks = [];
@@ -228,7 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const withinCaseStudy =
       position >= mainPosition && position < ourTeamPosition - getWindowHeight();
 
-    if (getWindowHeight() < 400 || getWindowWidth() < 1100) {
+    if (getWindowHeight() < 500 || getWindowWidth() < 1100) {
       $sideNavLogo.stop(true, true).css('display', 'none');
       $caseStudyNav.stop(true, true).css('display', 'none');
     } else if (withinCaseStudy) {
@@ -285,10 +286,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     } else {
       if (isWideScreen && !onMain && topNavVisible) {
-        styleNavColors(skoposWhite, skoposOrange, skoposBlue);
+        styleNavColors(skoposWhite, skoposRed, skoposBlue);
         changeImgSrc('skopos-logo', 'images/logos/SKOPOS_logo_color.png'); // black
       } else {
-        styleNavColors(skoposWhite, skoposOrange, skoposBlue);
+        styleNavColors(skoposWhite, skoposRed, skoposBlue);
         changeImgSrc('skopos-logo', 'images/logos/SKOPOS_logo_color.png');
       }
     }
