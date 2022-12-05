@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const removeAmpersand = (text) => text.replace('&', '');
 
   let lastH2Id;
-  const linkableHeaders = [...document.querySelectorAll('#case-study h2, #case-study h3, #our-team h1')].map((el) => {
+  const linkableHeaders = [...document.querySelectorAll('#case-study h2, #case-study h4, #case-study h3, #our-team h1')].map((el) => {
     if (el.nodeName === 'H2') {
       lastH2Id = el.id;
     }
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const getCaseStudyHeadingPositions = () =>
     linkableHeaders.reduce((obj, headerObj) => {
-      const selector = `#${snakeCaseify(removeAmpersand(headerObj.text))}`;
+      const selector = `#${snakeCaseify(removeAmpersand(headerObj.text))}`.replace(/-+/g, '-');
       const header = document.querySelector(selector);
       if(!header) {console.log(selector)}
       const position =

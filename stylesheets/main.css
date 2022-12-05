@@ -10,7 +10,7 @@
   font-family: 'Oswald';
   /* src: url('/fonts/FoundersGrotesk-Semibold.otf') format('opentype'); */
   src: url('../fonts/Oswald-Light.ttf') format('truetype');
-  font-weight: lighter;
+  font-weight: auto;
   font-style: normal;
 }
 
@@ -18,7 +18,7 @@
   font-family: 'Oswald';
   /* src: url('/fonts/FoundersGrotesk-Semibold.otf') format('opentype'); */
   src: url('../fonts/Oswald-Medium.ttf') format('truetype');
-  font-weight: medium;
+  font-weight: auto;
   font-style: normal;
 }
 
@@ -26,7 +26,7 @@
   font-family: 'OpenSans';
   /* src: url('/fonts/FoundersGrotesk-SemiboldItalic.otf') format('opentype'); */
   src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
-  font-weight: medium;
+  font-weight: auto;
   font-style: normal;
 }
 
@@ -145,6 +145,26 @@ a:hover {
 .text-box p {
   font-size: 2rem;
   margin-top: 75px;
+}
+
+.text-box p span.orange {
+  color: var(--color-skopos-cadmium-orange);
+}
+
+.text-box p span.dark-green {
+  color: var(--color-skopos-dark-jungle-green);
+}
+
+.text-box p span.blue {
+  color: var(--color-skopos-powder-blue);
+}
+
+.text-box p span.sky-blue {
+  color: var(--color-skopos-vivid-sky-blue);
+}
+
+.text-box p span.green {
+  color: var(--color-skopos-veridian-green);
 }
 
 .box {
@@ -472,11 +492,16 @@ header h1 img {
   padding-left: 1rem;
 }
 
-#case-study nav li[data-tag-type="H3"] {
+#case-study nav li[data-tag-type="H3"],
+#case-study nav li[data-tag-type="H4"]
+{
   display: none;
 }
 
-#case-study nav li[data-tag-type="H3"].active-child {
+
+#case-study nav li[data-tag-type="H3"].active-child,
+#case-study nav li[data-tag-type="H4"].active-child
+{
   display: block;
 }
 
@@ -485,7 +510,7 @@ header h1 img {
 }
 
 #case-study nav a {
-  color: var(--color-skopos-font);
+  color: var(--color-skopos-veridian-green);
   font-family: var(--font-family-header);
   font-size: 0.9rem;
   font-weight: bold;
@@ -512,7 +537,7 @@ header h1 img {
 }
 
 #case-study ul ul {
-  margin-bottom: 0px;
+  margin-bottom: 0;
 }
 
 #case-study h2 {
@@ -552,7 +577,7 @@ h3 {
 }
 
 .softened {
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
 
   border-radius: 5px;
 }
@@ -734,7 +759,6 @@ h2#references {
 #our-team > p {
   font-size: 1.2rem;
   line-height: 1.7rem;
-  margin-top: 30px;
   text-align: center;
   margin: 0 auto;
   width: 45%;
@@ -1144,7 +1168,7 @@ small {
   }
 
   #our-team .individual:last-of-type {
-    border-bottom: 0px;
+    border-bottom: 0;
   }
 
   #our-team .individual ul {
