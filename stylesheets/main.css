@@ -513,6 +513,14 @@ header h1 img {
   display: block;
 }
 
+#case-study nav li[data-tag-type="H4"] {
+  display: none;
+}
+
+#case-study nav li[data-tag-type="H4"].active-child {
+  display: block;
+}
+
 #case-study nav li:last-of-type {
   margin-bottom: 0;
 }

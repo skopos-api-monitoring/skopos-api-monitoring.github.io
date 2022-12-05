@@ -71,12 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const getCaseStudyHeadingPositions = () =>
     linkableHeaders.reduce((obj, headerObj) => {
-      // const selector = headerObj.el.id ? `#${headerObj.el.id}` : null
-      const selector = `#${snakeCaseify(removeAmpersand(headerObj.text))}`.replace(/-+/g, '-');
+      const selector = `#${snakeCaseify(removeAmpersand(headerObj.text))}`;
       const header = document.querySelector(selector);
-      if (!header) {
-        return obj
-      }
       const position =
         getScrollPosition() + header.getBoundingClientRect().top - paddingAllowanceAboveHeading;
       obj[`${selector}-nav`] = {
