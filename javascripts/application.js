@@ -48,26 +48,34 @@ document.addEventListener('DOMContentLoaded', () => {
   const removeAmpersand = (text) => text.replace('&', '');
 
   let lastH2Id;
-  const linkableHeaders = [...document.querySelectorAll('#case-study h2, #case-study h3, #our-team h1')].map((el) => {
+  let lastH3Id;
+  const linkableHeaders = [...document.querySelectorAll('#case-study h2, #case-study h3, #case-study h4, #our-team h1')].map((el) => {
     if (el.nodeName === 'H2') {
       lastH2Id = el.id;
     }
 
-    return {
+    if (el.nodeName === 'H3') {
+      lastH3Id = el.id
+    }
+
+    let elObject = {
       el,
       type: el.nodeName,
       text: el.textContent.replace(/^.*\) /, ''),
-      parentId: lastH2Id
+      parentId: el.nodeName === 'H4' ? lastH3Id : lastH2Id
     }
+    return elObject
   });
 
   const paddingAllowanceAboveHeading = 30;
 
   const getCaseStudyHeadingPositions = () =>
     linkableHeaders.reduce((obj, headerObj) => {
-      const selector = `#${snakeCaseify(removeAmpersand(headerObj.text))}`;
+      const selector = headerObj.el.id ? `#${headerObj.el.id}` : null
       const header = document.querySelector(selector);
-      if(!header) {console.log(selector)}
+      if (!header) { 
+        return obj 
+      }
       const position =
         getScrollPosition() + header.getBoundingClientRect().top - paddingAllowanceAboveHeading;
       obj[`${selector}-nav`] = {
@@ -89,10 +97,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   (function () {
     let lastH2Id;
+    let lastH3Id;
 
     linkableHeaders.forEach((headerObj) => {
       if (headerObj.type === 'H2') {
         lastH2Id = headerObj.el.id;
+      } else if (headerObj.type === 'H3') {
+        headerObj.parentId = lastH3Id;
       } else {
         headerObj.parentId = lastH2Id;
       }
@@ -103,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
       li.dataset['tagType'] = headerObj.el.nodeName;
 
       const a = document.createElement('a');
-      a.href = snakeCaseify(`#${removeAmpersand(headerObj.text).replace('!', '')}`);
+      a.href = snakeCaseify(`#${removeAmpersand(headerObj.el.id).replace('!', '')}`);
       a.textContent = headerObj.text.toUpperCase();
       a.className = 'case-study-anchor';
 
@@ -125,7 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileCaseStudyLinks.push(a2);
         li2.appendChild(a2);
         mobileCaseStudyNavUl.appendChild(li2);
-      }
+      } 
 
       headerObj.navEl = li;
     });
@@ -376,9 +387,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   caseStudyNav.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
+      console.log(e.target)
       e.preventDefault();
       const positions = getCaseStudyHeadingPositions();
       const positionKey = `#${e.target.href.split('#')[1]}-nav`;
+      console.log(positions, positionKey, 'event listener')
       const newScrollPosition = positions[positionKey].position;
       window.scrollTo(0, newScrollPosition + 5);
     }
