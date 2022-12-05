@@ -505,6 +505,14 @@ header h1 img {
   display: block;
 }
 
+#case-study nav li[data-tag-type="H4"] {
+  display: none;
+}
+
+#case-study nav li[data-tag-type="H4"].active-child {
+  display: block;
+}
+
 #case-study nav li:last-of-type {
   margin-bottom: 0;
 }
@@ -519,6 +527,10 @@ header h1 img {
 }
 
 #case-study nav li[data-tag-type="H3"] a {
+  font-weight: normal;
+}
+
+#case-study nav li[data-tag-type="H4"] a {
   font-weight: normal;
 }
 
@@ -551,7 +563,7 @@ header h1 img {
 }
 
 #case-study h2,
-h3 {
+h3, h4 {
   letter-spacing: 0.02rem;
 }
 
