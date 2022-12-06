@@ -3,448 +3,912 @@
 <html lang="en-US" prefix="og: http://opg.me/ns#">
 
 <head>
-  <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
 
-  <meta name="title" property="og:title" content="Skopos" />
+    <meta name="title" property="og:title" content="Skopos"/>
 
-  <meta name="description" property="og:description"
-    content="Skopos is an open-source solution for monitoring critical APIs in production." />
+    <meta name="description" property="og:description"
+          content="Skopos is an open-source solution for monitoring critical APIs in production."/>
 
-  <meta name="type" property="og:type" content="website" />
+    <meta name="type" property="og:type" content="website"/>
 
-  <meta name="url" property="og:url" content="https://skopos-monitoring.github.io/" />
+    <meta name="url" property="og:url" content="https://skopos-monitoring.github.io/"/>
 
-  <meta name="image" property="og:image" content="images/logos/SKOPOS_logo_color.png" />
+    <meta name="image" property="og:image" content="images/logos/SKOPOS_logo_color.png"/>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-  <meta name="author" content="Hans Elde, Katherine Ebel, Gagan Sapkota, Nykaela Dodson" />
+    <meta name="author" content="Hans Elde, Katherine Ebel, Gagan Sapkota, Nykaela Dodson"/>
 
-  <link rel="manifest" href="./images/icons/favicons/site.webmanifest" />
-  <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/favicons/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicons/favicon-16x16.png" />
-  <link rel="mask-icon" href="./images/icons/favicons/safari-pinned-tab.svg" color="#5bbad5" />
-  <link rel="shortcut icon" href="./images/icons/favicons/favicon.ico" />
-  <meta name="msapplication-TileColor" content="#ee6f57" />
-  <meta name="msapplication-config" content="./images/icons/favicons/browserconfig.xml" />
-  <meta name="theme-color" content="#ffffff" />
+    <link rel="manifest" href="./images/icons/favicons/site.webmanifest"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/favicons/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicons/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicons/favicon-16x16.png"/>
+    <link rel="mask-icon" href="./images/icons/favicons/safari-pinned-tab.svg" color="#5bbad5"/>
+    <link rel="shortcut icon" href="./images/icons/favicons/favicon.ico"/>
+    <meta name="msapplication-TileColor" content="#ee6f57"/>
+    <meta name="msapplication-config" content="./images/icons/favicons/browserconfig.xml"/>
+    <meta name="theme-color" content="#ffffff"/>
 
-  <title>Skopos</title>
+    <title>Skopos</title>
 
-  <!-- <style>reset</style> -->
+    <!-- <style>reset</style> -->
 
-  <link rel="stylesheet" href="stylesheets/reset.css" />
+    <link rel="stylesheet" href="stylesheets/reset.css"/>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/gruvbox-dark.min.css"
-    charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/gruvbox-dark.min.css"
+          charset="utf-8"/>
 
-  <!-- <style></style> -->
+    <!-- <style></style> -->
 
-  <link rel="stylesheet" href="stylesheets/main.css" />
+    <link rel="stylesheet" href="stylesheets/main.css"/>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-  <!-- <script></script> -->
+    <!-- <script></script> -->
 
-  <script src="javascripts/application.js"></script>
+    <script src="javascripts/application.js"></script>
 
-  <style></style>
+    <style></style>
 </head>
 
 <body>
-  <div class="logo-links">
+<div class="logo-links">
     <p id="skopos-logo">MENU</p>
 
     <a href="https://github.com/capstone2208-team9/skopos" target="_blank">
-      <img src="images/logos/github_black.png" alt="github logo" id="github-logo" />
+        <img src="images/logos/github_black.png" alt="github logo" id="github-logo"/>
     </a>
-  </div>
-  <a id="toTop-link" href="#" target="_blank">
-    <img src="images/logos/back-to-top.png" alt="Back to top" id="toTop-logo" />
-  </a>
-  <nav id="site-navigation">
+</div>
+<a id="toTop-link" href="#" target="_blank">
+    <img src="images/logos/back-to-top.png" alt="Back to top" id="toTop-logo"/>
+</a>
+<nav id="site-navigation">
     <ul>
-      <li>
-        <a href="#home" id="home-link">HOME</a>
-      </li>
+        <li>
+            <a href="#home" id="home-link">HOME</a>
+        </li>
 
-      <li>
-        <a href="#case-study" id="case-study-link">CASE STUDY</a>
+        <li>
+            <a href="#case-study" id="case-study-link">CASE STUDY</a>
 
-        <nav id="case-study-mobile">
-          <ul></ul>
-        </nav>
-      </li>
+            <nav id="case-study-mobile">
+                <ul></ul>
+            </nav>
+        </li>
 
-      <li>
-        <a href="#our-team" id="our-team-link">OUR TEAM</a>
-      </li>
+        <li>
+            <a href="#our-team" id="our-team-link">OUR TEAM</a>
+        </li>
     </ul>
-  </nav>
+</nav>
 
-  <header id="home">
+<header id="home">
     <h1>
-      <img src="images/logos/header_logo.png" alt="Skopos logo" />
+        <img src="images/logos/header_logo.png" alt="Skopos logo"/>
     </h1>
-  </header>
+</header>
 
-  <section class="integration">
+<section class="integration">
     <div class="box">
-      <img id="banner-deploy" src="" class="softened" alt="Picture showing ease of use" />
+        <img id="banner-deploy" src="" class="softened" alt="Picture showing ease of use"/>
     </div>
 
     <article class="box">
-      <div class="text-box">
-        <h1>What is API Monitoring?</h1>
+        <div class="text-box">
+            <h1>What is API Monitoring?</h1>
 
-        <p>
-          <span class='orange'>API monitoring tools</span> <span class='green'>detect API failures</span> <span class='orange'>by</span> making requests to endpoints at specified intervals <span class='orange'>and</span> <span class='sky-blue'>checking the validity of their response data.</span>
-        </p>
-      </div>
+            <p>
+                <span class='orange'>API monitoring tools</span> <span class='green'>detect API failures</span> <span
+                    class='orange'>by</span> making requests to endpoints at specified intervals <span class='orange'>and</span>
+                <span class='sky-blue'>checking the validity of their response data.</span>
+            </p>
+        </div>
     </article>
-  </section>
+</section>
 
-  <section class="integration">
+<section class="integration">
     <article class="box">
-      <div class="text-box">
-        <h1>What is Skopos?</h1>
+        <div class="text-box">
+            <h1>What is Skopos?</h1>
 
-        <p>
-          <span class='orange'>Skopos is an open-source</span> API monitoring tool <span class='orange'>designed for</span> <span class='blue'>testing multi-step API workflows</span> <span class='orange'>and</span> <span class='blue'>running multiple tests in parallel</span>
-        </p>
-      </div>
+            <p>
+                <span class='orange'>Skopos is an open-source</span> API monitoring tool <span class='orange'>designed for</span>
+                <span class='blue'>testing multi-step API workflows</span> <span class='orange'>and</span> <span
+                    class='blue'>running multiple tests in parallel</span>
+            </p>
+        </div>
     </article>
 
     <div class="box">
-      <img id="banner-deploy" src="" class="softened"
-        alt="Another Pretty Picture" />
+        <img id="banner-deploy" src="" class="softened"
+             alt="Another Pretty Picture"/>
     </div>
-  </section>
+</section>
 
-  <main>
+<main>
     <section id="case-study">
-      <h1>Case Study</h1>
+        <h1>Case Study</h1>
 
-      <div id="side-nav">
-        <a href="#home">
-          <img src="images/logos/SKOPOS_logo_color.png" alt="Skopos logo" />
-        </a>
-      </div>
+        <div id="side-nav">
+            <a href="#home">
+                <img src="images/logos/SKOPOS_logo_color.png" alt="Skopos logo"/>
+            </a>
+        </div>
 
-      <nav>
-        <ul></ul>
-      </nav>
-      <h2 id="introduction">1) Introduction</h2>
-      <p>[intro]</p>
+        <nav>
+            <ul></ul>
+        </nav>
+        <h2 id="introduction">1) Introduction</h2>
+        <p>
+            Modern software depends heavily on APIs - both internal APIs and external APIs, such as Stripe or Mailgun -
+            for critical functionality and key business transactions. However, relying on APIs is not without risks -
+            software can change, the network is unreliable, and mistakes happen. How can we be sure that APIs are
+            available and behaving as expected?
+        </p>
+
+        <p>
+            Through API monitoring, we can observe business-critical APIs and inter-API interactions in production by
+            testing workflows and verify we are getting the expected results. We may not be able to avoid API failures,
+            but we can try to catch issues quickly and minimize their impact.
+        </p>
+
+        <p>
+            In this case study, we describe how we built Skopos, a free, open-source API monitoring tool. We designed
+            Skopos to make it easy to keep an eye on multi-step API workflows and respond quickly to failures. First,
+            let's explore why APIs fail and the consequences for applications that consume them.
+        </p>
         <h2 id="what-happens-when-apis-fail">2) What Happens When APIs Fail</h2>
-          <h3 id="modern-applications-and-apis">2.1) Modern Applications and APIs</h3>
-            <p>[2.1]</p>
-            <div class="img-wrapper">
-              <img src="./images/graphics/api_example.png" alt="Example API" />
-            </div>
-          <h3 id="failures-and-their-consequences">2.2) Failures and Their Consequences</h3>
-            <p>[2.2]</p>
-            <h4 id="ubereats-payment-glitch">2.2.1) UberEats Payment Glitch</h4>
-              <p>[2.2.1 before graphic]</p>
-              <div class="img-wrapper">
-                <img src="./images/graphics/ubereats_example.png" alt="UberEats Example" />
-              </div>
-              <p>[2.2.1 after graphic]</p>
-            <h4 id="stripe-api-outage">2.2.2) Stripe API Outage</h4>
-              <p>[2.2.2]</p>
-            <h4 id="twitter-api-outage">2.2.3) Twitter API Outage</h4>
-              <p>[2.2.3 before graphic</p>
-              <div class="img-wrapper">
-                <img src="./images/graphics/twitter_example.png" alt="Twitter Example" />
-              </div>
-              <p>[2.2.3 after graphic]</p>
-            <h4 id="anticipating-api-failures">2.2.4) Anticipating API Failures</h4>
-              <p>[2.2.4]</p>
-        <h2 id="api-monitoring">3) API Monitoring</h2>
-          <h3 id="what-is-api-monitoring">3.1) What is API Monitoring</h3>
-            <p>[3.1]</p>
-          <h3 id="how-api-monitoring-works">3.2) How API Monitoring Works</h3>
-            <p>[3.2]</p>
-            <div class="img-wrapper">
-              <img src="./images/graphics/four_steps.png" alt="Four Steps" />
-            </div>
-            <h4 id="definition-defining-what-is-monitored">3.2.1) Definition - Defining What is Monitored</h4>
-              <div class="img-wrapper">
-                <img src="./images/graphics/define.png" alt="Define" />
-              </div>
-              <p>[3.2.1]</p>
-            <h4 id="execution-performing-the-tests">3.2.3) Execution - Performing the Tests</h4>
-              <div class="img-wrapper">
-                <img src="./images/graphics/execute.png" alt="Execute" />
-              </div>
-              <p>[3.2.2]</p>
-            <h4 id="scheduling-automating-the-monitoring-process">3.2.3) Scheduling - Automating the Monitoring Process</h4>
-              <div class="img-wrapper">
-                <img src="./images/graphics/schedule.png" alt="Schedule" />
-              </div>
-              <p>[3.2.3]</p>
-            <h4 id="notification-alerting-with-monitoring-results">3.2.4) Notification - Alerting with Monitoring Results</h4>
-              <div class="img-wrapper">
-                <img src="./images/graphics/notify.png" alt="Notify" />
-              </div>
-              <p>[3.2.4]</p>
-        <h2 id="approaches-to-api-monitoring">4) Approaches to API Monitoring</h2>
-          <p>[4]</p>
-          <h3 id="multi-step-tests">4.1) Multi-Step Tests</h3>
-            <div class="img-wrapper">
-              <img src="./images/graphics/multi-step.png" alt="Multi-Step" />
-            </div>
-            <div class="img-wrapper">
-              <img src="./images/graphics/multi-step-error.png" alt="Multi-Step-Error" />
-            </div>
-            <p>[4.1]</p>
-          <h3 id="parallel-tests">4.2) Parallel Tests</h3>
-            <div class="img-wrapper">
-              <img src="./images/graphics/parallel.png" alt="parallel" />
-            </div>
-            <p>[4.2]</p>
-          <h3 id="geo-location-based-tests">4.3) Geo-Location Based Tests</h3>
-            <div class="img-wrapper">
-              <img src="./images/graphics/geo.png" alt="geo" />
-            </div>
-            <p>[4.3]</p>
-          <h3 id="ci-cd-integration-tests">4.4) CI/CD Integration Tests</h3>
-            <div class="img-wrapper">
-              <img src="./images/graphics/ci_cd.png" alt="CI/CD" />
-            </div>
-            <p>[4.4]</p>
-          <h3 id="finding-the-right-approach">4.5) Finding the Right Approach</h3>
-            <p>[4.5]</p>
-        <h2 id="existing-solutions">5) Existing Solutions</h2>
-          <h3 id="open-source-solutions">5.1) Open-Source Solutions</h3>
-            <p>[5.1]</p>
-          <h3 id="commercial-solutions">5.2) Commercial Solutions</h3>
-            <p>[5.2]</p>
-            <div class="img-wrapper">
-              <img src="./images/graphics/comp_no_skopos.png" alt="existing solutions" />
-            </div>
-          <h3 id="a-solution-for-our-use-case">5.3) A Solution For Our Use Case</h3>
-            <p>[5.3]</p>
-            <div class="img-wrapper">
-              <img src="./images/graphics/architecure-parallel-vs-multistep.drawio.png" alt="existing solutions" />
-            </div>
-        <h2 id="introducing-skopos">6) Introducing Skopos</h2>
-          <h3 id="deploying-skopos">6.1) Deploying Skopos</h3>
-            <div class="img-wrapper">
-              <img src="./images/graphics/deploy.png" alt="existing solutions" />
-            </div>
-            <p>[6.1]</p>
-          <h3 id="using-skopos">6.2) Using Skopos</h3>
-            <p>[6.2]</p>
-            <h4 id="how-test-definition-works">6.2.1) How Test Definition Works</h4>
-              <video width="600" height="520" autoplay muted>
-                <source src="./images/videos/definition-walkthrough.mp4" type="video/mp4">
-              </video>
-              <p>[6.2.1]</p>
-            <h4 id="how-test-execution-works">6.2.2) How Test Execution Works</h4>
-              <video width="600" height="520" autoplay muted>
-                <source src="./images/videos/execution-walkthrough.mp4" type="video/mp4">
-              </video>
-              <p>[6.2.2]</p>
-            <h4 id="how-scheduling-works">6.2.3) How Scheduling Works</h4>
-              <video width="600" height="520" autoplay muted>
-                <source src="./images/videos/scheduling-walkthrough.mp4" type="video/mp4">
-              </video>
-              <p>[6.2.3]</p>
-            <h4 id="how-notification-works">6.2.4) How Notification Works</h4>
-              <video width="600" height="520" autoplay muted>
-                <source src="./images/videos/notification-walkthrough.mp4" type="video/mp4">
-              </video>
-              <p>[6.2.4]</p>
-        <h2 id="building-our-core-application">7) Building Our Core Application</h2>
-          <p>[7]</p>
-          <h3 id="building-the-definition-functionality">7.1) Building the Definition Functionality</h3>
-            <p>[7.1]</p>
-            <h4 id="definition-design-decisions">7.1.1) Definition Design Decisions</h4>
-              <p>[7.1.1]</p>
-            <h4 id="defining-multi-step-tests">7.1.2) Defining Multi-Step Tests</h4>
-              <p>[7.1.2 before diagram]</p>
-              <div class="img-wrapper">
-                <img src="./images/graphics/architecture-steps-define.drawio.png" alt="existing solutions" />
-              </div>
-              <p>[7.1.2 after diagram]</p>
-          <h3 id="data-storage-and-fetching">7.2) Data Storage and Fetching</h3>
-            <p>[7.2]</p>
-            <h4 id='efficiently-fetching-and-storing-data'>7.2.1) Efficiently Fetching and Storing Data</h4>
-              <p>[7.2.1]</p>
-              <div class="img-wrapper">
-                <img src="./images/graphics/data_stack.png" alt="existing solutions" />
-              </div>
-            <h4 id="further-optimizations">7.2.2) Further Optimizations</h4>
-              <p>[7.2.2 before diagram]</p>
-              <div class="img-wrapper">
-                <img src="./images/graphics/indexes.png" alt="existing solutions" />
-              </div>
-              <p>[7.2.2 after diagram]</p>
-          <h3 id="multi-step-test-execution">7.3) Multi-Step Test Execution</h3>
-            <p>[7.3]</p>
+        <h3 id="modern-applications-and-apis">2.1) Modern Applications and APIs</h3>
+        <p>
+            APIs play a vital role at the heart of almost every piece of technology in use today. APIs can improve
+            functionality and allow easy integration of new features into existing products and services. APIs act as
+            the connective tissue that links together different technology ecosystems.
+        </p>
+        <p>
+            Consider a simple weather app that allows users to see current and future weather forecasts worldwide. This
+            weather application relies upon APIs provided by weather services, such as OpenWeather, to retrieve
+            up-to-date weather information for users. OpenWeather in turn sources its data from agencies like NOAA and
+            the National Weather Service, which offer their own APIs to access their data.
+        </p>
 
-      <!-- ****************************************************************** -->
-      <!-- <a href="#footnote-1" target="_self">1</a>
-      <blockquote></blockquote>
-      
-      <section id="footnotes">
-        <h2 id="references"></h2>
+        <p>
+            <b>APIs act as the connective tissue that binds together the services comprising modern
+                applications.</b> However, this reliance raises an important question: what happens if they fail?
+        </p>
+        <div class="img-wrapper">
+            <img src="./images/graphics/api_example.png" alt="Example API"/>
+        </div>
+        <h3 id="failures-and-their-consequences">2.2) Failures and Their Consequences</h3>
+        <p>
+            When a company’s APIs fail, it can have cascading effects across other services that had integrated and
+            relied on those APIs. To illustrate this, we will briefly describe three high-profile examples.
+        </p>
+        <h4 id="ubereats-payment-glitch">2.2.1) UberEats Payment Glitch</h4>
+        <p>
+            In 2019, Paytm, a payment service used by UberEats, made an unannounced update to an API endpoint so that
+            the endpoint no longer behaved idempotently. Before the change, Paytm's API endpoint always returned the
+            same error when attempting to charge a wallet with insufficient funds to cover the cost of the order. After
+            the change, Paytm returned different messages for the first and the subsequent attempts at charging a wallet
+            with insufficient funds. This unexpected behavior changed how the UberEats’ integration with the API
+            responded to the error.
+        </p>
+        <div class="img-wrapper">
+            <img src="./images/graphics/ubereats_example.png" alt="UberEats Example"/>
+        </div>
+        <p>
+            UberEats’ software did not interpret this unexpected response as an error and completed the customer’s order
+            anyway, resulting in free food for the customer. News of the glitch spread fast, and tens of thousands of
+            dollars of orders were placed for free!
+        </p>
+        <p>
+            <strong>From this UberEats example, it is clear that API failures can manifest in an unexpected
+                payload.</strong>
+        </p>
+        <h4 id="stripe-api-outage">2.2.2) Stripe API Outage</h4>
+        <p>
+            In 2019, an incident caused severe degradation of Stripe’s API performance. What began as database bugs and
+            a configuration change resulted in a cascade of failures across critical services, including their API. As a
+            result, during this incident, a majority of requests to Stripe’s API either outright failed or suffered
+            greatly elevated response times.
+        </p>
+        <p>
+            The outage financially impacted both Stripe itself, since it charges a fee on payments it processes, as well
+            as small businesses that rely on Stripe; one startup claimed roughly $100,000 in lost sales.
+        </p>
+
+        <p>
+            <strong>From this Stripe example, it is clear that API failures can manifest in error responses and
+                unacceptable response times.</strong>
+        </p>
+        <h4 id="twitter-api-outage">2.2.3) Twitter API Outage</h4>
+        <p>In 2016, Twitter suffered an incident that saw four of its five public-facing APIs experience either
+            performance issues or severe disruption. The affected APIs returned status codes and responses stating that
+            they were either “over capacity” or had suffered an “internal error.” During the outages, businesses relying
+            on Twitter for live customer feedback lost valuable marketing insight.</p>
+        <p>
+            <strong>
+                From this Twitter example, it is clear that API failures can manifest in error responses and different
+                status codes.
+            </strong>
+        </p>
+        <div class="img-wrapper">
+            <img src="./images/graphics/twitter_example.png" alt="Twitter Example"/>
+        </div>
+        <p>These were just three instances of API failures, but there is no shortage of examples. Moreover, when an API
+            fails, the implications for software that relies on that API can be dire, from negatively impacting user
+            experience to compromising revenue. </p>
+        <h4 id="anticipating-api-failures">2.2.4) Anticipating API Failures</h4>
+        <p>To mitigate the impacts of these problems, companies have invested in tools that track the live performance
+            of relied-upon API endpoints. The key candidates for tracking are:</p>
+        <ol>
+            <li>data payloads</li>
+            <li>response times</li>
+            <li>status codes</li>
+        </ol>
+
+        <p>
+            While the tools designed for tracking these key features of API endpoint performance are fine-tuned to
+            fulfill different use cases, they come with a core set of functionalities, and all fall under the banner of
+            API monitoring.
+        </p>
+        <h2 id="api-monitoring">3) API Monitoring</h2>
+        <h3 id="what-is-api-monitoring">3.1) What is API Monitoring</h3>
+        <p>API monitoring is the process of making requests to API endpoints at set intervals and comparing the response
+            to expected values to check both the availability of API endpoints and the validity of their response data.
+            The goal of API monitoring is to spot issues that may affect users as early as possible.</p>
+
+        <p>
+            For this case study, we refer to requests made to API endpoints to monitor that API's performance as
+            <strong>API
+                tests</strong> or simply <strong>tests</strong>.
+        </p>
+        <h3 id="how-api-monitoring-works">3.2) How API Monitoring Works</h3>
+        <p>While API monitoring tools may vary in their specific implementations and use cases, API monitoring tools
+            share a core set of functionalities that are necessary to regularly check API endpoints and provide
+            actionable data on their status. These core functionalities can be broken down at a broad level as a set of
+            distinct steps. We chose to describe these steps as Definition, Execution, Scheduling, and Notification. In
+            the following subsections, we will detail each of these steps.</p>
+        <div class="img-wrapper">
+            <img src="./images/graphics/four_steps.png" alt="Four Steps"/>
+        </div>
+        <h4 id="definition-defining-what-is-monitored">3.2.1) Definition - Defining What is Monitored</h4>
+        <div class="img-wrapper">
+            <img src="./images/graphics/define.png" alt="Define"/>
+        </div>
+        <p>Every API monitoring tool must create tests that define what is being monitored and include all relevant
+            information necessary to perform those tests. This information would consist of the API endpoint to send a
+            request to, the HTTP method to be used, any required headers, and the request’s body.</p>
+        <p>
+            To facilitate this, an API monitoring tool must have a way of creating tests either via a user interface
+            (UI) or with code. The user provides the above information required for a complete and functional test
+            definition, and the tool defines the test.
+        </p>
+
+        <p>
+            An API monitoring tool must also create assertions for tests. In this context, an assertion is a logical
+            statement describing what is expected in response from the API endpoint. The API monitoring tool can then,
+            at a later stage, compare the expected value specified in the assertion with the actual values returned to
+            identify if any failure has occurred. It may be useful to note here that because assertions are specified by
+            the user, the API monitoring tool does not itself decide what constitutes a failure of an API - that is up
+            to the user.
+        </p>
+        <h4 id="execution-performing-the-tests">3.2.3) Execution - Performing the Tests</h4>
+        <div class="img-wrapper">
+            <img src="./images/graphics/execute.png" alt="Execute"/>
+        </div>
+        <p>Every API monitoring tool must be able to execute previously defined tests. In this context, execute refers
+            to using a protocol like HTTP to communicate with an API, receive a response, and then process the response
+            appropriately. In processing, the API monitoring tool compares received values to any expected values
+            specified as assertions. Assertions can be either explicit such as verifying that a response body has a
+            specific value, or implicit such as simply expecting test execution to complete without error. The API
+            monitoring tool then determines whether the assertion passed or failed.</p>
+        <h4 id="scheduling-automating-the-monitoring-process">3.2.3) Scheduling - Automating the Monitoring Process</h4>
+        <div class="img-wrapper">
+            <img src="./images/graphics/schedule.png" alt="Schedule"/>
+        </div>
+        <p>Every API monitoring tool must allow for the automation of tests rather than only providing functionality for
+            a user to run the tests manually. Through scheduling, an API monitoring tool can regularly run tests to
+            catch errors quickly should they occur. </p>
+        <p>
+            Scheduling in this context is not limited to a time-based schedule but refers to a broader concept of
+            setting a pattern to execute tests in a particular manner automatically. This includes time-based
+            scheduling, but it also includes other patterns. For example, a trigger-based pattern could execute tests as
+            part of a deployment in a CI/CD pipeline, or a location-based pattern could have tests originate from
+            different locations around the globe.
+        </p>
+
+        <p>
+            The scheduling patterns an API monitoring tool offers will depend on the specific use case the tool
+            addresses.
+        </p>
+        <h4 id="notification-alerting-with-monitoring-results">3.2.4) Notification - Alerting with Monitoring
+            Results</h4>
+        <div class="img-wrapper">
+            <img src="./images/graphics/notify.png" alt="Notify"/>
+        </div>
+        <p>Every API monitoring tool must recognize and report discrepancies between actual and expected response
+            values. For monitoring to be useful, it needs to provide actionable information about the status of the API
+            endpoints being monitored. Some tools may use self-healing mechanisms to resolve these discrepancies, while
+            others rely on user intervention for resolution, in which case notifications can be sent to the user of the
+            monitoring tool. The notification methods can vary depending on specific implementation; popular ways to
+            notify user agents of API monitoring tools include Slack webhooks and SMS.
+        </p>
+
+        <p>
+            While API monitoring tools have core commonalities, they are not generally one-size-fits-all products. There
+            are different use cases to account for, and services often offer different features. Knowing which features
+            to target for a company depends on which approach to API monitoring makes the most sense for their specific
+            use case. Let us now explore how these core functionalities are fine-tuned in different ways to fit
+            different use cases.
+        </p>
+        <h2 id="approaches-to-api-monitoring">4) Approaches to API Monitoring</h2>
+        <p>Below are examples of features commonly offered by API monitoring tools and which use cases they are best
+            suited to handle. These features typically work by changing the functionality of one or more of the steps
+            defined above.
+        </p>
+        <h3 id="multi-step-tests">4.1) Multi-Step Tests</h3>
+        <div class="img-wrapper">
+            <img src="./images/graphics/multi-step.png" alt="Multi-Step"/>
+        </div>
+        <div class="img-wrapper">
+            <img src="./images/graphics/multi-step-error.png" alt="Multi-Step-Error"/>
+        </div>
+        <p>Multi-step tests allow for tests to be linked to each other. This way, a subsequent test can refer to values
+            from the responses to previous tests. In the context of the four steps of API monitoring, with multi-step
+            tests, the user now defines the previous values they wish to access, and the execution of the test must
+            execute tests in sequence and track state. This is typically used when different services of an application
+            need to communicate with one another in sequence over API calls to complete common functionality, such as an
+            API endpoint requiring authentication through a token. API call chaining like this is particularly prevalent
+            with a microservices architecture.
+        </p>
+
+        <p>
+            A trade-off of this approach is that multi-step tests must be run sequentially and depend on each other,
+            which can make tests inefficient and possibly more error-prone.
+        </p>
+        <h3 id="parallel-tests">4.2) Parallel Tests</h3>
+        <div class="img-wrapper">
+            <img src="./images/graphics/parallel.png" alt="parallel"/>
+        </div>
+        <p>API monitoring tools that offer parallel tests allow many tests to be run simultaneously. In the context of
+            the four steps of API monitoring, with parallel tests, the execution of tests occurs in isolated sandboxes.
+            If these tests are being sent to the same endpoint, this feature can be used for load testing to see how an
+            application responds to many requests received in a short period of time. If these tests are being sent to
+            different endpoints, this feature can save time when running a large number of tests.
+        </p>
+        <p>One trade-off to this approach is that when tests are executed in parallel, it is much more challenging to
+            set up complex API tests, and those with prerequisites typically require setup with user-defined scripting.
+            Additionally, orchestrating parallel tests requires provisioning multiple resources to carry out execution
+            simultaneously.
+        </p>
+        <h3 id="geo-location-based-tests">4.3) Geo-Location Based Tests</h3>
+        <div class="img-wrapper">
+            <img src="./images/graphics/geo.png" alt="geo"/>
+        </div>
+        <p>
+            Applications with global users may want to test the performance of their APIs in varying geographical
+            locations. Monitoring tools that offer this allow for specifying different locations for requests to
+            originate. When considering the four steps of API monitoring, with geo-location-based tests, scheduling
+            includes selecting locations rather than just times, and execution occurs in different locations. This
+            provides insight into how an API is performing for varied users, particularly that response time is
+            acceptable and response status codes are as expected. This helps to better diagnose if an issue is
+            network-related, and is especially helpful for public-facing APIs that users interact with directly.
+        </p>
+        <p>
+            A trade-off of this approach is that resources must be provisioned and managed in each location tests are to
+            be executed.
+        </p>
+        <h3 id="ci-cd-integration-tests">4.4) CI/CD Integration Tests</h3>
+        <div class="img-wrapper">
+            <img src="./images/graphics/ci_cd.png" alt="CI/CD"/>
+        </div>
+        <p>API monitoring tools can also allow integration with CI/CD pipelines, often by linking collections to
+            multiple environments and setting deployment triggers that automatically run tests in these environments in
+            response to new builds. In the four steps of API monitoring, with CI/CD integration, the scheduling involves
+            deployment triggers rather than time-based scheduling, and the execution can occur in different
+            environments. This is helpful to ensure that API integrations do not break amidst frequent codebase changes.
+            Often, CI/CD integration tests are used with APIs that have internal endpoints that other mission-critical
+            components rely on. </p>
+        <p>
+            One trade-off of this approach is that CI/CD integrated tests only check that endpoints are functional at
+            the point of deployment and do not provide insight into API availability across time.
+        </p>
+        <h3 id="finding-the-right-approach">4.5) Finding the Right Approach</h3>
+        <p>Each of these approaches is useful for different applications, though care must be taken to choose the best
+            tool for one’s specific requirements. For instance, consider two applications that both publish their own
+            public-facing APIs: one frequently deploys updates to their codebase but only markets their API in one
+            region, while the other deploys new versions infrequently but offers its APIs to users in several different
+            geographic locations. Where one may benefit from CI/CD integrated API monitoring, the other may benefit more
+            from geo-location-based monitoring.</p>
+        <p>
+            It is worth noting this is not an exhaustive list since with new innovations there are new needs and ways to
+            monitor APIs. These simply form some of the broader categories of API monitoring approaches. In our case, we
+            were searching for an API monitoring solution capable of monitoring multiple API endpoints that rely on
+            multi-step workflows and require high availability.
+        </p>
+        <h2 id="existing-solutions">5) Existing Solutions</h2>
+        <h3 id="open-source-solutions">5.1) Open-Source Solutions</h3>
+        <p>There are different API monitoring tools currently on the market that offer different features depending on
+            their use case. </p>
+        <p>One example is Postman’s Newman CLI tool. This tool can be used for running collections that are created in
+            Postman. As a CLI tool, this allows for increased flexibility in how groups of tests, or collections, are
+            run. For example, this tool can be integrated with others, incorporated into a CI/CD pipeline, or used as a
+            Node.js library. Because of this flexibility, features such as parallel collection runs and multi-step tests
+            can be configured, although they do require writing and maintaining additional code.
+        </p>
+        <p>
+            The trade-off for increased flexibility with this tool is ease of use. Because this is a command line tool,
+            there is no GUI to interact with. Also, there is a disjointed experience using Newman because tests are
+            created in Postman and then exported into Newman.
+        </p>
+        <h3 id="commercial-solutions">5.2) Commercial Solutions</h3>
+        <p>
+            Various companies offer SaaS solutions. These tools are generally robust with many features and even provide
+            customer support to help troubleshoot issues. However, many of these features are often behind paywalls and
+            may or may not be open-source.
+        </p>
+
+        <p>
+            One commercial solution we looked at is Checkly. This tool has an easy-to-use GUI with extensive dashboards
+            to monitor the results of running tests. However, Checkly does not offer support for multi-step testing out
+            of the box. Instead, tests are considered an isolated unit, and users can write setup and teardown scripts
+            to achieve the functionality of multi-step tests. However, this does require additional code to write and
+            maintain.
+        </p>
+
+        <p>
+            Testfully is another commercial solution we looked at; this tool comes very close to what we desired.
+            However, as a commercial solution, it is not open source, so users must be comfortable with a lack of
+            transparency, as well as sacrificing some control over their data. Also, features like Slack integration for
+            notifications, short intervals between test or collection runs, and long-term data retention are locked
+            behind higher payment tiers.
+        </p>
+        <div class="img-wrapper">
+            <img src="./images/graphics/comp_no_skopos.png" alt="existing solutions"/>
+        </div>
+        <h3 id="a-solution-for-our-use-case">5.3) A Solution For Our Use Case</h3>
+        <p>As a reminder, we wanted an API monitoring tool that allowed us to monitor multi-step API workflows requiring
+            high availability.
+        </p>
+        <p>
+            An essential requirement for us was the ability to run multi-step tests in collections. Within a collection,
+            tests could be dependent on each other and executed sequentially. Separate groups, however, could be run in
+            parallel. This would allow collections to be run more quickly and decrease compute time. For example, if an
+            API workflow has 10 requests with 200ms of latency for each request, running this collection of tests
+            sequentially would take around 2 seconds. If you need to test 50 different workflows, that would take 100
+            seconds to run collections sequentially. This creates a hard limit for the frequency of running collections
+            that may exceed acceptable downtime.
+        </p>
+
+        <p>
+            Another key requirement for us was ease of use; we wanted a tool that allowed developers to implement their
+            API tests and monitor the results with minimal onboarding.
+        </p>
+        <div class="img-wrapper">
+            <img src="./images/graphics/architecure-parallel-vs-multistep.drawio.png" alt="existing solutions"/>
+        </div>
+
+        <p>
+            All the tools we looked at only fulfilled a subset of our requirements. For example, <strong>Newman
+            CLI</strong> could set up
+            multi-step tests that could run in parallel, but it did not have the ease of use we wanted. Using Newman
+            required a developer to write their own test scripts, and collections had to be created in Postman and then
+            exported to use in Newman. <strong>Checkly</strong> had an easy-to-use GUI, but implementing multi-step
+            functionality
+            required a developer to write their own setup and teardown scripts on each test. <strong>Testfully</strong>
+            came the closest
+            to satisfying most of our requirements, but it locked its functionality behind high monthly subscription
+            costs. We wanted an open-source solution. Ultimately, none of these tools matched our use case, so we set
+            out to build our own.
+        </p>
+        <h2 id="introducing-skopos">6) Introducing Skopos</h2>
+
+        <p>
+            Skopos is an open-source API monitoring tool designed for multi-step API testing and running collections of
+            tests in parallel, with a user-friendly interface. We designed Skopos intending to monitor multi-step API
+            workflows that needed to be highly available. With Skopos’ GUI, it is possible to set up multi-step API
+            tests and schedule them to run in short intervals, for example, every minute. Additionally, if several
+            collections are scheduled to run simultaneously, they can run in parallel.
+        </p>
+
+        <div class="img-wrapper">
+            <img src="./images/graphics/deploy.png" alt="existing solutions"/>
+        </div>
+        <p>
+            Skopos is not designed for CI/CD integration; since we created Skopos with a focus on monitoring API
+            endpoints in production, CI/CD integration was not central to our goal. Additionally, Skopos lacks any
+            user-defined scripting. While this sacrifices some flexibility in how tests can be defined and executed, we
+            felt expecting a user to write their own scripts would compromise our vision of an easy-to-use tool.
+        </p>
+        <h3 id="deploying-skopos">6.1) Deploying Skopos</h3>
+        <p>
+            Using Skopos requires:
+        </p>
+        <ul>
+            <li>An AWS account</li>
+            <li>npm installed</li>
+            <li>The AWS CLI installed and configured (Skopos will use the locally configured AWS account)</li>
+            <li>The AWS CDK command line tool installed</li>
+        </ul>
+
+        <p>
+            To install Skopos, run ‘npm install -g skopos’. Then, running ‘skopos deploy’ will deploy Skopos on the
+            user’s AWS account using the AWS CDK. Once this is completed, a URL will be supplied to access the
+            application’s GUI. Through this URL, the user can interact with the React front end hosted in an S3 bucket.
+        </p>
+        <h3 id="using-skopos">6.2) Using Skopos</h3>
+        <p>As an API monitoring tool, Skopos incorporates the core functionalities of defining, scheduling, executing,
+            and notifying. Here is a look at how this is implemented with Skopos.</p>
+        <h4 id="how-test-definition-works">6.2.1) How Test Definition Works</h4>
+        <video width="600" height="520" autoplay muted>
+            <source src="./images/videos/definition-walkthrough.mp4" type="video/mp4">
+        </video>
+        <p>A user can define a test in the following way:</p>
+
+        <ol class='define-test-steps'>
+            <li>From the main menu, click the ‘Add Collection’ button to create a collection to group requests, and
+                enter a name for the collection
+            </li>
+            <li>
+                <p>
+                    On the collection screen, click the ‘Add Request’ button
+                </p>
+                <ul style='list-style-type: "a"'>
+                    <li>
+                        To use values from previous steps, use variables (`@{{}}`) to reference the exact value from
+                        previous requests. For instance, `@{{step1.body.sample}}` references the value stored in the
+                        `sample` property of the body received in response to the request defined in step 1.
+                    </li>
+                </ul>
+            </li>
+            <li>In the form that opens, specify the necessary details for the API request the test will make</li>
+            <li>
+                To specify assertions, select the ‘Assertions’ tab in the form and then click the ‘Add Assertion’
+                button
+                <ul>
+                    <li>
+                        Select from the drop-down the specific fields to be validated for the assertion. The options
+                        are:
+                        <ol>
+                            <li>Status Code</li>
+                            <li>Latency</li>
+                            <li>Headers</li>
+                            <li>Body</li>
+                        </ol>
+                    </li>
+                    <li>
+                        To make assertions on the response body or headers, specify the specific property in the text
+                        box that pops up as you select headers or body. For instance, `body.id` references the `id`
+                        property of the body object
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <h4 id="how-test-execution-works">6.2.2) How Test Execution Works</h4>
+        <video width="600" height="520" autoplay muted>
+            <source src="./images/videos/execution-walkthrough.mp4" type="video/mp4">
+        </video>
+        <p>When a collection is selected, to run that collection immediately, a user can click the ‘Run Collection’
+            button. Internally, this sends a request to the collection runner to run the collection. Once test execution
+            has been completed, the results of the execution are displayed. To see the results of past collection runs,
+            click the ‘History’ button in the collection. Tests can also be executed automatically on a schedule.</p>
+        <h4 id="how-scheduling-works">6.2.3) How Scheduling Works</h4>
+        <video width="600" height="520" autoplay muted>
+            <source src="./images/videos/scheduling-walkthrough.mp4" type="video/mp4">
+        </video>
+        <p>Tests are scheduled at the collection level. A user can set up a monitoring schedule in the following
+            way:
+        </p>
 
         <ol>
-          <li id="footnote-1"><a></a></li>
+            <li>Open the sidebar and select ‘Monitors’</li>
+            <li>Click the ‘Add Monitor’ button</li>
+            <li>
+                In the form that open, set desired configuration options:
+                <ol>
+                    <li>Specify often to run the collection (for example, every 1 minute)</li>
+                    <li>Select collections to add to this Monitor. When the scheduling rule triggers, all specified
+                        collections will have their tests executed in parallel
+                    </li>
+                    <li>Select which notification methods should be used for this monitor, and provide appropriate
+                        contact details for each method
+                    </li>
+                </ol>
+            </li>
         </ol>
-      </section> -->
-    </section>
-  </main>
+        <h4 id="how-notification-works">6.2.4) How Notification Works</h4>
+        <video width="600" height="520" autoplay muted>
+            <source src="./images/videos/notification-walkthrough.mp4" type="video/mp4">
+        </video>
+        <p>When assertions fail, notifications can be sent via email, Slack, or PagerDuty.</p>
+        <p>
+            Having seen how API monitoring with Skopos works and what it can do, we can now explore the design decisions
+            and engineering challenges that went into building this tool, starting with Skopos’ core functionality.
+        </p>
+        <h2 id="building-our-core-application">7) Building Our Core Application</h2>
+        <p>We started by building a proof of concept for running multi-step tests, which would be the core functionality
+            of our API monitoring tool.
+        </p>
+        <h3 id="building-the-definition-functionality">7.1) Building the Definition Functionality</h3>
 
-  <section id="our-team">
+        <p>Test definition was a natural first step for us to tackle since all subsequent functionality of an API
+            monitoring tool depended on having a test to execute in the first place. For our core application, we
+            focused on facilitating test definition through a GUI and defining multi-step tests.
+        </p>
+        <h4 id="definition-design-decisions">7.1.1) Definition Design Decisions</h4>
+
+        <p>When we designed the test definition functionality, one of the first decisions we made was to use React for
+            the application's front end. Via text fields and drop-down menus, this React front-end provided a GUI for
+            the user to input the information required to define a test.
+        </p>
+
+        <p>
+            To enable multistep tests, we chose to group individual tests into collections, which would be the central
+            functional unit of our application. A collection could be associated with many tests, while a test (referred
+            to as ‘request’ in our schema) could only be associated with one collection, and the tests in one collection
+            could not rely on tests in other collections. When run, tests in a collection would be executed
+            sequentially, and tests would have an associated step number that indicated when they would be executed in
+            relation to the other tests.
+        </p>
+        <h4 id="defining-multi-step-tests">7.1.2) Defining Multi-Step Tests</h4>
+        <p>Our chief implementation challenge at the test definition stage concerned how to define a test such that when
+            it is later executed as a part of a collection, it can reference response values from previous tests in that
+            collection.
+        </p>
+
+        <p>
+            To solve this problem, we first needed a reliable method of flagging to the application that “this value
+            should reference another value” that was still human-readable and simple enough for a user to take advantage
+            of. Here we took inspiration from JavaScript’s template literal string interpolation syntax, where in the
+            string `Hello ${variable}`, the $ symbol and curly brackets indicate that whatever is between the curly
+            brackets is a variable whose value should be interpolated into the string. In our case, we decided to use
+            @{{}} as our variable template flag - an @ symbol, followed by a double set of curly brackets.
+        </p>
+        <div class="img-wrapper">
+            <img src="./images/graphics/architecture-steps-define.drawio.png" alt="existing solutions"/>
+        </div>
+        <p>Once we had established the data model and logic for test definition and implemented a basic front-end user
+            interface to create tests, we needed to store and fetch the resulting data.
+        </p>
+        <h3 id="data-storage-and-fetching">7.2) Data Storage and Fetching</h3>
+
+        <p>Since we aimed to eventually implement scheduling - which would allow tests to execute automatically on short
+            intervals - we anticipated frequently querying this data to execute the tests and display the results.
+            Therefore, the efficiency of these operations was of some concern.
+        </p>
+
+        <h4 id='efficiently-fetching-and-storing-data'>7.2.1) Efficiently Fetching and Storing Data</h4>
+
+        <p>We had detailed our data model in a relational way and were able to easily implement the schema with
+            PostgreSQL. However, as we were developing our definition and execution components, we often had to return
+            to our data model and modify or tweak our schema in some way, so we decided to use Prisma to simplify
+            initializing database schema and migrating schema.
+        </p>
+
+        <p>
+            As we progressed in development, working with REST endpoints was limiting. Sometimes, we were fetching
+            resources from multiple endpoints (under-fetching), and other times we were fetching more resources than
+            necessary (over-fetching). So we began adjusting our queries and endpoints to target only the data we
+            needed. Still, the queries were growing too complex for us to comfortably work with, and the custom
+            endpoints departed from REST implementation.
+        </p>
+
+        <p>
+            To simplify our queries and avoid over or under-fetching of data, we integrated GraphQL into our data stack.
+            Specifically, we added Apollo Server to our backend app server. Any components that would need to
+            communicate with the database could then use Apollo Client, and the backend running Apollo Server would act
+            as the single gateway to the database. Our final data stack consisted of a PostgreSQL database connected to
+            a backend server running Prisma and GraphQL via Apollo Server.
+        </p>
+
+        <div class="img-wrapper">
+            <img src="./images/graphics/data_stack.png" alt="existing solutions"/>
+        </div>
+        <h4 id="further-optimizations">7.2.2) Further Optimizations</h4>
+        <p>Once we had our data stack established, we considered some further optimizations we could make:</p>
+
+        <ul>
+            <li>
+                Adding indexes
+                <ul>
+                    <li>
+                        We implemented indexes on foreign key columns because complex table joins were slowing down the
+                        queries. Adding indexes on the foreign key columns sped up the joins.
+
+                        <div class="img-wrapper">
+                            <img src="./images/graphics/indexes.png" alt="existing solutions"/>
+                        </div>
+                    </li>
+                    <li>
+                        Pagination
+                        <ul>
+                            We implemented pagination for collection runs, as a significant amount of data could be
+                            requested depending on the frequency with which collections are executed.
+                        </ul>
+                    </li>
+                    <li>
+                        Caching
+                        <ul>
+                            Apollo Client stores the results of GraphQL queries in a local in-memory cache. We were able
+                            to take advantage of this to improve the performance of our React front end and cut down on
+                            the number of network requests we would have to send as a user navigated around the UI.
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <p>
+            Now that we were able to define tests and store and query the tests’ data, we needed to be able to execute
+            the tests.
+        </p>
+        <h3 id="multi-step-test-execution">7.3) Multi-Step Test Execution</h3>
+        <p>Multi-step tests require running tests in sequence while keeping track of previous responses. Therefore, we
+            had to process requests to access previous values, send new requests, save the response to a collection of
+            responses, and finally check if the assertions passed for the response. Furthermore, if there were any
+            errors in the process, we wanted to handle the error differently based on where the error occurred.</p>
+
+        <!-- ****************************************************************** -->
+        <!-- <a href="#footnote-1" target="_self">1</a>
+        <blockquote></blockquote>
+
+        <section id="footnotes">
+          <h2 id="references"></h2>
+
+          <ol>
+            <li id="footnote-1"><a></a></li>
+          </ol>
+        </section> -->
+    </section>
+</main>
+
+<section id="our-team">
     <h1>Our Team</h1>
 
     <p>
-      We are looking for opportunities. If you like our project, feel free to reach out!
+        We are looking for opportunities. If you like our project, feel free to reach out!
     </p>
 
     <ul>
-      <li class="individual">
-        <img src="" alt="Nykaela Dodson" />
+        <li class="individual">
+            <img src="" alt="Nykaela Dodson"/>
 
-        <h3 id="nykaela">Nykaela Dodson</h3>
+            <h3 id="nykaela">Nykaela Dodson</h3>
 
-        <p>Orange County, California</p>
+            <p>Orange County, California</p>
 
-        <ul class="social-icons">
-          <li>
-            <a href="" target="">
-              <img src="images/icons/email_icon.png" alt="email" />
-            </a>
-          </li>
+            <ul class="social-icons">
+                <li>
+                    <a href="" target="">
+                        <img src="images/icons/email_icon.png" alt="email"/>
+                    </a>
+                </li>
 
-          <li>
-            <a href="" target="_blank">
-              <img src="images/logos/github_orange.png" alt="github" />
-            </a>
-          </li>
+                <li>
+                    <a href="" target="_blank">
+                        <img src="images/logos/github_orange.png" alt="github"/>
+                    </a>
+                </li>
 
-          <li>
-            <a href="#" target="_blank">
-              <img src="images/icons/website_icon.png" alt="website" />
-            </a>
-          </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="images/icons/website_icon.png" alt="website"/>
+                    </a>
+                </li>
 
-          <li>
-            <a href="#" target="_blank">
-              <img src="images/icons/linked_in_icon.png" alt="linkedin" />
-            </a>
-          </li>
-        </ul>
-      </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="images/icons/linked_in_icon.png" alt="linkedin"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
 
-      <li class="individual">
-        <img src="" alt="Hans Elde" />
+        <li class="individual">
+            <img src="" alt="Hans Elde"/>
 
-        <h3 id="hans">Hans Elde</h3>
+            <h3 id="hans">Hans Elde</h3>
 
-        <p>Seattle, Washington</p>
+            <p>Seattle, Washington</p>
 
-        <ul class="social-icons">
-          <li>
-            <a href="" target="">
-              <img src="images/icons/email_icon.png" alt="email" />
-            </a>
-          </li>
+            <ul class="social-icons">
+                <li>
+                    <a href="" target="">
+                        <img src="images/icons/email_icon.png" alt="email"/>
+                    </a>
+                </li>
 
-          <li>
-            <a href="" target="_blank">
-              <img src="images/logos/github_orange.png" alt="github" />
-            </a>
-          </li>
+                <li>
+                    <a href="" target="_blank">
+                        <img src="images/logos/github_orange.png" alt="github"/>
+                    </a>
+                </li>
 
-          <li>
-            <a href="#" target="_blank">
-              <img src="images/icons/website_icon.png" alt="website" />
-            </a>
-          </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="images/icons/website_icon.png" alt="website"/>
+                    </a>
+                </li>
 
-          <li>
-            <a href="#" target="_blank">
-              <img src="images/icons/linked_in_icon.png" alt="linkedin" />
-            </a>
-          </li>
-        </ul>
-      </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="images/icons/linked_in_icon.png" alt="linkedin"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
 
-      <li class="individual">
-        <img src="" alt="Katherin Ebel" />
+        <li class="individual">
+            <img src="" alt="Katherin Ebel"/>
 
-        <h3 id="kathy">Katherine Ebel</h3>
+            <h3 id="kathy">Katherine Ebel</h3>
 
-        <p>Florida</p>
+            <p>Florida</p>
 
-        <ul class="social-icons">
-          <li>
-            <a href="" target="">
-              <img src="images/icons/email_icon.png" alt="email" />
-            </a>
-          </li>
+            <ul class="social-icons">
+                <li>
+                    <a href="" target="">
+                        <img src="images/icons/email_icon.png" alt="email"/>
+                    </a>
+                </li>
 
-          <li>
-            <a href="" target="_blank">
-              <img src="images/logos/github_orange.png" alt="github" />
-            </a>
-          </li>
+                <li>
+                    <a href="" target="_blank">
+                        <img src="images/logos/github_orange.png" alt="github"/>
+                    </a>
+                </li>
 
-          <li>
-            <a href="#" target="_blank">
-              <img src="images/icons/website_icon.png" alt="website" />
-            </a>
-          </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="images/icons/website_icon.png" alt="website"/>
+                    </a>
+                </li>
 
-          <li>
-            <a href="#" target="_blank">
-              <img src="images/icons/linked_in_icon.png" alt="linkedin" />
-            </a>
-          </li>
-        </ul>
-      </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="images/icons/linked_in_icon.png" alt="linkedin"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
 
-      <li class="individual">
-        <img src="" alt="Gagan Sapkota" />
+        <li class="individual">
+            <img src="" alt="Gagan Sapkota"/>
 
-        <h3 id="gagan">Gagan Sapkota</h3>
+            <h3 id="gagan">Gagan Sapkota</h3>
 
-        <p>California</p>
+            <p>California</p>
 
-        <ul class="social-icons">
-          <li>
-            <a href="" target="">
-              <img src="images/icons/email_icon.png" alt="email" />
-            </a>
-          </li>
+            <ul class="social-icons">
+                <li>
+                    <a href="" target="">
+                        <img src="images/icons/email_icon.png" alt="email"/>
+                    </a>
+                </li>
 
-          <li>
-            <a href="" target="_blank">
-              <img src="images/logos/github_orange.png" alt="github" />
-            </a>
-          </li>
+                <li>
+                    <a href="" target="_blank">
+                        <img src="images/logos/github_orange.png" alt="github"/>
+                    </a>
+                </li>
 
-          <li>
-            <a href="#" target="_blank">
-              <img src="images/icons/website_icon.png" alt="website" />
-            </a>
-          </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="images/icons/website_icon.png" alt="website"/>
+                    </a>
+                </li>
 
-          <li>
-            <a href="#" target="_blank">
-              <img src="images/icons/linked_in_icon.png" alt="linkedin" />
-            </a>
-          </li>
-        </ul>
-      </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <img src="images/icons/linked_in_icon.png" alt="linkedin"/>
+                    </a>
+                </li>
+            </ul>
+        </li>
     </ul>
-  </section>
+</section>
 </body>
 </html>

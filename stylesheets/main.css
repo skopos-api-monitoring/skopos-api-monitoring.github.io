@@ -26,7 +26,15 @@
   font-family: 'OpenSans';
   /* src: url('/fonts/FoundersGrotesk-SemiboldItalic.otf') format('opentype'); */
   src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
-  font-weight: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  /* src: url('/fonts/FoundersGrotesk-SemiboldItalic.otf') format('opentype'); */
+  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: 900;
   font-style: normal;
 }
 
@@ -40,7 +48,7 @@
 
 :root {
   --font-family-header: 'Oswald', medium;
-  --font-family-body: 'Oswald', lighter;
+  --font-family-body: 'OpenSans', regular;
   --color-black: #000000;
   --color-skopos-dark-jungle-green: #172729;
   --color-skopos-cadmium-orange: #E28027;
