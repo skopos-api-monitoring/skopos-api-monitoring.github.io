@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .filter((logo) => !/SKOPOS/.test(logo.id))
     .map((logo) => logo.id.split('-')[0]);
 
-  const snakeCaseify = (text) => text.toLowerCase().split(/ +/).join('-').replace(/\./g, '_');
+  const snakeCaseify = (text) => text.toLowerCase().split(/ +|\//).join('-').replace(/\.|-{2,}/g, '-');
 
   const removeAmpersand = (text) => text.replace('&', '');
 
@@ -100,6 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (headerObj.type === 'H2') {
         lastH2Id = headerObj.el.id;
       } else if (headerObj.type === 'H3') {
+        lastH3Id = headerObj.el.id
         headerObj.parentId = lastH3Id;
       } else {
         headerObj.parentId = lastH2Id;
@@ -107,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const li = document.createElement('li');
       li.id = snakeCaseify(`${removeAmpersand(headerObj.text).replace('!', '').toLowerCase()}-nav`);
-      li.dataset['parentHeaderId'] = lastH2Id;
+      li.dataset['parentHeaderId'] = headerObj.parentId;
       li.dataset['tagType'] = headerObj.el.nodeName;
 
       const a = document.createElement('a');
