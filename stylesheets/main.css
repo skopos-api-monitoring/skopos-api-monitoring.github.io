@@ -130,8 +130,8 @@ a:hover {
 }
 
 .integration:nth-of-type(2) {
-  background: var(--color-skopos-veridian-green);
-  color: var(--color-white);
+  background: var(--color-skopos-powder-blue);
+  color: var(--color-skopos-dark-jungle-green);
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -157,6 +157,10 @@ a:hover {
 
 .text-box p span.orange {
   color: var(--color-skopos-cadmium-orange);
+}
+
+.text-box p span.red {
+  color: var(--color-skopos-cedar-chest);
 }
 
 .text-box p span.dark-green {
@@ -837,7 +841,7 @@ h2#references {
 }
 
 #our-team .individual li img {
-  border-radius: 45px;
+  /* border-radius: 45px; */
   padding: 2px;
   margin-top: 10px;
   width: 45px;
