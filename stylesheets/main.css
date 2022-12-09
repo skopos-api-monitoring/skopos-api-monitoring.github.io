@@ -7,9 +7,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap');
 
 @font-face {
+  font-family: 'Pragati_narrow';
+  /* src: url('/fonts/FoundersGrotesk-Semibold.otf') format('opentype'); */
+  src: url('../fonts/PragatiNarrow-Regular.ttf') format('truetype');
+  font-weight: auto;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Oswald';
   /* src: url('/fonts/FoundersGrotesk-Semibold.otf') format('opentype'); */
-  src: url('../fonts/Oswald-Light.ttf') format('truetype');
+  src: url('../fonts/Oswald-ExtraLight.ttf') format('truetype');
   font-weight: auto;
   font-style: normal;
 }
@@ -47,7 +55,8 @@
 
 
 :root {
-  --font-family-header: 'Oswald', medium;
+  --font-family-header: 'Oswald';
+  --font-family-nav: 'Pragati_narrow';
   --font-family-body: 'OpenSans', regular;
   --color-black: #000000;
   --color-skopos-dark-jungle-green: #172729;
@@ -130,8 +139,8 @@ a:hover {
 }
 
 .integration:nth-of-type(2) {
-  background: var(--color-skopos-veridian-green);
-  color: var(--color-white);
+  background: var(--color-skopos-powder-blue);
+  color: var(--color-skopos-dark-jungle-green);
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -157,6 +166,10 @@ a:hover {
 
 .text-box p span.orange {
   color: var(--color-skopos-cadmium-orange);
+}
+
+.text-box p span.red {
+  color: var(--color-skopos-cedar-chest);
 }
 
 .text-box p span.dark-green {
@@ -473,7 +486,10 @@ header h1 img {
 
 #side-nav img {
   max-width: 120px;
-  margin: 0 auto;
+  margin-left: -50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: auto;
 }
 
 #case-study nav {
@@ -495,9 +511,9 @@ header h1 img {
 #case-study nav li {
   color: #2E939E;
   font-size: 1.3rem;
-  list-style: circle;
+  list-style-type: circle;
   margin-bottom: 1.5vh;
-  padding-left: 1rem;
+  padding-left: 0.5rem;
 }
 
 #case-study nav li[data-tag-type="H3"],
@@ -507,33 +523,25 @@ header h1 img {
 }
 
 
-#case-study nav li[data-tag-type="H3"].active-child,
-#case-study nav li[data-tag-type="H4"].active-child
-{
+#case-study nav li[data-tag-type="H3"].active-child {
   display: block;
-}
-
-#case-study nav li[data-tag-type="H4"] {
-  display: none;
+  padding-left: 2rem;
 }
 
 #case-study nav li[data-tag-type="H4"].active-child {
   display: block;
+  padding-left: 3rem;
 }
 
 #case-study nav li[data-tag-type="H4"] {
   display: none;
-}
-
-#case-study nav li[data-tag-type="H4"].active-child {
-  display: block;
 }
 
 #case-study nav li:last-of-type {
   margin-bottom: 0;
 }
 
-#case-study nav a {
+#case-study nav a{
   color: var(--color-skopos-veridian-green);
   font-family: var(--font-family-header);
   font-size: 0.9rem;
@@ -543,11 +551,12 @@ header h1 img {
 }
 
 #case-study nav li[data-tag-type="H3"] a {
-  font-weight: normal;
+  font-family: var(--font-family-header);
 }
 
 #case-study nav li[data-tag-type="H4"] a {
-  font-weight: normal;
+  font-weight: extraLight;
+  font-family: var(--font-family-nav);
 }
 
 #case-study nav a:hover {
@@ -587,7 +596,7 @@ h3, h4 {
 #case-study h4,
 #case-study h5 {
   color: var(--color-skopos-cedar-chest);
-  font-family: var(--font-family-header);
+  font-family: var(--font-family-body);
   margin-top: 75px;
 }
 
@@ -837,7 +846,7 @@ h2#references {
 }
 
 #our-team .individual li img {
-  border-radius: 45px;
+  /* border-radius: 45px; */
   padding: 2px;
   margin-top: 10px;
   width: 45px;
