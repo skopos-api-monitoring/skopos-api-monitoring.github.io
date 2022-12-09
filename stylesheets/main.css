@@ -7,17 +7,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap');
 
 @font-face {
-  font-family: 'Oswald';
+  font-family: 'Pragati_narrow';
   /* src: url('/fonts/FoundersGrotesk-Semibold.otf') format('opentype'); */
-  src: url('../fonts/Oswald-Light.ttf') format('truetype');
-  font-weight: light;
+  src: url('../fonts/PragatiNarrow-Regular.ttf') format('truetype');
+  font-weight: auto;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Oswald';
   /* src: url('/fonts/FoundersGrotesk-Semibold.otf') format('opentype'); */
   src: url('../fonts/Oswald-ExtraLight.ttf') format('truetype');
-  font-weight: extralight;
+  font-weight: auto;
   font-style: normal;
 }
 
@@ -54,8 +55,8 @@
 
 
 :root {
-  --font-family-header: 'Oswald', Oswald-Medium;
-  --font-family-nav: 'Oswald', Oswald-ExtraLight;
+  --font-family-header: 'Oswald';
+  --font-family-nav: 'Pragati_narrow';
   --font-family-body: 'OpenSans', regular;
   --color-black: #000000;
   --color-skopos-dark-jungle-green: #172729;
@@ -524,15 +525,11 @@ header h1 img {
 
 #case-study nav li[data-tag-type="H3"].active-child {
   display: block;
-  list-style-type: disc;
   padding-left: 2rem;
-  font-family: var(--font-family-body);
 }
 
 #case-study nav li[data-tag-type="H4"].active-child {
   display: block;
-  list-style-type: circle;
-  font-family: var(--font-family-body);
   padding-left: 3rem;
 }
 
@@ -544,7 +541,7 @@ header h1 img {
   margin-bottom: 0;
 }
 
-#case-study nav a {
+#case-study nav a{
   color: var(--color-skopos-veridian-green);
   font-family: var(--font-family-header);
   font-size: 0.9rem;
@@ -554,12 +551,12 @@ header h1 img {
 }
 
 #case-study nav li[data-tag-type="H3"] a {
-  font-family: var(--font-family-body);
+  font-family: var(--font-family-header);
 }
 
 #case-study nav li[data-tag-type="H4"] a {
-
-  font-family: var(--font-family-body);
+  font-weight: extraLight;
+  font-family: var(--font-family-nav);
 }
 
 #case-study nav a:hover {
