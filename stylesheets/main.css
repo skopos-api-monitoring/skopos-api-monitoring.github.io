@@ -477,7 +477,7 @@ header h1 img {
 
 #side-nav img {
   max-width: 120px;
-  margin: 0 auto;
+  margin: auto;
 }
 
 #case-study nav {
