@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
         lastH2Id = headerObj.el.id;
       } else if (headerObj.type === 'H3') {
         lastH3Id = headerObj.el.id
-        headerObj.parentId = lastH3Id;
+        headerObj.parentId = lastH2Id
       } else {
         headerObj.parentId = lastH2Id;
       }
