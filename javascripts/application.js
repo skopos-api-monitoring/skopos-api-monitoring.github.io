@@ -285,16 +285,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const onMain = !(onHeader || onTeam);
     const isWideScreen = !isNarrowScreen();
     const isSkopos = true;
-    if (!isSkopos) {
-      // the past must survive
-      if (isWideScreen && !onMain && topNavVisible) {
-        styleNavColors('#2E939E', '#2E939E', '#2E939E');
-        changeImgSrc('apex-logo', 'images/logos/crato-logo.png');
-      } else {
-        styleNavColors('#f7f7f7', '#65c8d0', '#248F99');
-        changeImgSrc('apex-logo', 'images/logos/crato-logo.png');
-      }
-    } else {
+    if (true) {
       if (isWideScreen && !onMain && topNavVisible) {
         styleNavColors(skoposWhite, skoposRed, skoposBlue);
         changeImgSrc('skopos-logo', 'images/logos/SKOPOS_logo_color.png'); // black
