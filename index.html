@@ -305,8 +305,7 @@
             specified as assertions. Assertions can be either explicit such as verifying that a response body has a
             specific value, or implicit such as simply expecting test execution to complete without error. The API
             monitoring tool then determines whether the assertion passed or failed.</p>
-            <h4 id="scheduling-automating-the-monitoring-process">3.2.3) Scheduling - Automating the Monitoring Process
-            </h4>
+            <h4 id="scheduling-automating-the-monitoring-process">3.2.3) Scheduling - Automating the Monitoring Process</h4>
             <div class="img-wrapper">
                 <img src="./images/graphics/schedule.png" alt="Schedule" />
             </div>
@@ -827,7 +826,7 @@
 
             <p>The execution component, however, required more careful consideration since we needed a way to run collections in parallel. Processing all collections on one virtual machine (VM), such as an Amazon EC2 instance, would not scale and would compromise the ability to run tests on a frequent schedule.</p>
 
-            <h3 id="parallel-test-execution">8.2) Test Execution (Parallel)</h3>
+            <h3 id="parallel-test-execution">8.2) Test Execution in Parallel</h3>
 
             <p>If running all collections on one single-tenant VM was the issue, then the simplest solution would be to provision multiple such VMs, each hosting its own collection runner process. This approach had the benefit of simplicity and reliability: a load balancer could direct traffic to available collection runner VMs, and if any collection runners suffered outages, then traffic could simply be routed to those still available. </p>
 

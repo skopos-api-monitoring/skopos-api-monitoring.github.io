@@ -73,6 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     linkableHeaders.reduce((obj, headerObj) => {
       const selector = `#${snakeCaseify(removeAmpersand(headerObj.text))}`;
       const header = document.querySelector(selector);
+      if (!header) return obj;
       const position =
         getScrollPosition() + header.getBoundingClientRect().top - paddingAllowanceAboveHeading;
       obj[`${selector}-nav`] = {
