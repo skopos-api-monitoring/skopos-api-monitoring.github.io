@@ -87,7 +87,7 @@ h5 {
   font-family: var(--font-family-header);
 }
 
-h1 + p.subheader {
+h1+p.subheader {
   color: #999;
 }
 
@@ -201,7 +201,8 @@ a:hover {
 }
 
 .integration img {
-  max-width: 800px;  /* originally 600px */
+  max-width: 800px;
+  /* originally 600px */
   width: 100%;
   padding-top: 40px;
 }
@@ -228,7 +229,7 @@ a:hover {
   background: #fff;
 }
 
-main > section {
+main>section {
   margin: 80px 0 100px 0;
   width: 75%;
 }
@@ -254,8 +255,9 @@ em {
 }
 
 sup {
-  display: inline-block;
+  font-size: 0.7em;
   vertical-align: super;
+  line-height: 0;
 }
 
 sup a {
@@ -359,8 +361,7 @@ img {
 
 @font-face {
   font-family: 'Fira Code';
-  src: url(https://cdn.jsdelivr.net/npm/firacode@1.205.0/distr/woff2/FiraCode-Regular.woff2)
-    format('truetype');
+  src: url(https://cdn.jsdelivr.net/npm/firacode@1.205.0/distr/woff2/FiraCode-Regular.woff2) format('truetype');
 }
 
 .container {
@@ -499,7 +500,7 @@ header h1 img {
   display: none;
   left: 2rem;
   position: fixed;
-  top: 35%;
+  top: 30%;
   max-width: 300px;
   height: 60%;
   overflow-y: scroll;
@@ -520,8 +521,7 @@ header h1 img {
 }
 
 #case-study nav li[data-tag-type="H3"],
-#case-study nav li[data-tag-type="H4"]
-{
+#case-study nav li[data-tag-type="H4"] {
   display: none;
 }
 
@@ -544,11 +544,12 @@ header h1 img {
   margin-bottom: 0;
 }
 
-#case-study nav a{
+#case-study nav a {
   color: var(--color-skopos-veridian-green);
   font-family: var(--font-family-header);
   font-size: 0.9rem;
   font-weight: bold;
+  letter-spacing: 0.01rem;
   text-decoration: none;
   vertical-align: 0.1rem;
 }
@@ -568,12 +569,15 @@ header h1 img {
 
 #case-study h3,
 #case-study h4,
-#case-study h5,
 #case-study p,
 #case-study pre,
 #case-study ul,
 #case-study ol {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+#case-study h5 {
+  margin-bottom: 5px;
 }
 
 #case-study ul ul {
@@ -583,15 +587,12 @@ header h1 img {
 #case-study h2 {
   color: var(--color-skopos-cedar-chest);
   font-family: var(--font-family-header);
-  margin: 75px auto 20px auto;
-}
-
-#case-study h2:first-of-type {
-  margin-top: 50px;
+  margin: 50px auto 20px auto;
 }
 
 #case-study h2,
-h3, h4 {
+h3,
+h4 {
   letter-spacing: 0.02rem;
 }
 
@@ -600,13 +601,14 @@ h3, h4 {
 #case-study h5 {
   color: var(--color-skopos-cedar-chest);
   font-family: var(--font-family-body);
-  margin-top: 75px;
+  margin-top: 20px;
 }
 
 #case-study p {
   font-size: 1.2rem;
   line-height: 1.8rem;
 }
+
 #case-study blockquote {
   font-size: 1.5rem;
 }
@@ -631,10 +633,10 @@ h3, h4 {
   text-align: center;
   width: 50%;
   margin: 0 auto;
-  margin-top:2rem;
-  margin-bottom:-2rem;
-  font-size:1.2rem;
-  line-height:1.2rem;
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
 }
 
 #case-study .img-wrapper p.block-caption {
@@ -748,33 +750,28 @@ h3, h4 {
 
 ------------------------------------ */
 
-a[href^='footnote-'] {
+/* a[href^='footnote-'] {
   cursor: pointer;
+} */
+
+#references {
+  font-size: 2.5rem;
 }
 
-h2#references {
-  color: var(--color-skopos-dark-jungle-green);
-  font-size: 1.7rem;
-  margin-top: 75px;
+#citations h3 {
+  font-size: 1.5rem;
 }
 
-#footnotes ol li {
-  color: #999;
-  font-size: 0.9rem;
-}
-
-#footnotes ol li {
-  list-style: decimal;
+#citations li {
   color: #999;
 }
 
-#footnotes a {
-  color: #999;
-  font-size: 0.9rem;
+#citations a {
   text-decoration: none;
+  color: #999;
 }
 
-#footnotes a:hover {
+#citations a:hover {
   color: var(--color-skopos-cedar-chest);
 }
 
@@ -801,7 +798,7 @@ h2#references {
   line-height: 4rem;
 }
 
-#our-team > p {
+#our-team>p {
   font-size: 1.2rem;
   line-height: 1.7rem;
   text-align: center;
@@ -809,7 +806,7 @@ h2#references {
   width: 45%;
 }
 
-#our-team > ul {
+#our-team>ul {
   padding: 60px 0 80px;
   text-align: center;
 }
@@ -842,7 +839,7 @@ h2#references {
   cursor: pointer;
 }
 
-#our-team li > img {
+#our-team li>img {
   border-radius: 100%;
   margin: 0 auto 20px;
   width: 15vw;
@@ -893,9 +890,11 @@ small {
   #case-study nav {
     display: none;
   }
+
   #case-study img.w30 {
     max-width: 50vw;
   }
+
   nav#case-study-mobile ul {
     margin: 0;
   }
@@ -952,7 +951,7 @@ small {
     overflow: scroll;
   }
 
-  nav#site-navigation > ul {
+  nav#site-navigation>ul {
     margin-top: 50px;
     padding-bottom: 50px;
   }
@@ -1020,7 +1019,7 @@ small {
     text-align: center;
   }
 
-  #our-team > p {
+  #our-team>p {
     width: 60%;
   }
 
@@ -1040,6 +1039,7 @@ small {
 }
 
 @media (max-width: 800px) {
+
   /* General */
   h1 {
     font-size: 3.5rem;
@@ -1054,6 +1054,14 @@ small {
   }
 
   h4 {
+    font-size: 1.3rem;
+  }
+
+  #references {
+    font-size: 1.5rem;
+  }
+
+  #citations h3 {
     font-size: 1.3rem;
   }
 
@@ -1104,7 +1112,8 @@ small {
     width: 100%;
   }
 
-  #case-study p {
+  #case-study p,
+  #case-study li {
     font-size: 1rem;
     line-height: 1.5rem;
   }
@@ -1129,7 +1138,7 @@ small {
 
   /* Our Team */
 
-  #our-team > p {
+  #our-team>p {
     width: 70%;
   }
 
@@ -1192,12 +1201,12 @@ small {
     padding-top: 60px;
   }
 
-  #our-team > p {
+  #our-team>p {
     font-size: 1rem;
     margin-top: 0;
   }
 
-  #our-team > ul {
+  #our-team>ul {
     margin-top: 0;
     padding: 0;
   }
@@ -1231,7 +1240,7 @@ small {
     padding: 3px;
   }
 
-  #our-team li > img {
+  #our-team li>img {
     width: 30vw;
   }
 }
@@ -1263,7 +1272,7 @@ small {
     padding: 2px;
   }
 
-  #our-team li > img {
+  #our-team li>img {
     width: 35vw;
   }
 
@@ -1325,7 +1334,7 @@ small {
     font-size: 1.1rem;
   }
 
-  nav#site-navigation > ul {
+  nav#site-navigation>ul {
     margin-top: 20px;
     padding-bottom: 25px;
   }
@@ -1346,7 +1355,7 @@ small {
     padding-bottom: 18px;
   }
 
-  #our-team > p {
+  #our-team>p {
     width: 57%;
   }
 }
