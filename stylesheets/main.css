@@ -335,6 +335,7 @@ img {
   margin-bottom: 10px;
   max-width: 50vw;
   height: auto;
+  max-height: 50vh;
 }
 
 #root-proxy-path {
