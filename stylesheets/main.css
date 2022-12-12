@@ -162,6 +162,7 @@ a:hover {
 .text-box p {
   font-size: 2rem;
   margin-top: 75px;
+  font-family: var(--font-family-header)
 }
 
 .text-box p span.orange {
@@ -185,7 +186,11 @@ a:hover {
 }
 
 .text-box p span.green {
-  color: var(--color-skopos-veridian-green);
+  color: #277B85;
+}
+
+.text-box p span.white {
+  color: var(--color-white);
 }
 
 .box {
