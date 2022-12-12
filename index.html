@@ -165,7 +165,7 @@
             <p>
             APIs play a vital role at the heart of almost every piece of technology in use today. APIs can improve
             functionality and allow easy integration of new features into existing products and services. APIs act as
-            the connective tissue that links together different technology ecosystems.
+            the connective tissue that links together different technology ecosystems.<sup><a href="#footnote-1">1</a></sup>
         </p>
             <p>
             Consider a simple weather app that allows users to see current and future weather forecasts worldwide. This
@@ -184,12 +184,12 @@
             <h3 id="failures-and-their-consequences">2.2) Failures and Their Consequences</h3>
             <p>
             When a company’s APIs fail, it can have cascading effects across other services that had integrated and
-            relied on those APIs. To illustrate this, we will briefly describe three high-profile examples.
+            relied on those APIs.<sup><a href="#footnote-2">2</a></sup> To illustrate this, we will briefly describe three high-profile examples.
         </p>
             <h4 id="ubereats-payment-glitch">2.2.1) UberEats Payment Glitch</h4>
             <p>
             In 2019, Paytm, a payment service used by UberEats, made an unannounced update to an API endpoint so that
-            the endpoint no longer behaved idempotently. Before the change, Paytm's API endpoint always returned the
+            the endpoint no longer behaved idempotently.<sup><a href="#footnote-3">3</a></sup> Before the change, Paytm's API endpoint always returned the
             same error when attempting to charge a wallet with insufficient funds to cover the cost of the order. After
             the change, Paytm returned different messages for the first and the subsequent attempts at charging a wallet
             with insufficient funds. This unexpected behavior changed how the UberEats’ integration with the API
@@ -209,14 +209,14 @@
         </p>
             <h4 id="stripe-api-outage">2.2.2) Stripe API Outage</h4>
             <p>
-            In 2019, an incident caused severe degradation of Stripe’s API performance. What began as database bugs and
+            In 2019, an incident caused severe degradation of Stripe’s API performance.<sup><a href="#footnote-4">4</a></sup> What began as database bugs and
             a configuration change resulted in a cascade of failures across critical services, including their API. As a
             result, during this incident, a majority of requests to Stripe’s API either outright failed or suffered
             greatly elevated response times.
         </p>
             <p>
             The outage financially impacted both Stripe itself, since it charges a fee on payments it processes, as well
-            as small businesses that rely on Stripe; one startup claimed roughly $100,000 in lost sales.
+            as small businesses that rely on Stripe; one startup claimed roughly $100,000 in lost sales.<sup><a href="#footnote-5">5</a></sup>
         </p>
 
             <p>
@@ -225,7 +225,7 @@
         </p>
             <h4 id="twitter-api-outage">2.2.3) Twitter API Outage</h4>
             <p>In 2016, Twitter suffered an incident that saw four of its five public-facing APIs experience either
-            performance issues or severe disruption. The affected APIs returned status codes and responses stating that
+            performance issues or severe disruption.<sup><a href="#footnote-6">6</a></sup> The affected APIs returned status codes and responses stating that
             they were either “over capacity” or had suffered an “internal error.” During the outages, businesses relying
             on Twitter for live customer feedback lost valuable marketing insight.</p>
             <p>
@@ -240,7 +240,7 @@
             <p>These were just three instances of API failures, but there is no shortage of examples. Moreover, when an API
             fails, the implications for software that relies on that API can be dire, from negatively impacting user
             experience to compromising revenue. </p>
-            <h4 id="anticipating-api-failures">2.2.4) Anticipating API Failures</h4>
+            <h3 id="anticipating-api-failures">2.3) Anticipating API Failures</h4>
             <p>To mitigate the impacts of these problems, companies have invested in tools that track the live performance
             of relied-upon API endpoints. The key candidates for tracking are:</p>
             <ol>
@@ -257,7 +257,7 @@
             <h2 id="api-monitoring">3) API Monitoring</h2>
             <h3 id="what-is-api-monitoring">3.1) What is API Monitoring</h3>
             <p>API monitoring is the process of making requests to API endpoints at set intervals and comparing the response
-            to expected values to check both the availability of API endpoints and the validity of their response data.
+            to expected values to check both the availability of API endpoints and the validity of their response data.<sup><a href="#footnote-7">7</a></sup>
             The goal of API monitoring is to spot issues that may affect users as early as possible.</p>
 
             <p>
@@ -361,7 +361,7 @@
             tests, the user now defines the previous values they wish to access, and the execution of the test must
             execute tests in sequence and track state. This is typically used when different services of an application
             need to communicate with one another in sequence over API calls to complete common functionality, such as an
-            API endpoint requiring authentication through a token. API call chaining like this is particularly prevalent
+            API endpoint requiring authentication through a token.<sup><a href="#footnote-8">8</a></sup> API call chaining like this is particularly prevalent
             with a microservices architecture.
         </p>
 
@@ -377,7 +377,7 @@
             the four steps of API monitoring, with parallel tests, the execution of tests occurs in isolated sandboxes.
             If these tests are being sent to the same endpoint, this feature can be used for load testing to see how an
             application responds to many requests received in a short period of time. If these tests are being sent to
-            different endpoints, this feature can save time when running a large number of tests.
+            different endpoints, this feature can save time when running a large number of tests.<sup><a href="#footnote-9">9</a></sup>
         </p>
             <p>One trade-off to this approach is that when tests are executed in parallel, it is much more challenging to
             set up complex API tests, and those with prerequisites typically require setup with user-defined scripting.
@@ -395,7 +395,7 @@
             includes selecting locations rather than just times, and execution occurs in different locations. This
             provides insight into how an API is performing for varied users, particularly that response time is
             acceptable and response status codes are as expected. This helps to better diagnose if an issue is
-            network-related, and is especially helpful for public-facing APIs that users interact with directly.
+            network-related, and is especially helpful for public-facing APIs that users interact with directly.<sup><a href="#footnote-10">10</a></sup>
         </p>
             <p>
             A trade-off of this approach is that resources must be provisioned and managed in each location tests are to
@@ -409,7 +409,7 @@
             multiple environments and setting deployment triggers that automatically run tests in these environments in
             response to new builds. In the four steps of API monitoring, with CI/CD integration, the scheduling involves
             deployment triggers rather than time-based scheduling, and the execution can occur in different
-            environments. This is helpful to ensure that API integrations do not break amidst frequent codebase changes.
+            environments. This is helpful to ensure that API integrations do not break amidst frequent codebase changes.<sup><a href="#footnote-11">11</a></sup>
             Often, CI/CD integration tests are used with APIs that have internal endpoints that other mission-critical
             components rely on. </p>
             <p>
@@ -787,7 +787,7 @@
               <img src="./images/graphics/state-machine.png" alt="visualization of state machine execution flow" />
             </div>
 
-            <p>For the collection runner, we decided to use a state machine to keep track of the complex state we would have to navigate during the execution of a collection. A state machine helps declaratively model application logic by explicitly defining the states the application can exist in, the events that trigger changes between these states, and the transitions which represent the actions taken while moving from one state to another. A state machine would help us visualize the different paths through the stages of execution. It would also help us track, update, and pass around context easily through the different states of running a collection, such as referencing past responses and updating a request with interpolated values.</p>
+            <p>For the collection runner, we decided to use a state machine to keep track of the complex state we would have to navigate during the execution of a collection. A state machine helps declaratively model application logic by explicitly defining the states the application can exist in, the events that trigger changes between these states, and the transitions which represent the actions taken while moving from one state to another.<sup><a href="#footnote-12">12</a></sup> A state machine would help us visualize the different paths through the stages of execution. It would also help us track, update, and pass around context easily through the different states of running a collection, such as referencing past responses and updating a request with interpolated values.</p>
 
             <p>To implement a state machine, we used XState, a JavaScript library to create, manage, and interpret state machines. There was a learning curve, but we felt it was worthwhile.</p>
 
@@ -852,7 +852,7 @@
               <img src="./images/graphics/tenancy.001.png" alt="Single-tenancy vs multi-tenancy" />
             </div>
 
-            <p>An alternative approach was to run the collection runner process inside a container. One benefit of cloud infrastructure is the ability to take advantage of multi-tenancy, where multiple instances of an application can share the same computing resources. By using containers, two main multi-tenant solutions opened up to us.</p>
+            <p>An alternative approach was to run the collection runner process inside a container. One benefit of cloud infrastructure is the ability to take advantage of multi-tenancy, where multiple instances of an application can share the same computing resources.<sup><a href="#footnote-13">13</a></sup> By using containers, two main multi-tenant solutions opened up to us.</p>
 
             <div class="img-wrapper">
               <img src="./images/graphics/ecs-vs-fargate.png" alt="AWS ECS vs AWS Fargate" />
@@ -961,10 +961,32 @@
             </ul>
 
             <h2 id="references">10) References</h2>
-
+            <section id="citations">
             <h3 id="footnotes">10.1) Footnotes</h3>
-
+              <ol>
+                <li id="footnote-1">Keerthi Iyengar et al., “What It Really Takes to Capture the Value of Apis,” McKinsey &amp; Company (McKinsey &amp; Company, February 13, 2020), <a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/what-it-really-takes-to-capture-the-value-of-apis">https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/what-it-really-takes-to-capture-the-value-of-apis</a>.</li>
+                <li id="footnote-2">Broadcom Inc., “Building an API Monitoring Practice,” Broadcom, 2020, <a href="https://docs.broadcom.com/doc/building-an-api-monitoring-practice">https://docs.broadcom.com/doc/building-an-api-monitoring-practice</a>.</li>
+                <li id="footnote-3">Gergely Orosz, “As It's Been ~3 Years, Figured I'll Answer ‘What Caused the Uber Eats Glitch That Allowed Ordering Free Food for a Weekend in India?",” Twitter, March 13, 2022, <a href="https://twitter.com/GergelyOrosz/status/1502947315279187979">https://twitter.com/GergelyOrosz/status/1502947315279187979</a>.</li>
+                <li id="footnote-4">David Singleton, “Root Cause Analysis: Significantly Elevated Error Rates on 2019‑07‑10,” Stripe, July 12, 2019, <a href="https://stripe.com/rcas/2019-07-10">https://stripe.com/rcas/2019-07-10</a>.</li>
+                <li id="footnote-5">Julie Verhage and Bloomberg, “Stripe Outage Smacked Businesses for Two Hours,” Fortune, July 11, 2019, <a href="https://fortune.com/2019/07/11/stripe-outage-technology-payment-processing/">https://fortune.com/2019/07/11/stripe-outage-technology-payment-processing/</a>.</li>
+                <li id="footnote-6">Chris Baraniuk, “Twitter Network down for Many Users after Technical Fault,” BBC News, January 19, 2016, <a href="https://www.bbc.com/news/technology-35351154">https://www.bbc.com/news/technology-35351154</a>.</li>
+                <li id="footnote-7">Splunk, “What Is API Monitoring?,” Splunk, March 1, 2022, <a href="https://www.splunk.com/en_us/data-insider/what-is-api-monitoring.html">https://www.splunk.com/en_us/data-insider/what-is-api-monitoring.html</a>.</li>
+                <li id="footnote-8">Datadog, “Multistep API Tests,” Datadog Infrastructure and Application Monitoring, <a href="https://docs.datadoghq.com/synthetics/multistep/">https://docs.datadoghq.com/synthetics/multistep/</a>.</li>
+                <li id="footnote-9">Gerie Owen, “How and Why to Do Parallel Testing,” TechTarget, October 14, 2020, <a href="https://www.techtarget.com/searchsoftwarequality/tip/How-and-why-to-do-parallel-testing">https://www.techtarget.com/searchsoftwarequality/tip/How-and-why-to-do-parallel-testing</a>.</li>
+                <li id="footnote-10">Kevin Farnham, “Why Location Matters in API Performance Testing,” API Science, April 6, 2020, <a href="https://www.apiscience.com/blog/why-location-matters-in-api-performance-testing/">https://www.apiscience.com/blog/why-location-matters-in-api-performance-testing/</a>.</li>
+                <li id="footnote-11">Brandon Cox, “5 Software Testing Strategies to Build into Your CI/CD Pipeline,” Red Hat, June 1, 2022, <a href="https://www.redhat.com/architect/test-applications-cicd-pipeline">https://www.redhat.com/architect/test-applications-cicd-pipeline</a>.</li>
+                <li id="footnote-12">Sabit Ololade, “Using State Machine to Write Bug-Free Code,” DeepSource, April 7, 2021, <a href="https://deepsource.io/blog/using-state-machine-to-write-bug-free-code/">https://deepsource.io/blog/using-state-machine-to-write-bug-free-code/</a>.</li>
+                <li id="footnote-13">Chris Brook, Paul Roberts, and Nate Lord, “Saas: Single Tenant vs Multi-Tenant - What's the Difference?,” Digital Guardian, November 28, 2022, <a href="https://digitalguardian.com/blog/saas-single-tenant-vs-multi-tenant-whats-difference">https://digitalguardian.com/blog/saas-single-tenant-vs-multi-tenant-whats-difference</a>.</li>
+              </ol>
             <h3 id="documentation">10.2) Documentation</h3>
+              <ul>
+                <li>Apollo Graph Inc., Apollo Docs, <a href="https://www.apollographql.com/docs/apollo-server/">https://www.apollographql.com/docs/apollo-server/</a>.</li>
+                <li id="footnote-1">XState, XState Docs, December 5, 2022, <a href="https://xstate.js.org/docs/">https://xstate.js.org/docs/</a>.</li>
+                <li>AWS, “What Is Amazon Elastic Container Service?,” Amazon Web Services Inc., <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html">https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html</a>.</li>
+                <li>AWS, “What Is Amazon EventBridge?,” Amazon Web Services Inc., <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html">https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html</a>.</li>
+                <li>AWS, “What is Amazon SNS?,” Amazon Web Services Inc., <a href="https://docs.aws.amazon.com/sns/latest/dg/welcome.html">https://docs.aws.amazon.com/sns/latest/dg/welcome.html</a>.</li>
+              </ul>
+              </section>
             <!-- ****************************************************************** -->
             <!-- <a href="#footnote-1" target="_self">1</a>
         <blockquote></blockquote>
