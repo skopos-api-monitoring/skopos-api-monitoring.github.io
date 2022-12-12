@@ -434,6 +434,8 @@ nav#site-navigation a {
 ------------------------------------ */
 
 header {
+  display: grid;
+  place-items: center;
   height: 100vh;
   background: var(--color-skopos-powder-blue);
 }
@@ -465,8 +467,9 @@ header span {
 
 header h1 img {
   display: block;
-  width: 40%;
-  max-width: 800px;
+  width: auto;
+  max-width: 100%;
+  max-height: 100vh;
   margin: 0 auto;
   padding: 10px 0;
 }
@@ -607,10 +610,15 @@ h3, h4 {
 #case-study blockquote {
   font-size: 1.5rem;
 }
+
 .img-wrapper {
   position: relative;
   margin-bottom: 50px;
   width: 100%;
+}
+
+.img-wrapper video {
+  max-width: 100%;
 }
 
 .softened {
@@ -957,9 +965,9 @@ small {
 }
 
 @media (max-width: 500px) {
-  header h1 img {
-    width: 300px;
-  }
+  /*header h1 img {*/
+  /*  width: 300px;*/
+  /*}*/
 
   #home p {
     box-sizing: border-box;
@@ -1175,7 +1183,7 @@ small {
 
   section#case-study {
     margin: 40px auto;
-    padding-left: 20rem;
+    /*padding-left: 20rem;*/
   }
 
   /* Our Team */
@@ -1229,9 +1237,9 @@ small {
 }
 
 @media (max-width: 500px) {
-  header h1 img {
-    max-width: 80%;
-  }
+  /*header h1 img {*/
+  /*  max-width: 80%;*/
+  /*}*/
 
   #home p {
     margin-top: 150px;
@@ -1354,9 +1362,9 @@ small {
     min-height: 750px;
   }
 
-  header h1 img {
-    padding: 40px 0;
-  }
+  /*header h1 img {*/
+  /*  padding: 40px 0;*/
+  /*}*/
 
   #home p {
     font-size: 2.5rem;
@@ -1381,10 +1389,10 @@ small {
     margin: 0 auto;
   }
 
-  header h1 img {
-    margin-top: -250px;
-    padding: 0;
-  }
+  /*header h1 img {*/
+  /*  margin-top: -250px;*/
+  /*  padding: 0;*/
+  /*}*/
 
   #home p {
     font-size: 2rem;
