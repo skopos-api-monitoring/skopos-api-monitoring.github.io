@@ -380,7 +380,7 @@ document.addEventListener('DOMContentLoaded', () => {
       console.log(e.target)
       e.preventDefault();
       const positions = getCaseStudyHeadingPositions();
-      const positionKey = `#${e.target.href.split('#')[1]}-nav`;
+      const positionKey = `#${snakeCaseify(e.target.text)}-nav`;
       console.log(positions, positionKey, 'event listener')
       const newScrollPosition = positions[positionKey].position;
       window.scrollTo(0, newScrollPosition + 5);
