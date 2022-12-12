@@ -87,7 +87,7 @@
 
 <header id="home">
     <h1>
-        <img src="images/logos/header_logo.png" alt="Skopos logo"/>
+            <img src="images/logos/header_logo.png" alt="Skopos logo"/>
     </h1>
 </header>
 
@@ -544,9 +544,13 @@
             <p>As an API monitoring tool, Skopos incorporates the core functionalities of defining, scheduling, executing,
             and notifying. Here is a look at how this is implemented with Skopos.</p>
             <h4 id="how-test-definition-works">6.2.1) How Test Definition Works</h4>
-            <video width="600" height="520" autoplay muted loop>
-                <source src="./images/videos/skopos-definition.mp4" type="video/mp4">
-            </video>
+    
+            <div class="img-wrapper">
+                <video autoplay muted loop>
+                    <source src="./images/videos/skopos-definition.mp4" type="video/mp4">
+                </video>
+            </div>
+
             <p>A user can define a test in the following way:</p>
 
             <ol class='define-test-steps'>
@@ -590,17 +594,22 @@
             </li>
             </ol>
             <h4 id="how-test-execution-works">6.2.2) How Test Execution Works</h4>
-            <video width="600" height="520" autoplay muted loop>
-                <source src="./images/videos/skopos-execution.mp4" type="video/mp4">
-            </video>
+            <div class="img-wrapper">
+                <video autoplay muted loop>
+                    <source src="./images/videos/skopos-execution.mp4" type="video/mp4">
+                </video>
+            </div>
+
             <p>When a collection is selected, to run that collection immediately, a user can click the ‘Run Collection’
             button. Internally, this sends a request to the collection runner to run the collection. Once test execution
             has been completed, the results of the execution are displayed. To see the results of past collection runs,
             click the ‘History’ button in the collection. Tests can also be executed automatically on a schedule.</p>
             <h4 id="how-scheduling-works">6.2.3) How Scheduling Works</h4>
-            <video width="600" height="520" autoplay muted loop>
-                <source src="./images/videos/skopos-scheduling.mp4" type="video/mp4">
-            </video>
+            <div class="img-wrapper">
+                <video autoplay muted loop>
+                    <source src="./images/videos/skopos-scheduling.mp4" type="video/mp4">
+                </video>
+            </div>
             <p>Tests are scheduled at the collection level. A user can set up a monitoring schedule in the following
             way:
         </p>
@@ -621,9 +630,11 @@
             </li>
             </ol>
             <h4 id="how-notification-works">6.2.4) How Notification Works</h4>
-            <video width="600" height="520" autoplay muted loop>
-                <source src="./images/videos/skopos-notification.mp4" type="video/mp4">
-            </video>
+            <div class="img-wrapper">
+                <video autoplay muted loop>
+                    <source src="./images/videos/skopos-notification.mp4" type="video/mp4">
+                </video>
+            </div>
         <p>When assertions fail, notifications can be sent via email, Slack, or PagerDuty.</p>
         <p>
             Having seen how API monitoring with Skopos works and what it can do, we can now explore the design decisions
