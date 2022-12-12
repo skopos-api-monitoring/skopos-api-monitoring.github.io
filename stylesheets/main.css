@@ -380,11 +380,14 @@ pre code {
 }
 
 code {
-  background-color: var(--color-skopos-veridian-green);
-  color: var(--color-skopos-dark-jungle-green);
-  font-family: 'Fira Code', monospace;
-  /* font-size: 1rem; */
-  text-decoration: none;
+    background-color: #eee;
+    color: var(--color-skopos-dark-jungle-green);
+    font-family: 'Fira Code', monospace;
+    text-decoration: none;
+}
+
+code > span {
+    color: var(--color-skopos-cedar-chest);
 }
 
 code.gruvbox-code {
@@ -911,6 +914,10 @@ small {
 
   main {
     padding: 0 75px;
+  }
+
+  #case-study {
+    margin-left: auto;
   }
 
   section#integration {

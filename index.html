@@ -563,9 +563,9 @@
                 </p>
                     <ul style='list-style-type: "a"'>
                         <li>
-                            To use values from previous steps, use variables (`@{{}}`) to reference the exact value from
-                            previous requests. For instance, `@{{step1.body.sample}}` references the value stored in the
-                            `sample` property of the body received in response to the request defined in step 1.
+                            To use values from previous steps, use variables (<code>@{{}}</code>) to reference the exact value from
+                            previous requests. For instance, <code>@{{step1.body.sample}}</code> references the value stored in the
+                            <code>sample</code> property of the body received in response to the request defined in step 1.
                         </li>
                 </ul>
                 </li>
@@ -587,7 +587,7 @@
             <li>
                             To make assertions on the response body or headers, specify the specific property in the
                             text
-                            box that pops up as you select headers or body. For instance, `body.id` references the `id`
+                            box that pops up as you select headers or body. For instance, <code>body.id</code> references the <code>id</code>
                             property of the body object
                         </li>
             </ul>
@@ -680,9 +680,9 @@
             To solve this problem, we first needed a reliable method of flagging to the application that “this value
             should reference another value” that was still human-readable and simple enough for a user to take advantage
             of. Here we took inspiration from JavaScript’s template literal string interpolation syntax, where in the
-            string `Hello ${variable}`, the $ symbol and curly brackets indicate that whatever is between the curly
+            string <code><span>`Hello</span> ${variable}<span>`</span></code>, the $ symbol and curly brackets indicate that whatever is between the curly
             brackets is a variable whose value should be interpolated into the string. In our case, we decided to use
-            @{{}} as our variable template flag - an @ symbol, followed by a double set of curly brackets.
+            <code>@{{}}</code> as our variable template flag - an @ symbol, followed by a double set of curly brackets.
         </p>
             <div class="img-wrapper">
                 <img src="./images/graphics/architecure-use-prev-values.drawio.png" alt="existing solutions" />
@@ -936,7 +936,7 @@
 
             <h4 id="notification-implementation-challenge">8.4.2) Notification Implementation Challenges</h4>
 
-            <p>We wanted to provide functionality for sending notifications to Slack. However, Slack webhooks require a specific JSON body with a `text` property that SNS is not able to add. There are various workarounds for this, such as publishing a message to a subscribed Lambda function that sends a request to the webhook with the correct body. In our case, since our implementation goal was simple in that we just needed to send a basic POST request to the Slack webhook URL, rather than set up an extra Lambda function we decided to send these notifications with a different method. If a Slack webhook URL is added by the user, it is saved to the database when the monitor is created. The collection runner then saves the webhook URL to its state and sends a post request to that endpoint with the appropriate body if an error occurs.</p>
+            <p>We wanted to provide functionality for sending notifications to Slack. However, Slack webhooks require a specific JSON body with a <code>text</code> property that SNS is not able to add. There are various workarounds for this, such as publishing a message to a subscribed Lambda function that sends a request to the webhook with the correct body. In our case, since our implementation goal was simple in that we just needed to send a basic POST request to the Slack webhook URL, rather than set up an extra Lambda function we decided to send these notifications with a different method. If a Slack webhook URL is added by the user, it is saved to the database when the monitor is created. The collection runner then saves the webhook URL to its state and sends a post request to that endpoint with the appropriate body if an error occurs.</p>
 
             <p>Once notification was successfully implemented, Skopos featured each of the core API monitoring functionalities we defined earlier. We can now review its completed architecture to appreciate how each piece of Skopos fits together.</p>
 
@@ -1060,29 +1060,29 @@
 
             <h3 id="kathy">Katherine Ebel</h3>
 
-            <p>Florida</p>
+            <p>Green Cove Springs, Florida</p>
 
             <ul class="social-icons">
                 <li>
-                    <a href="" target="">
+                    <a href="mailto:hello@katherineebel.com" target="">
                         <img src="images/icons/email_icon.png" alt="email"/>
                     </a>
                 </li>
 
                 <li>
-                    <a href="" target="_blank">
+                    <a href="https://github.com/KatherineEbel" target="_blank">
                         <img src="images/icons/github_icon.png" alt="github"/>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" target="_blank">
+                    <a href="https://katherineebel.com" target="_blank">
                         <img src="images/icons/website_icon.png" alt="website"/>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#" target="_blank">
+                    <a href="https://linkedin.com/in/kathyebel" target="_blank">
                         <img src="images/icons/linked_in_icon.png" alt="linkedin"/>
                     </a>
                 </li>
