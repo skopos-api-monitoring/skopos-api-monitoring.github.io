@@ -1,7 +1,7 @@
 # 🏠 [Homepage](https://skopos-monitoring.github.io/)
 
 <p align="center">
-  <img src="images/logos/SKOPOS_logo_color.png" />
+  <img src="images/logos/SKOPOS_logo_inverted.png" />
 </p>
 <h2>Skopos: Monitor critical APIs</h2>
 
