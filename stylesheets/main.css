@@ -229,8 +229,8 @@ a:hover {
 }
 
 main > section {
-  margin: 80px 150px 100px 0;
-  width: 90%;
+  margin: 80px 0 100px 0;
+  width: 75%;
 }
 
 blockquote {
@@ -514,7 +514,6 @@ header h1 img {
   list-style-type: circle;
   margin-bottom: 1.5vh;
   padding-left: 0.5rem;
-  padding-right: 3rem;
 }
 
 #case-study nav li[data-tag-type="H3"],
@@ -1307,10 +1306,7 @@ small {
   }
 
   main {
-    padding-top: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    padding-left: 200px;
+    padding: 0 70px 0 25px;
   }
 
   h1 {
