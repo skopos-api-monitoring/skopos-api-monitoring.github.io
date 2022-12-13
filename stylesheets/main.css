@@ -901,8 +901,21 @@ small {
     max-width: 50vw;
   }
 
+  #mobile-table-of-contents {
+    font-size: 35px;
+    font-weight: 900;
+    font-family: var(--font-family-header);
+    color: var(--color-skopos-powder-blue);
+    text-transform: uppercase;
+  }
+
+  #case-study-mobile li {
+    padding: 4px !important;
+  }
+
   #case-study-mobile li a {
-    font-size: 25px;
+    font-size: 30px;
+    /* text-decoration: none; */
   }
 
   main {
@@ -1448,6 +1461,8 @@ small {
   z-index: 1;
   position: fixed;
   display: flex;
+  top: 0vh;
+  left: 0vw;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -1548,7 +1563,7 @@ img.white {
     padding: 0 !important;
     flex-direction: column;
     justify-content: normal;
-    gap: 5%;
+    gap: 3%;
   }
 
   .menu div {

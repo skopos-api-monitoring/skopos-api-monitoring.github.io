@@ -27,6 +27,12 @@ document.addEventListener('DOMContentLoaded', () => {
     hide(hamburgerImg);
     toggleExpand(hamburger);
     show(xButton);
+
+    const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
+    const body = document.body;
+    body.style.position = 'fixed';
+    body.style.top = `-${scrollY}`;
+
     setTimeout(() => {
       toggleExpand(hamburger);
       show(menu)
@@ -35,6 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   menu.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
+      document.body.style.position = '';
+      document.body.style.top = '';
+      handleCaseStudyNav()
+
       setTimeout(() => {
         hide(xButton)
         hide(menu)
@@ -46,9 +56,20 @@ document.addEventListener('DOMContentLoaded', () => {
   xButton.onclick = (e) => {
     const xButton = e.currentTarget;
     hide(xButton);
+
+    const body = document.body;
+    const scrollY = body.style.top;
+    body.style.position = '';
+    body.style.top = '';
+    window.scrollTo(0, parseInt(scrollY || '0') * -1);
+
     hide(menu);
     show(hamburgerImg);
   }
+
+  window.addEventListener('scroll', () => {
+    document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+  });
 
   $toTop.on('click', (e) => {
     e.preventDefault();
