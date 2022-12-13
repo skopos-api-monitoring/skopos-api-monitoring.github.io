@@ -46,6 +46,13 @@
   font-style: normal;
 }
 
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
 
 /* ---------------------------------
 
@@ -303,18 +310,6 @@ img {
   z-index: 4;
 }
 
-#github-logo {
-  cursor: pointer;
-  width: 35px;
-  position: fixed;
-  top: 75px;
-  right: 35px;
-}
-
-#github-logo:hover {
-  filter: invert(20%);
-}
-
 #toTop-logo {
   display: none;
   cursor: pointer;
@@ -445,7 +440,7 @@ header {
   display: grid;
   place-items: center;
   height: 100vh;
-  background: var(--color-skopos-powder-blue);
+  background: var(--color-skopos-vivid-sky-blue);
 }
 
 header h1 {
@@ -670,6 +665,10 @@ h4 {
   list-style: disc;
   margin-left: 2rem;
   margin-bottom: 1rem;
+}
+
+#case-study-mobile {
+  display: none;
 }
 
 /* #case-study li code {
@@ -902,16 +901,8 @@ small {
     max-width: 50vw;
   }
 
-  nav#case-study-mobile ul {
-    margin: 0;
-  }
-
-  nav#site-navigation #case-study-mobile li {
-    margin-left: 0;
-  }
-
-  nav#site-navigation #case-study-mobile li:last-child {
-    margin-bottom: 0;
+  #case-study-mobile li a {
+    font-size: 25px;
   }
 
   main {
@@ -1078,14 +1069,6 @@ small {
     width: 40px;
     top: 18px;
     right: 40px;
-  }
-
-  #github-logo {
-    cursor: pointer;
-    width: 28px;
-    position: fixed;
-    bottom: 75px;
-    right: 27px;
   }
 
   #toTop-logo {
@@ -1298,11 +1281,6 @@ small {
     right: 40px;
   }
 
-  #github-logo {
-    right: 20px;
-    width: 23px;
-  }
-
   #toTop-logo {
     bottom: 20px;
     width: 23px;
@@ -1330,7 +1308,7 @@ small {
   }
 
   main {
-    padding: 0 70px 0 25px;
+    padding: 0 25px 0 25px;
   }
 
   h1 {
@@ -1417,7 +1395,7 @@ small {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 /* === Hamburger === */
@@ -1434,15 +1412,15 @@ small {
   width: 90px;
   border: none;
   border-bottom-left-radius: 100%;
-  background: #BCE2E8;
+  background: var(--color-skopos-powder-blue);
 }
 
 #hamburger:hover {
-  background: #24C5E3;
+  background: var(--color-skopos-veridian-green);
 }
 
 #hamburger.expand {
-  background: #24C5E3;
+  background: var(--color-skopos-veridian-green);
   animation-duration: 0.6s;
   animation-name: expand;
 }
@@ -1456,9 +1434,10 @@ small {
   }
 }
 
-#hamburger img {
+#hamburger svg {
   position: relative;
-  left: 10px;
+  fill: var(--color-skopos-dark-jungle-green);
+  left: 5px;
   bottom: 10px;
   width: 40px;
 }
@@ -1468,33 +1447,51 @@ small {
 .menu {
   z-index: 1;
   position: fixed;
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  background: #24C5E3;
+  align-items: center;
+  background: var(--color-skopos-veridian-green);
   height: 100vh;
   width: 100vw;
-}
-
-#menu-logo {
-  width: 10%;
-  display: none;
+  overflow: auto;
 }
 
 #x {
   z-index: 2;
   position: fixed;
-  top: 10px;
-  right: 10px;
+  top: 7px;
+  right: 15px;
   background: none;
   border: none;
   cursor: pointer;
 }
 
-#x img {
+#x svg {
   width: 40px;
+  fill: var(--color-skopos-powder-blue)
+}
+
+#x svg:hover {
+  fill: var(--color-skopos-dark-jungle-green)
 }
 
 .menu ul {
-  width: 75%;
+  width: 50%;
+  margin-right: 10%;
+  flex: 2 1 auto;
+  display: inline-block;
+}
+
+.menu div {
+  width: 25%;
+  margin-top: -3%;
+  margin-left: 10%;
+  flex: 1 1 auto;
+}
+
+#menu-logo {
+  width: 100%;
 }
 
 .menu li {
@@ -1507,11 +1504,11 @@ small {
   font-size: 8vw;
   font-family: var(--font-family-header);
   text-transform: uppercase;
-  color: #172729;
+  color: var(--color-skopos-powder-blue);
 }
 
 .menu a:hover {
-  color: #FFFFFF;
+  color: var(--color-skopos-dark-jungle-green);
 }
 
 img.white {
@@ -1526,4 +1523,88 @@ img.white {
 
 .menu a>img:hover {
   filter: brightness(250%) saturate(220%) hue-rotate(350deg);
+}
+
+@media screen and (max-width: 800px) {
+  #hamburger {
+    height: 70px;
+    width: 70px;
+  }
+
+  #hamburger.expand {
+    animation-duration: 0.4s;
+  }
+
+  #x {
+    top: 10px;
+    right: 8px;
+  }
+
+  #x:hover {
+    color: white;
+  }
+
+  .menu {
+    padding: 0 !important;
+    flex-direction: column;
+    justify-content: normal;
+    gap: 5%;
+  }
+
+  .menu div {
+    width: 50%;
+    flex: 0 1 auto;
+    margin: 3% 0 0 0;
+  }
+
+  .menu ul {
+    width: 95% !important;
+    margin-right: 0%;
+  }
+
+  .menu li {
+    text-align: center !important;
+    padding: 8px 0 !important;
+  }
+
+  .menu a {
+    font-size: 55px;
+  }
+
+  #case-study-mobile {
+    display: block;
+    padding-bottom: 10px;
+  }
+}
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 50px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  text-align: center;
+}
+
+.modal-image {
+  display: inline-block;
 }
