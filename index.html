@@ -55,40 +55,39 @@
 </head>
 
 <body>
-<div class="logo-links">
-    <p id="skopos-logo">MENU</p>
-
-    <a href="https://github.com/capstone2208-team9/skopos" target="_blank">
-        <img src="images/logos/github_black.png" alt="github logo" id="github-logo"/>
-    </a>
-</div>
 <a id="toTop-link" href="#" target="_blank">
     <img src="images/logos/back-to-top.png" alt="Back to top" id="toTop-logo"/>
 </a>
-<nav id="site-navigation">
-    <ul>
-        <li>
-            <a href="#home" id="home-link">HOME</a>
-        </li>
+<button id="hamburger">
+  <img src="images/icons/hamburger-menu.png" />
+</button>
 
-        <li>
-            <a href="#case-study" id="case-study-link">CASE STUDY</a>
+<button class="hidden" id="x">
+  <img src="https://img.icons8.com/material-outlined/512/delete-sign.png" />
+</button>
 
-            <nav id="case-study-mobile">
-                <ul></ul>
-            </nav>
-        </li>
+<nav class="menu hidden">
+  <img id="menu-logo" src="images/logos/header_logo.png" alt="Skopos logo"/>
 
-        <li>
-            <a href="#our-team" id="our-team-link">OUR TEAM</a>
-        </li>
-    </ul>
+  <ul>
+    <li><a href="#home" id="home-link">HOME</a></li>    
+    <li><a href="#case-study" id="case-study-link">CASE STUDY</a></li>
+    <li><a href="#our-team" id="our-team-link">OUR TEAM</a></li>
+    <li>
+      <a href="https://github.com/skopos-api-monitoring" target="_blank">
+        <img src="images/logos/github_black.png" />
+      </a>
+      <nav id="case-study-mobile">
+          <ul></ul>
+      </nav>
+    </li>
+  </ul>
 </nav>
 
 <header id="home">
-    <h1>
-            <img src="images/logos/header_logo.png" alt="Skopos logo"/>
-    </h1>
+    <nav>
+      <img src="images/logos/header_logo.png" alt="Skopos logo"/>
+    </nav>
 </header>
 
 <section class="integration">
@@ -1041,7 +1040,7 @@
         </li>
 
         <li class="individual">
-            <img src="images/icons/hans_avatar.jpeg" alt="Hans Elde"/>
+            <img src="images/icons/hans_avatar.jpg" alt="Hans Elde"/>
 
             <h3 id="hans">Hans Elde</h3>
 

@@ -1,11 +1,12 @@
 /* global document, window, hljs, $ */
 
+
 document.addEventListener('DOMContentLoaded', () => {
   const skoposWhite = '#FFFFFF';
   const skoposOrange = '#E28027';
   const skoposBlue = '#2E939E';
   const skoposRed = '#D3593D'
-  const skoposLogo = document.querySelector('#skopos-logo');
+  // const skoposLogo = document.querySelector('#skopos-logo');
   const nav = document.querySelector('nav');
   const navLinks = document.querySelectorAll('#site-navigation a');
   const main = document.querySelector('main');
@@ -20,6 +21,50 @@ document.addEventListener('DOMContentLoaded', () => {
   const caseStudyNavUl = document.querySelector('#case-study nav ul');
   const mobileCaseStudyNavUl = document.querySelector('#case-study-mobile ul');
   const $toTop = $('#toTop-logo');
+
+  // window.onresize = () => {
+  //   if (window.innerWidth < 1200) absPosition(headerLogo);
+  // }
+
+  const hamburgerImg = document.querySelector('#hamburger img');
+  const hamburger = document.querySelector('#hamburger');
+  const xButton = document.querySelector('#x');
+  const menu = document.querySelector('.menu');
+  const headerLogo = document.querySelector('header > nav img');
+  const toggleExpand = (element) => element.classList.toggle('expand');
+  const hide = (element) => element.classList.add('hidden');
+  const show = (element) => element.classList.remove('hidden');
+  // const fixPosition = (element) => element.style.position = 'fixed';
+  // const absPosition = (element) => element.style.position = 'absolute';
+
+  hamburger.onclick = (e) => {
+    hide(hamburgerImg);
+    toggleExpand(hamburger);
+    show(xButton);
+    setTimeout(() => {
+      // fixPosition(headerLogo);
+      toggleExpand(hamburger);
+      show(menu)
+    }, 250);
+  }
+
+  menu.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+      setTimeout(() => {
+        hide(xButton)
+        hide(menu)
+        show(hamburgerImg)
+      }, 150)
+    }
+  })
+
+  xButton.onclick = (e) => {
+    const xButton = e.currentTarget;
+    hide(xButton);
+    hide(menu);
+    // if (window.innerWidth < 1200) absPosition(headerLogo);
+    show(hamburgerImg);
+  }
 
   $toTop.on('click', (e) => {
     e.preventDefault();
@@ -263,111 +308,111 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  const styleNavColors = (bgColor, textColor, hoverColor) => {
-    nav.style.backgroundColor = bgColor;
-    const links = Array.prototype.slice.call(navLinks).concat(mobileCaseStudyLinks);
-    links.forEach((link) => {
-      link.style.color = textColor;
+  // const styleNavColors = (bgColor, textColor, hoverColor) => {
+  //   // nav.style.backgroundColor = bgColor;
+  //   const links = Array.prototype.slice.call(navLinks).concat(mobileCaseStudyLinks);
+  //   links.forEach((link) => {
+  //     link.style.color = textColor;
 
-      link.addEventListener('mouseenter', () => {
-        link.style.color = hoverColor;
-      });
+  //     link.addEventListener('mouseenter', () => {
+  //       link.style.color = hoverColor;
+  //     });
 
-      link.addEventListener('mouseleave', () => {
-        link.style.color = textColor;
-      });
-    });
-  };
+  //     link.addEventListener('mouseleave', () => {
+  //       link.style.color = textColor;
+  //     });
+  //   });
+  // };
 
-  const handleNavColors = () => {
-    const onHeader = isOnHeader('skopos');
-    const onTeam = isOnTeamSection('skopos');
-    const onMain = !(onHeader || onTeam);
-    const isWideScreen = !isNarrowScreen();
-    const isSkopos = true;
-    if (true) {
-      if (isWideScreen && !onMain && topNavVisible) {
-        styleNavColors(skoposWhite, skoposRed, skoposBlue);
-        changeImgSrc('skopos-logo', 'images/logos/SKOPOS_logo_color.png'); // black
-      } else {
-        styleNavColors(skoposWhite, skoposRed, skoposBlue);
-        changeImgSrc('skopos-logo', 'images/logos/SKOPOS_logo_color.png');
-      }
-    }
-  };
+  // const handleNavColors = () => {
+  //   const onHeader = isOnHeader('skopos');
+  //   const onTeam = isOnTeamSection('skopos');
+  //   const onMain = !(onHeader || onTeam);
+  //   const isWideScreen = !isNarrowScreen();
+  //   const isSkopos = true;
+  //   if (true) {
+  //     if (isWideScreen && !onMain && topNavVisible) {
+  //       styleNavColors(skoposWhite, skoposRed, skoposBlue);
+  //       changeImgSrc('skopos-logo', 'images/logos/SKOPOS_logo_color.png'); // black
+  //     } else {
+  //       styleNavColors(skoposWhite, skoposRed, skoposBlue);
+  //       changeImgSrc('skopos-logo', 'images/logos/SKOPOS_logo_color.png');
+  //     }
+  //   }
+  // };
 
-  const showNav = () => {
-    const position = getScrollPosition();
-    const narrowScreen = isNarrowScreen();
-    topNavVisible = true;
+  // const showNav = () => {
+  //   const position = getScrollPosition();
+  //   const narrowScreen = isNarrowScreen();
+  //   topNavVisible = true;
 
-    handleNavColors();
-    scrollPosition = position;
+  //   handleNavColors();
+  //   scrollPosition = position;
 
-    if (narrowScreen) document.body.style.backgroundColor = '#282828';
-    $(nav).slideDown('fast');
-  };
+  //   if (narrowScreen) document.body.style.backgroundColor = '#282828';
+  //   $(nav).slideDown('fast');
+  // };
 
-  const showSite = () => {
-    const siteElements = [header, main, ourTeam, document.body];
-    // remove "display = 'none'" set when small nav was displayed
-    siteElements.forEach((el) => el.removeAttribute('style'));
-  };
+  // const showSite = () => {
+  //   const siteElements = [header, main, ourTeam, document.body];
+  //   // remove "display = 'none'" set when small nav was displayed
+  //   siteElements.forEach((el) => el.removeAttribute('style'));
+  // };
 
-  const hideSite = () => {
-    header.style.display = 'none';
-    main.style.display = 'none';
-    ourTeam.style.display = 'none';
-  };
+  // const hideSite = () => {
+  //   header.style.display = 'none';
+  //   main.style.display = 'none';
+  //   ourTeam.style.display = 'none';
+  // };
 
-  const hideNav = () => {
-    smallNavVisible = false;
-    topNavVisible = false;
-    handleNavColors();
-    $(nav).slideUp('fast');
-    showSite();
-  };
+  // const hideNav = () => {
+  //   smallNavVisible = false;
+  //   topNavVisible = false;
+  //   handleNavColors();
+  //   $(nav).slideUp('fast');
+  //   showSite();
+  // };
 
-  const toggleNav = () => {
-    if (smallNavVisible) {
-      hideNav();
-      window.scrollTo(0, scrollPosition);
-    } else {
-      showNav();
-      smallNavVisible = true;
-      hideSite();
-    }
-  };
+  // const toggleNav = () => {
+  //   if (smallNavVisible) {
+  //     hideNav();
+  //     window.scrollTo(0, scrollPosition);
+  //   } else {
+  //     showNav();
+  //     smallNavVisible = true;
+  //     hideSite();
+  //   }
+  // };
 
-  const handleNavDisplay = (e) => {
-    console.log("hi")
-    if (isNarrowScreen()) {
-      toggleNav();
-    } else {
-      showNav();
-    }
-  };
+  // const handleNavDisplay = (e) => {
+  //   console.log("hi")
+  //   if (isNarrowScreen()) {
+  //     toggleNav();
+  //   } else {
+  //     showNav();
+  //   }
+  // };
 
-  skoposLogo.addEventListener('click', handleNavDisplay);
-  main.addEventListener('mouseenter', hideNav);
-  ourTeam.addEventListener('mouseenter', hideNav);
-  header.addEventListener('mouseenter', hideNav);
-  homeLink.addEventListener('click', hideNav);
-  caseStudyLink.addEventListener('click', hideNav);
-  mobileCaseStudyLinks.forEach((link) => link.addEventListener('click', hideNav));
-  ourTeamLink.addEventListener('click', hideNav);
+  // skoposLogo.addEventListener('click', handleNavDisplay);
+  // main.addEventListener('mouseenter', hideNav);
+  // ourTeam.addEventListener('mouseenter', hideNav);
+  // header.addEventListener('mouseenter', hideNav);
+  // homeLink.addEventListener('click', hideNav);
+  // caseStudyLink.addEventListener('click', hideNav);
+  // mobileCaseStudyLinks.forEach((link) => link.addEventListener('click', hideNav));
+  // ourTeamLink.addEventListener('click', hideNav);
 
   document.addEventListener('scroll', () => {
     if (!smallNavVisible) {
-      changeLogoColors();
+      // changeLogoColors();
       handleCaseStudyNav();
     }
-    handleNavColors();
+    // handleNavColors();
   });
 
   window.addEventListener('resize', () => {
     handleCaseStudyNav();
-    handleNavColors();
+    // handleNavColors();
     if (!isNarrowScreen() && smallNavVisible) {
       showSite();
       hideNav();
