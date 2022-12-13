@@ -773,6 +773,7 @@ h4 {
 
 #citations li {
   color: #999;
+  overflow-wrap: break-word;
 }
 
 #citations a {
