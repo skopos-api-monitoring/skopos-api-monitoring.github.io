@@ -47,6 +47,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <script src="https://kit.fontawesome.com/fc3dbb2e9a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <!-- <script></script> -->
 
     <script src="javascripts/application.js"></script>
@@ -55,39 +58,41 @@
 </head>
 
 <body>
-<div class="logo-links">
-    <p id="skopos-logo">MENU</p>
-
-    <a href="https://github.com/capstone2208-team9/skopos" target="_blank">
-        <img src="images/logos/github_black.png" alt="github logo" id="github-logo"/>
-    </a>
-</div>
 <a id="toTop-link" href="#" target="_blank">
     <img src="images/logos/back-to-top.png" alt="Back to top" id="toTop-logo"/>
 </a>
-<nav id="site-navigation">
-    <ul>
-        <li>
-            <a href="#home" id="home-link">HOME</a>
-        </li>
+<button id="hamburger">
+  <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/></svg>
+</button>
 
-        <li>
-            <a href="#case-study" id="case-study-link">CASE STUDY</a>
+<button class="hidden" id="x">
+  <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48"><path d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z"/></svg>
+</button>
 
-            <nav id="case-study-mobile">
-                <ul></ul>
-            </nav>
-        </li>
+<nav class="menu hidden">
+  <div >
+    <img id="menu-logo" src="images/logos/SKOPOS_logo_inverted.png" alt="Skopos logo"/>
+  </div>
+  
 
-        <li>
-            <a href="#our-team" id="our-team-link">OUR TEAM</a>
-        </li>
-    </ul>
+  <ul>
+    <li><a href="#home" id="home-link">HOME</a></li>    
+    <li><a href="#case-study" id="case-study-link">CASE STUDY</a></li>
+    <li><a href="#our-team" id="our-team-link">OUR TEAM</a></li>
+    <li>
+      <a href="https://github.com/skopos-api-monitoring" target="_blank">
+        <i class="fa-brands fa-github"></i>
+      </a>
+    </li>
+  </ul>
+  <ul id="case-study-mobile">
+    <li id="mobile-table-of-contents"> Case Study Table of Contents: </li>
+  </ul>
 </nav>
 
 <header id="home">
     <h1>
-            <img src="images/logos/header_logo.png" alt="Skopos logo"/>
+      <img src="images/logos/header_logo.png" alt="Skopos logo"/>
     </h1>
 </header>
 
@@ -1041,7 +1046,7 @@
         </li>
 
         <li class="individual">
-            <img src="images/icons/hans_avatar.jpeg" alt="Hans Elde"/>
+            <img src="images/icons/hans_avatar.jpg" alt="Hans Elde"/>
 
             <h3 id="hans">Hans Elde</h3>
 
