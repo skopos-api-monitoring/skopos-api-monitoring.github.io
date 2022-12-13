@@ -28,10 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleExpand(hamburger);
     show(xButton);
 
-    const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
-    const body = document.body;
-    body.style.position = 'fixed';
-    body.style.top = `-${scrollY}`;
+    const scrollY = document.scrollingElement.style.getPropertyValue('--scroll-y');
+    const scrollingElement = document.scrollingElement;
+    scrollingElement.style.position = 'fixed';
+    scrollingElement.style.top = `-${scrollY}`;
 
     setTimeout(() => {
       toggleExpand(hamburger);
@@ -41,8 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   menu.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
-      document.body.style.position = '';
-      document.body.style.top = '';
+      const scrollingElement = document.scrollingElement;
+      scrollingElement.style.position = '';
+      scrollingElement.style.top = '';
       handleCaseStudyNav()
 
       setTimeout(() => {
@@ -57,10 +58,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const xButton = e.currentTarget;
     hide(xButton);
 
-    const body = document.body;
-    const scrollY = body.style.top;
-    body.style.position = '';
-    body.style.top = '';
+    const scrollingElement = document.scrollingElement;
+    const scrollY = scrollingElement.style.top;
+    scrollingElement.style.position = '';
+    scrollingElement.style.top = '';
     window.scrollTo(0, parseInt(scrollY || '0') * -1);
 
     hide(menu);
@@ -68,12 +69,12 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('scroll', () => {
-    document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
+    document.scrollingElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
   });
 
   $toTop.on('click', (e) => {
     e.preventDefault();
-    $([document.documentElement, document.body]).animate(
+    $([document.documentElement, document.scrollingElement]).animate(
       {
         scrollTop: $('#introduction').offset().top,
       },
