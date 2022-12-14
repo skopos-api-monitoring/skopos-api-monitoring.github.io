@@ -1526,7 +1526,6 @@ img.white {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding: 2rem;
 }
 
 .presentation h2 {
