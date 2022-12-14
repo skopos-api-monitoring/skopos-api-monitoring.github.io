@@ -1196,6 +1196,10 @@ small {
   nav#site-navigation ul li {
     margin: 10px 0 10px 40px;
   }
+
+  .presentation {
+    text-align: center;
+  }
 }
 
 @media (max-width: 400px) {
