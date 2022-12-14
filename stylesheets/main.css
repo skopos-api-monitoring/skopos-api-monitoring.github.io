@@ -1407,13 +1407,12 @@ small {
 }
 
 .menu li {
-  padding: 8px 0;
   text-align: right;
 }
 
 .menu a {
   font-weight: 900;
-  font-size: 8vw;
+  font-size: 6.5vw;
   font-family: var(--font-family-header);
   text-transform: uppercase;
   color: var(--color-skopos-powder-blue);
