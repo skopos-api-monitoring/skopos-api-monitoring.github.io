@@ -28,8 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleExpand(hamburger);
     show(xButton);
 
-    document.body.style.overflow = "hidden"
-
     setTimeout(() => {
       toggleExpand(hamburger);
       show(menu)
@@ -38,7 +36,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   menu.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
-      document.body.style.overflow = "auto";
       handleCaseStudyNav()
       setTimeout(() => {
         hide(xButton)
@@ -50,7 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   xButton.onclick = (e) => {
     const xButton = e.currentTarget;
-    document.body.style.overflow = "auto";
     hide(xButton);
     hide(menu);
     show(hamburgerImg);
