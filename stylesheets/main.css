@@ -139,20 +139,25 @@ a:hover {
 
 .integration:first-of-type {
   background: var(--color-skopos-dark-jungle-green);
-  color: var(--color-white);
+  border-top: var(--color-skopos-dark-jungle-green) inset 2px;
+  color: var(--color-skopos-vivid-sky-blue);
   padding-top: 20px;
   padding-bottom: 40px;
 }
 
 .integration:nth-of-type(2) {
   background: var(--color-skopos-powder-blue);
+  border-top: white inset 2px;
   color: var(--color-skopos-dark-jungle-green);
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
 .integration:nth-of-type(3) {
-  background: var(--color-skopos-powder-blue);
+  background: var(--color-skopos-dark-jungle-green);
+  color: var(--color-skopos-powder-blue);
+  border-top: var(--color-skopos-vivid-sky-blue) inset 2px;
+  border-bottom: var(--color-black) inset 2px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -161,7 +166,7 @@ a:hover {
   width: 70%;
 }
 
-.text-box h1 {
+.text-box h2 {
   font-size: 3rem;
 }
 
@@ -1517,9 +1522,32 @@ img.white {
   color: var(--color-skopos-veridian-green)
 }
 
+.presentation {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.presentation h2 {
+  font-size: 3rem;
+}
+
+.presentation>iframe {
+  height: auto;
+  margin: 2rem auto;
+  max-width: 900px;
+  min-height: 365px;
+  width: 100%;
+}
+
 @media (min-width: 668px) {
   .team {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .presentation>iframe {
+    min-height: 450px;
   }
 }
 
