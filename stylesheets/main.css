@@ -790,15 +790,15 @@ h4 {
 
 #our-team {
   display: grid;
-  background-color: var(--color-white);
+  background-color: var(--color-skopos-powder-blue);
   border-top: solid 3px #EEE;
-  color: var(--color-black);
+  color: var(--color-skopos-dark-jungle-green);
   margin-top: 100px;
-  padding: 2rem;
+  padding: 2rem 2rem 10rem 2rem;
 }
 
 #our-team h1 {
-  color: var(--color-skopos-veridian-green);
+  color: var(--color-skopos-dark-jungle-green);
   font-weight: 700;
   padding-top: 100px;
   margin-bottom: 30px;
@@ -1509,8 +1509,12 @@ img.white {
   place-items: center;
 }
 
-.social-icons img {
-  width: 2rem;
+.social-svg {
+  color: var(--color-skopos-dark-jungle-green)
+}
+
+.social-svg:hover {
+  color: var(--color-skopos-veridian-green)
 }
 
 @media (min-width: 668px) {
