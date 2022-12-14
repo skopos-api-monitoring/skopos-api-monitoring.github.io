@@ -176,31 +176,31 @@ a:hover {
   font-family: var(--font-family-header)
 }
 
-.text-box p span.orange {
+span.orange {
   color: var(--color-skopos-cadmium-orange);
 }
 
-.text-box p span.red {
+span.red {
   color: var(--color-skopos-cedar-chest);
 }
 
-.text-box p span.dark-green {
+span.dark-green {
   color: var(--color-skopos-dark-jungle-green);
 }
 
-.text-box p span.blue {
+span.blue {
   color: var(--color-skopos-powder-blue);
 }
 
-.text-box p span.sky-blue {
+span.sky-blue {
   color: var(--color-skopos-vivid-sky-blue);
 }
 
-.text-box p span.green {
+span.green {
   color: #24717A;
 }
 
-.text-box p span.white {
+span.white {
   color: var(--color-white);
 }
 
