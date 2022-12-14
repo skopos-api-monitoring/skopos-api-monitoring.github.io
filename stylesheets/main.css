@@ -47,8 +47,7 @@
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-    'FILL' 0,
+  font-variation-settings: 'FILL' 0,
     'wght' 400,
     'GRAD' 0,
     'opsz' 48
@@ -495,10 +494,7 @@ header h1 img {
 
 #side-nav img {
   max-width: 120px;
-  margin-left: -70px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-right: auto;
+  margin: 0 auto 0 -70px;
 }
 
 #case-study nav {
@@ -779,6 +775,7 @@ h4 {
 #citations a {
   text-decoration: none;
   color: #999;
+  word-wrap: anywhere;
 }
 
 #citations a:hover {
@@ -792,11 +789,12 @@ h4 {
 ------------------------------------ */
 
 #our-team {
+  display: grid;
   background-color: var(--color-white);
   border-top: solid 3px #EEE;
   color: var(--color-black);
   margin-top: 100px;
-  padding-bottom: 25px;
+  padding: 2rem;
 }
 
 #our-team h1 {
@@ -813,26 +811,7 @@ h4 {
   line-height: 1.7rem;
   text-align: center;
   margin: 0 auto;
-  width: 45%;
-}
-
-#our-team>ul {
-  padding: 60px 0 80px;
-  text-align: center;
-}
-
-#our-team li {
-  display: inline-block;
-  margin: 0 3%;
-  width: 15%;
-  vertical-align: top;
-}
-
-#our-team .social-icons li {
-  display: inline-block;
-  margin: 0 3%;
-  width: 15%;
-  vertical-align: top;
+  padding: 2rem;
 }
 
 #our-team h3 {
@@ -851,32 +830,13 @@ h4 {
 
 #our-team li>img {
   border-radius: 100%;
-  margin: 0 auto 20px;
-  width: 15vw;
-  max-width: 250px;
+  width: auto;
+  height: 200px
 }
 
-#our-team .individual ul {
-  margin: 0;
-}
-
-#our-team .individual li img {
-  /* border-radius: 45px; */
-  padding: 2px;
-  margin-top: 10px;
-  width: 45px;
-}
 
 #our-team .individual li img:hover {
   filter: invert(20%);
-}
-
-#our-team .individual li {
-  margin: 10px 10px 0 10px;
-}
-
-#our-team .individual p {
-  font-size: 1rem;
 }
 
 small {
@@ -964,7 +924,6 @@ small {
   }
 
   /* Site Nav */
-
   nav#site-navigation {
     height: 100vh;
     overflow: scroll;
@@ -983,10 +942,10 @@ small {
 }
 
 @media (max-width: 500px) {
+
   /*header h1 img {*/
   /*  width: 300px;*/
   /*}*/
-
   #home p {
     box-sizing: border-box;
     width: 100%;
@@ -1003,7 +962,6 @@ small {
   }
 
   /* section */
-
   .box {
     width: 100%;
     padding: 1rem 0;
@@ -1042,13 +1000,13 @@ small {
     width: 60%;
   }
 
-  #our-team .individual li {
-    margin: 10px 7px 0;
-  }
+  /*#our-team .individual li {*/
+  /*    margin: 10px 7px 0;*/
+  /*}*/
 
-  #our-team .individual li img {
-    width: 30px;
-  }
+  /*#our-team .individual li img {*/
+  /*    width: 30px;*/
+  /*}*/
 }
 
 @media (min-width: 1100px) {
@@ -1085,7 +1043,6 @@ small {
   }
 
   /* Logos */
-
   #skopos-logo {
     width: 40px;
     top: 18px;
@@ -1106,7 +1063,6 @@ small {
   }
 
   /* Main */
-
   header h1 {
     font-size: 2.5rem;
     padding: 18px 21px;
@@ -1135,10 +1091,9 @@ small {
   }
 
   /* code,
-  .command {
-    font-size: 0.9rem;
-  } */
-
+    .command {
+      font-size: 0.9rem;
+    } */
   pre code {
     font-size: 1.5vw;
   }
@@ -1148,14 +1103,13 @@ small {
   }
 
   /* Our Team */
-
   #our-team>p {
     width: 70%;
   }
 
-  #our-team .individual li {
-    margin: 10px 5px 0;
-  }
+  /*#our-team .individual li {*/
+  /*    margin: 10px 5px 0;*/
+  /*}*/
 
   #our-team .individual li img {
     width: 25px;
@@ -1163,8 +1117,8 @@ small {
 }
 
 @media (max-width: 600px) {
-  /* General */
 
+  /* General */
   h1 {
     font-size: 2.7rem;
   }
@@ -1182,7 +1136,6 @@ small {
   }
 
   /* section */
-
   .integration {
     flex-direction: column;
   }
@@ -1196,7 +1149,6 @@ small {
   }
 
   /* Main */
-
   #home p {
     padding: 0 30px;
   }
@@ -1207,7 +1159,6 @@ small {
   }
 
   /* Our Team */
-
   #our-team h1 {
     padding-top: 60px;
   }
@@ -1217,74 +1168,18 @@ small {
     margin-top: 0;
   }
 
-  #our-team>ul {
-    margin-top: 0;
-    padding: 0;
-  }
-
-  #our-team li {
-    display: block;
-    margin: 0 auto;
-    width: 60%;
-  }
-
-  #our-team .individual {
-    padding: 50px 0;
-    border-bottom: 1px solid #fff;
-  }
-
   #our-team .individual:last-of-type {
     border-bottom: 0;
-  }
-
-  #our-team .individual ul {
-    width: 70%;
-    margin: 0 auto;
-  }
-
-  #our-team .individual li {
-    margin: 10px 5px;
-  }
-
-  #our-team .individual li img {
-    width: 25px;
-    padding: 3px;
-  }
-
-  #our-team li>img {
-    width: 30vw;
   }
 }
 
 @media (max-width: 500px) {
-  /*header h1 img {*/
-  /*  max-width: 80%;*/
-  /*}*/
-
   #home p {
     margin-top: 150px;
   }
 
   #case-study img {
     max-width: 60vw;
-  }
-
-  #our-team .individual ul {
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  #our-team .individual li {
-    margin: 10px 7px;
-  }
-
-  #our-team .individual li img {
-    width: 30px;
-    padding: 2px;
-  }
-
-  #our-team li>img {
-    width: 35vw;
   }
 
   nav#site-navigation ul {
@@ -1315,7 +1210,6 @@ small {
   }
 
   /* section */
-
   #home p {
     margin-top: 200px;
   }
@@ -1356,14 +1250,6 @@ small {
   #case-study img {
     max-width: 65vw;
   }
-
-  #our-team {
-    padding-bottom: 18px;
-  }
-
-  #our-team>p {
-    width: 57%;
-  }
 }
 
 /* ---------------------------------
@@ -1380,7 +1266,6 @@ small {
   /*header h1 img {*/
   /*  padding: 40px 0;*/
   /*}*/
-
   #home p {
     font-size: 2.5rem;
     margin-top: 150px;
@@ -1408,7 +1293,6 @@ small {
   /*  margin-top: -250px;*/
   /*  padding: 0;*/
   /*}*/
-
   #home p {
     font-size: 2rem;
     margin-top: 175px;
@@ -1469,8 +1353,8 @@ small {
   z-index: 1;
   position: fixed;
   display: flex;
-  top: 0vh;
-  left: 0vw;
+  top: 0;
+  left: 0;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
@@ -1582,7 +1466,7 @@ img.white {
 
   .menu ul {
     width: 95% !important;
-    margin-right: 0%;
+    margin-right: 0;
   }
 
   .menu li {
@@ -1597,5 +1481,46 @@ img.white {
   #case-study-mobile {
     display: block;
     padding-bottom: 10px;
+  }
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.team {
+  display: grid;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.team img {
+  max-width: 100%;
+}
+
+.team li {
+  text-align: center;
+}
+
+.individual {
+  display: grid;
+  gap: 0.5rem;
+  place-items: center;
+}
+
+.social-icons img {
+  width: 2rem;
+}
+
+@media (min-width: 668px) {
+  .team {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1000px) {
+  .team {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
