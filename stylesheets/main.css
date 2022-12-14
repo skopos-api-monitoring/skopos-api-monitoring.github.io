@@ -218,7 +218,7 @@ a:hover {
   padding-top: 40px;
 }
 
-.integration img#banner-deploy {
+.integration img.banner-deploy {
   padding-top: 0;
   width: 85%;
 }
@@ -769,6 +769,7 @@ h4 {
 
 #citations li {
   color: #999;
+  overflow-wrap: break-word;
 }
 
 #citations a {
