@@ -148,6 +148,7 @@ a:hover {
 .integration:nth-of-type(2) {
   background: var(--color-skopos-powder-blue);
   border-top: white inset 2px;
+  border-bottom: black inset 2px;
   color: var(--color-skopos-dark-jungle-green);
   padding-top: 40px;
   padding-bottom: 40px;
@@ -156,10 +157,9 @@ a:hover {
 .integration:nth-of-type(3) {
   background: var(--color-skopos-dark-jungle-green);
   color: var(--color-skopos-powder-blue);
-  border-top: var(--color-skopos-vivid-sky-blue) inset 2px;
   border-bottom: var(--color-black) inset 2px;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 100px;
 }
 
 .text-box {
@@ -988,17 +988,19 @@ small {
     max-width: 360px;
   }
 
+  .text-box {
+    text-align: center;
+  }
+
   .text-box h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    text-align: center;
   }
 
   .text-box p {
     font-size: 1.5rem;
     padding: 0;
     margin: 0;
-    text-align: center;
   }
 
   #our-team>p {
@@ -1529,11 +1531,12 @@ img.white {
 
 .presentation h2 {
   font-size: 3rem;
+  padding-top: 1rem;
 }
 
 .presentation>iframe {
   height: auto;
-  margin: 2rem auto;
+  margin: 5rem auto 2rem auto;
   max-width: 900px;
   min-height: 365px;
   width: 100%;
@@ -1547,6 +1550,7 @@ img.white {
   .presentation>iframe {
     min-height: 450px;
   }
+
 }
 
 @media (min-width: 1000px) {
