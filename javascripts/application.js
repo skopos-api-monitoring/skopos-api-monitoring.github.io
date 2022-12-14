@@ -262,11 +262,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   caseStudyNav.addEventListener('click', (e) => {
     if (e.target.tagName === 'A') {
-      console.log(e.target)
+      // console.log(e.target)
       e.preventDefault();
       const positions = getCaseStudyHeadingPositions();
       const positionKey = `#${snakeCaseify(e.target.text)}-nav`;
-      console.log(positions, positionKey, 'event listener')
+      // console.log(positions, positionKey, 'event listener')
       const newScrollPosition = positions[positionKey].position;
       window.scrollTo(0, newScrollPosition + 5);
     }
