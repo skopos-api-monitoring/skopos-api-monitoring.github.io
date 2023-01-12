@@ -1,58 +1,115 @@
 <!DOCTYPE html>
 <html lang="en-US" prefix="og: http://opg.me/ns#">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="title" property="og:title" content="Skopos"/>
-    <meta name="description" property="og:description"
-      content="Skopos is an open-source solution for monitoring critical APIs in production."/>
-    <meta name="type" property="og:type" content="website"/>
-    <meta name="url" property="og:url" content="https://skopos-monitoring.github.io/"/>
-    <meta name="image" property="og:image" content="images/logos/SKOPOS_logo_color.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <meta name="author" content="Hans Elde, Katherine Ebel, Gagan Sapkota, Nykaela Dodson"/>
-    <link rel="manifest" href="./images/icons/favicons/site.webmanifest"/>
-    <link rel="apple-touch-icon" sizes="180x180" href="./images/icons/favicons/Favicon_inverted_with_circle.png"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/icons/favicons/Favicon_inverted_with_circle.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="./images/icons/favicons/Favicon_inverted_with_circle.png"/>
-    <link rel="mask-icon" href="./images/icons/favicons/Favicon_inverted_with_circle.png" />
-    <link rel="shortcut icon" href="./images/icons/favicons/Favicon_inverted_with_circle.png"/>
-    <meta name="msapplication-TileColor" content="#ee6f57"/>
-    <meta name="msapplication-config" content="./images/icons/favicons/browserconfig.xml"/>
-    <meta name="theme-color" content="#ffffff"/>
+    <meta charset="UTF-8" />
+    <meta name="title" property="og:title" content="Skopos" />
+    <meta
+      name="description"
+      property="og:description"
+      content="Skopos is an open-source solution for monitoring critical APIs in production."
+    />
+    <meta name="type" property="og:type" content="website" />
+    <meta
+      name="url"
+      property="og:url"
+      content="https://skopos-monitoring.github.io/"
+    />
+    <meta
+      name="image"
+      property="og:image"
+      content="images/logos/SKOPOS_logo_color.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="author"
+      content="Hans Elde, Katherine Ebel, Gagan Sapkota, Nykaela Dodson"
+    />
+    <link rel="manifest" href="./images/icons/favicons/site.webmanifest" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/icons/favicons/Favicon_inverted_with_circle.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/icons/favicons/Favicon_inverted_with_circle.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/icons/favicons/Favicon_inverted_with_circle.png"
+    />
+    <link
+      rel="mask-icon"
+      href="./images/icons/favicons/Favicon_inverted_with_circle.png"
+    />
+    <link
+      rel="shortcut icon"
+      href="./images/icons/favicons/Favicon_inverted_with_circle.png"
+    />
+    <meta name="msapplication-TileColor" content="#ee6f57" />
+    <meta
+      name="msapplication-config"
+      content="./images/icons/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
     <title>Skopos</title>
     <!-- <style>reset</style> -->
-    <link rel="stylesheet" href="stylesheets/reset.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/gruvbox-dark.min.css"/>
+    <link rel="stylesheet" href="stylesheets/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/gruvbox-dark.min.css"
+    />
     <!-- <style></style> -->
-    <link rel="stylesheet" href="stylesheets/main.css"/>
+    <link rel="stylesheet" href="stylesheets/main.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.6.2.js"
       integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4="
-      crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/fc3dbb2e9a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/fc3dbb2e9a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <!-- <script></script> -->
     <script src="javascripts/application.js"></script>
     <style></style>
   </head>
   <body>
     <a id="toTop-link" href="#" target="_blank">
-    <img src="images/logos/back-to-top.png" alt="Back to top" id="toTop-logo"/>
+      <img
+        src="images/logos/back-to-top.png"
+        alt="Back to top"
+        id="toTop-logo"
+      />
     </a>
     <button id="hamburger">
       <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-        <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z"/>
+        <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
       </svg>
     </button>
     <button class="hidden" id="x">
       <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-        <path d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z"/>
+        <path
+          d="m12.45 37.65-2.1-2.1L21.9 24 10.35 12.45l2.1-2.1L24 21.9l11.55-11.55 2.1 2.1L26.1 24l11.55 11.55-2.1 2.1L24 26.1Z"
+        />
       </svg>
     </button>
     <nav class="menu hidden">
-      <div >
-        <img id="menu-logo" src="images/logos/SKOPOS_logo_inverted.png" alt="Skopos logo"/>
+      <div>
+        <img
+          id="menu-logo"
+          src="images/logos/SKOPOS_logo_inverted.png"
+          alt="Skopos logo"
+        />
       </div>
       <ul>
         <li><a href="#home" id="home-link">HOME</a></li>
@@ -61,30 +118,40 @@
         <li><a href="#our-team" id="our-team-link">OUR TEAM</a></li>
         <li>
           <a href="https://github.com/skopos-api-monitoring" target="_blank">
-          <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-github"></i>
           </a>
         </li>
       </ul>
       <ul id="case-study-mobile">
-        <li id="mobile-table-of-contents"> Case Study Table of Contents: </li>
+        <li id="mobile-table-of-contents">Case Study Table of Contents:</li>
       </ul>
     </nav>
     <header id="home">
       <h1>
-        <img src="images/logos/header_logo.png" alt="Skopos logo"/>
+        <img src="images/logos/header_logo.png" alt="Skopos logo" />
       </h1>
     </header>
     <section class="integration">
       <div class="box">
-        <img class="banner-deploy" src="./images/logos/web_monitor.png" alt="API Monitor"/>
+        <img
+          class="banner-deploy"
+          src="./images/logos/web_monitor.png"
+          alt="API Monitor"
+        />
       </div>
       <article class="box">
         <div class="text-box">
           <h2><span class="blue">What is API Monitoring?</span></h2>
           <p>
-            <span class='orange'>API monitoring tools detect API failures</span> <span
-              class='blue'>by</span> <span class="sky-blue">making requests to endpoints at specified intervals</span> <span class='blue'>and by</span>
-            <span class='sky-blue'>checking the validity of their response data.</span>
+            <span class="orange">API monitoring tools detect API failures</span>
+            <span class="blue">by</span>
+            <span class="sky-blue"
+              >making requests to endpoints at specified intervals</span
+            >
+            <span class="blue">and by</span>
+            <span class="sky-blue"
+              >checking the validity of their response data.</span
+            >
           </p>
         </div>
       </article>
@@ -94,27 +161,39 @@
         <div class="text-box">
           <h2>What is Skopos?</h2>
           <p>
-            <span class="red">Skopos</span> is an <span class='red'>open-source API monitoring tool </span>designed for testing
-            <span class='green'>multi-step API workflows in sequence</span> and <span
-              class='green'>independent workflows in parallel</span>
+            <span class="red">Skopos</span> is an
+            <span class="red">open-source API monitoring tool </span>designed
+            for testing
+            <span class="green">multi-step API workflows in sequence</span> and
+            <span class="green">independent workflows in parallel</span>
           </p>
         </div>
       </article>
       <div class="box">
-        <img class="banner-deploy softened" src="images/graphics/main_screen.png"
-          alt="Home page"/>
+        <img
+          class="banner-deploy softened"
+          src="images/graphics/main_screen.png"
+          alt="Home page"
+        />
       </div>
     </section>
-    <section class='presentation integration' id="presentation">
-        <h2>Watch the Presentation</h2>
-        <iframe class='presentation-video softened' src="https://www.youtube.com/embed/y1N8N9Rhkdc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <section class="presentation integration" id="presentation">
+      <h2>Watch the Presentation</h2>
+      <iframe
+        class="presentation-video softened"
+        src="https://www.youtube.com/embed/y1N8N9Rhkdc"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </section>
     <main>
       <section id="case-study">
         <h1>Case Study</h1>
         <div id="side-nav">
           <a href="#home">
-          <img src="images/logos/SKOPOS_logo_color.png" alt="Skopos logo" />
+            <img src="images/logos/SKOPOS_logo_color.png" alt="Skopos logo" />
           </a>
         </div>
         <nav>
@@ -122,104 +201,153 @@
         </nav>
         <h2 id="introduction">1) Introduction</h2>
         <p>
-          Modern software depends heavily on APIs - both internal APIs and external APIs, such as Stripe or Mailgun -
-          for critical functionality and key business transactions. However, relying on APIs is not without risks -
-          software can change, the network is unreliable, and mistakes happen. How can we be sure that APIs are
-          available and behaving as expected?
+          Modern software depends heavily on APIs - both internal APIs and
+          external APIs, such as Stripe or Mailgun - for critical functionality
+          and key business transactions. However, relying on APIs is not without
+          risks - software can change, the network is unreliable, and mistakes
+          happen. How can we be sure that APIs are available and behaving as
+          expected?
         </p>
         <p>
-          Through API monitoring, we can observe business-critical APIs and inter-API interactions in production by
-          testing workflows and verify we are getting the expected results. We may not be able to avoid API failures,
-          but we can try to catch issues quickly and minimize their impact.
+          Through API monitoring, we can observe business-critical APIs and
+          inter-API interactions in production by testing workflows and verify
+          we are getting the expected results. We may not be able to avoid API
+          failures, but we can try to catch issues quickly and minimize their
+          impact.
         </p>
         <p>
-          In this case study, we describe how we built Skopos, a free, open-source API monitoring tool. We designed
-          Skopos to make it easy to keep an eye on multi-step API workflows and respond quickly to failures. First,
-          let's explore why APIs fail and the consequences for applications that consume them.
+          In this case study, we describe how we built Skopos, a free,
+          open-source API monitoring tool. We designed Skopos to make it easy to
+          keep an eye on multi-step API workflows and respond quickly to
+          failures. First, let's explore why APIs fail and the consequences for
+          applications that consume them.
         </p>
         <h2 id="what-happens-when-apis-fail">2) What Happens When APIs Fail</h2>
-        <h3 id="modern-applications-and-apis">2.1) Modern Applications and APIs</h3>
+        <h3 id="modern-applications-and-apis">
+          2.1) Modern Applications and APIs
+        </h3>
         <p>
-          APIs play a vital role at the heart of almost every piece of technology in use today. APIs can improve
-          functionality and allow easy integration of new features into existing products and services. APIs act as
-          the connective tissue that links together different technology ecosystems.<sup><a href="#footnote-1">1</a></sup>
+          APIs play a vital role at the heart of almost every piece of
+          technology in use today. APIs can improve functionality and allow easy
+          integration of new features into existing products and services. APIs
+          act as the connective tissue that links together different technology
+          ecosystems.<sup><a href="#footnote-1">1</a></sup>
         </p>
         <p>
-          Consider a simple weather app that allows users to see current and future weather forecasts worldwide. This
-          weather application relies upon APIs provided by weather services, such as OpenWeather, to retrieve
-          up-to-date weather information for users. OpenWeather in turn sources its data from agencies like NOAA and
-          the National Weather Service, which offer their own APIs to access their data.
+          Consider a simple weather app that allows users to see current and
+          future weather forecasts worldwide. This weather application relies
+          upon APIs provided by weather services, such as OpenWeather, to
+          retrieve up-to-date weather information for users. OpenWeather in turn
+          sources its data from agencies like NOAA and the National Weather
+          Service, which offer their own APIs to access their data.
         </p>
         <p>
-          <b>APIs act as the connective tissue that binds together the services comprising modern
-          applications.</b> However, this reliance raises an important question: what happens if they fail?
+          <b
+            >APIs act as the connective tissue that binds together the services
+            comprising modern applications.</b
+          >
+          However, this reliance raises an important question: what happens if
+          they fail?
         </p>
         <div class="img-wrapper">
           <img src="./images/graphics/api_example.png" alt="Example API" />
         </div>
-        <h3 id="failures-and-their-consequences">2.2) Failures and Their Consequences</h3>
+        <h3 id="failures-and-their-consequences">
+          2.2) Failures and Their Consequences
+        </h3>
         <p>
-          When a company’s APIs fail, it can have cascading effects across other services that had integrated and
-          relied on those APIs.<sup><a href="#footnote-2">2</a></sup> To illustrate this, we will briefly describe three high-profile examples.
+          When a company’s APIs fail, it can have cascading effects across other
+          services that had integrated and relied on those APIs.<sup
+            ><a href="#footnote-2">2</a></sup
+          >
+          To illustrate this, we will briefly describe three high-profile
+          examples.
         </p>
         <h4 id="ubereats-payment-glitch">2.2.1) UberEats Payment Glitch</h4>
         <p>
-          In 2019, Paytm, a payment service used by UberEats, made an unannounced update to an API endpoint so that
-          the endpoint no longer behaved idempotently.<sup><a href="#footnote-3">3</a></sup> Before the change, Paytm's API endpoint always returned the
-          same error when attempting to charge a wallet with insufficient funds to cover the cost of the order. After
-          the change, Paytm returned different messages for the first and the subsequent attempts at charging a wallet
-          with insufficient funds. This unexpected behavior changed how the UberEats’ integration with the API
-          responded to the error.
+          In 2019, Paytm, a payment service used by UberEats, made an
+          unannounced update to an API endpoint so that the endpoint no longer
+          behaved idempotently.<sup><a href="#footnote-3">3</a></sup> Before the
+          change, Paytm's API endpoint always returned the same error when
+          attempting to charge a wallet with insufficient funds to cover the
+          cost of the order. After the change, Paytm returned different messages
+          for the first and the subsequent attempts at charging a wallet with
+          insufficient funds. This unexpected behavior changed how the UberEats’
+          integration with the API responded to the error.
         </p>
         <div class="img-wrapper">
-          <img src="./images/graphics/ubereats_example.png" alt="UberEats Example" />
+          <img
+            src="./images/graphics/ubereats_example.png"
+            alt="UberEats Example"
+          />
         </div>
         <p>
-          UberEats’ software did not interpret this unexpected response as an error and completed the customer’s order
-          anyway, resulting in free food for the customer. News of the glitch spread fast, and tens of thousands of
-          dollars of orders were placed for free!
+          UberEats’ software did not interpret this unexpected response as an
+          error and completed the customer’s order anyway, resulting in free
+          food for the customer. News of the glitch spread fast, and tens of
+          thousands of dollars of orders were placed for free!
         </p>
         <p>
-          <strong>From this UberEats example, it is clear that API failures can manifest in an unexpected
-          payload.</strong>
+          <strong
+            >From this UberEats example, it is clear that API failures can
+            manifest in an unexpected payload.</strong
+          >
         </p>
         <h4 id="stripe-api-outage">2.2.2) Stripe API Outage</h4>
         <p>
-          In 2019, an incident caused severe degradation of Stripe’s API performance.<sup><a href="#footnote-4">4</a></sup> What began as database bugs and
-          a configuration change resulted in a cascade of failures across critical services, including their API. As a
-          result, during this incident, a majority of requests to Stripe’s API either outright failed or suffered
-          greatly elevated response times.
+          In 2019, an incident caused severe degradation of Stripe’s API
+          performance.<sup><a href="#footnote-4">4</a></sup> What began as
+          database bugs and a configuration change resulted in a cascade of
+          failures across critical services, including their API. As a result,
+          during this incident, a majority of requests to Stripe’s API either
+          outright failed or suffered greatly elevated response times.
         </p>
         <p>
-          The outage financially impacted both Stripe itself, since it charges a fee on payments it processes, as well
-          as small businesses that rely on Stripe; one startup claimed roughly $100,000 in lost sales.<sup><a href="#footnote-5">5</a></sup>
+          The outage financially impacted both Stripe itself, since it charges a
+          fee on payments it processes, as well as small businesses that rely on
+          Stripe; one startup claimed roughly $100,000 in lost sales.<sup
+            ><a href="#footnote-5">5</a></sup
+          >
         </p>
         <p>
-          <strong>From this Stripe example, it is clear that API failures can manifest in error responses and
-          unacceptable response times.</strong>
+          <strong
+            >From this Stripe example, it is clear that API failures can
+            manifest in error responses and unacceptable response times.</strong
+          >
         </p>
         <h4 id="twitter-api-outage">2.2.3) Twitter API Outage</h4>
-        <p>In 2016, Twitter suffered an incident that saw four of its five public-facing APIs experience either
-          performance issues or severe disruption.<sup><a href="#footnote-6">6</a></sup> The affected APIs returned status codes and responses stating that
-          they were either “over capacity” or had suffered an “internal error.” During the outages, businesses relying
-          on Twitter for live customer feedback lost valuable marketing insight.
+        <p>
+          In 2016, Twitter suffered an incident that saw four of its five
+          public-facing APIs experience either performance issues or severe
+          disruption.<sup><a href="#footnote-6">6</a></sup> The affected APIs
+          returned status codes and responses stating that they were either
+          “over capacity” or had suffered an “internal error.” During the
+          outages, businesses relying on Twitter for live customer feedback lost
+          valuable marketing insight.
         </p>
         <p>
           <strong>
-          From this Twitter example, it is clear that API failures can manifest in error responses and different
-          status codes.
+            From this Twitter example, it is clear that API failures can
+            manifest in error responses and different status codes.
           </strong>
         </p>
         <div class="img-wrapper">
-          <img src="./images/graphics/twitter_example.png" alt="Twitter Example" />
+          <img
+            src="./images/graphics/twitter_example.png"
+            alt="Twitter Example"
+          />
         </div>
-        <p>These were just three instances of API failures, but there is no shortage of examples. Moreover, when an API
-          fails, the implications for software that relies on that API can be dire, from negatively impacting user
-          experience to compromising revenue. 
+        <p>
+          These were just three instances of API failures, but there is no
+          shortage of examples. Moreover, when an API fails, the implications
+          for software that relies on that API can be dire, from negatively
+          impacting user experience to compromising revenue.
         </p>
         <h3 id="anticipating-api-failures">2.3) Anticipating API Failures</h3>
-        <p>To mitigate the impacts of these problems, companies have invested in tools that track the live performance
-          of relied-upon API endpoints. The key candidates for tracking are:
+        <p>
+          To mitigate the impacts of these problems, companies have invested in
+          tools that track the live performance of relied-upon API endpoints.
+          The key candidates for tracking are:
         </p>
         <ol>
           <li>data payloads</li>
@@ -227,322 +355,442 @@
           <li>status codes</li>
         </ol>
         <p>
-          While the tools designed for tracking these key features of API endpoint performance are fine-tuned to
-          fulfill different use cases, they come with a core set of functionalities, and all fall under the banner of
-          API monitoring.
+          While the tools designed for tracking these key features of API
+          endpoint performance are fine-tuned to fulfill different use cases,
+          they come with a core set of functionalities, and all fall under the
+          banner of API monitoring.
         </p>
         <h2 id="api-monitoring">3) API Monitoring</h2>
         <h3 id="what-is-api-monitoring">3.1) What is API Monitoring</h3>
-        <p>API monitoring is the process of making requests to API endpoints at set intervals and comparing the response
-          to expected values to check both the availability of API endpoints and the validity of their response data.<sup><a href="#footnote-7">7</a></sup>
-          The goal of API monitoring is to spot issues that may affect users as early as possible.
+        <p>
+          API monitoring is the process of making requests to API endpoints at
+          set intervals and comparing the response to expected values to check
+          both the availability of API endpoints and the validity of their
+          response data.<sup><a href="#footnote-7">7</a></sup>
+          The goal of API monitoring is to spot issues that may affect users as
+          early as possible.
         </p>
         <p>
-          For this case study, we refer to requests made to API endpoints to monitor that API's performance as
-          <strong>API
-          tests</strong> or simply <strong>tests</strong>.
+          For this case study, we refer to requests made to API endpoints to
+          monitor that API's performance as
+          <strong>API tests</strong> or simply <strong>tests</strong>.
         </p>
         <h3 id="how-api-monitoring-works">3.2) How API Monitoring Works</h3>
-        <p>While API monitoring tools may vary in their specific implementations and use cases, API monitoring tools
-          share a core set of functionalities that are necessary to regularly check API endpoints and provide
-          actionable data on their status. These core functionalities can be broken down at a broad level as a set of
-          distinct steps. We chose to describe these steps as Definition, Execution, Scheduling, and Notification. In
-          the following subsections, we will detail each of these steps.
+        <p>
+          While API monitoring tools may vary in their specific implementations
+          and use cases, API monitoring tools share a core set of
+          functionalities that are necessary to regularly check API endpoints
+          and provide actionable data on their status. These core
+          functionalities can be broken down at a broad level as a set of
+          distinct steps. We chose to describe these steps as Definition,
+          Execution, Scheduling, and Notification. In the following subsections,
+          we will detail each of these steps.
         </p>
         <div class="img-wrapper">
           <img src="./images/graphics/four-steps-new.png" alt="Four Steps" />
         </div>
-        <h4 id="definition-defining-what-is-monitored">3.2.1) Definition - Defining What is Monitored</h4>
+        <h4 id="definition-defining-what-is-monitored">
+          3.2.1) Definition - Defining What is Monitored
+        </h4>
         <div class="img-wrapper">
           <img src="./images/graphics/define.png" alt="Define" />
         </div>
-        <p>Every API monitoring tool must create tests that define what is being monitored and include all relevant
-          information necessary to perform those tests. This information would consist of the API endpoint to send a
-          request to, the HTTP method to be used, any required headers, and the request’s body.
+        <p>
+          Every API monitoring tool must create tests that define what is being
+          monitored and include all relevant information necessary to perform
+          those tests. This information would consist of the API endpoint to
+          send a request to, the HTTP method to be used, any required headers,
+          and the request’s body.
         </p>
         <p>
-          To facilitate this, an API monitoring tool must have a way of creating tests either via a user interface
-          (UI) or with code. The user provides the above information required for a complete and functional test
+          To facilitate this, an API monitoring tool must have a way of creating
+          tests either via a user interface (UI) or with code. The user provides
+          the above information required for a complete and functional test
           definition, and the tool defines the test.
         </p>
         <p>
-          An API monitoring tool must also create assertions for tests. In this context, an assertion is a logical
-          statement describing what is expected in response from the API endpoint. The API monitoring tool can then,
-          at a later stage, compare the expected value specified in the assertion with the actual values returned to
-          identify if any failure has occurred. It may be useful to note here that because assertions are specified by
-          the user, the API monitoring tool does not itself decide what constitutes a failure of an API - that is up
-          to the user.
+          An API monitoring tool must also create assertions for tests. In this
+          context, an assertion is a logical statement describing what is
+          expected in response from the API endpoint. The API monitoring tool
+          can then, at a later stage, compare the expected value specified in
+          the assertion with the actual values returned to identify if any
+          failure has occurred. It may be useful to note here that because
+          assertions are specified by the user, the API monitoring tool does not
+          itself decide what constitutes a failure of an API - that is up to the
+          user.
         </p>
-        <h4 id="execution-performing-the-tests">3.2.3) Execution - Performing the Tests</h4>
+        <h4 id="execution-performing-the-tests">
+          3.2.3) Execution - Performing the Tests
+        </h4>
         <div class="img-wrapper">
           <img src="./images/graphics/execute.png" alt="Execute" />
         </div>
-        <p>Every API monitoring tool must be able to execute previously defined tests. In this context, execute refers
-          to using a protocol like HTTP to communicate with an API, receive a response, and then process the response
-          appropriately. In processing, the API monitoring tool compares received values to any expected values
-          specified as assertions. Assertions can be either explicit such as verifying that a response body has a
-          specific value, or implicit such as simply expecting test execution to complete without error. The API
-          monitoring tool then determines whether the assertion passed or failed.
+        <p>
+          Every API monitoring tool must be able to execute previously defined
+          tests. In this context, execute refers to using a protocol like HTTP
+          to communicate with an API, receive a response, and then process the
+          response appropriately. In processing, the API monitoring tool
+          compares received values to any expected values specified as
+          assertions. Assertions can be either explicit such as verifying that a
+          response body has a specific value, or implicit such as simply
+          expecting test execution to complete without error. The API monitoring
+          tool then determines whether the assertion passed or failed.
         </p>
-        <h4 id="scheduling-automating-the-monitoring-process">3.2.3) Scheduling - Automating the Monitoring Process</h4>
+        <h4 id="scheduling-automating-the-monitoring-process">
+          3.2.3) Scheduling - Automating the Monitoring Process
+        </h4>
         <div class="img-wrapper">
           <img src="./images/graphics/schedule.png" alt="Schedule" />
         </div>
-        <p>Every API monitoring tool must allow for the automation of tests rather than only providing functionality for
-          a user to run the tests manually. Through scheduling, an API monitoring tool can regularly run tests to
-          catch errors quickly should they occur. 
+        <p>
+          Every API monitoring tool must allow for the automation of tests
+          rather than only providing functionality for a user to run the tests
+          manually. Through scheduling, an API monitoring tool can regularly run
+          tests to catch errors quickly should they occur.
         </p>
         <p>
-          Scheduling in this context is not limited to a time-based schedule but refers to a broader concept of
-          setting a pattern to execute tests in a particular manner automatically. This includes time-based
-          scheduling, but it also includes other patterns. For example, a trigger-based pattern could execute tests as
-          part of a deployment in a CI/CD pipeline, or a location-based pattern could have tests originate from
+          Scheduling in this context is not limited to a time-based schedule but
+          refers to a broader concept of setting a pattern to execute tests in a
+          particular manner automatically. This includes time-based scheduling,
+          but it also includes other patterns. For example, a trigger-based
+          pattern could execute tests as part of a deployment in a CI/CD
+          pipeline, or a location-based pattern could have tests originate from
           different locations around the globe.
         </p>
         <p>
-          The scheduling patterns an API monitoring tool offers will depend on the specific use case the tool
-          addresses.
+          The scheduling patterns an API monitoring tool offers will depend on
+          the specific use case the tool addresses.
         </p>
-        <h4 id="notification-alerting-with-monitoring-results">3.2.4) Notification - Alerting with Monitoring Results</h4>
+        <h4 id="notification-alerting-with-monitoring-results">
+          3.2.4) Notification - Alerting with Monitoring Results
+        </h4>
         <div class="img-wrapper">
           <img src="./images/graphics/notify.png" alt="Notify" />
         </div>
-        <p>Every API monitoring tool must recognize and report discrepancies between actual and expected response
-          values. For monitoring to be useful, it needs to provide actionable information about the status of the API
-          endpoints being monitored. Some tools may use self-healing mechanisms to resolve these discrepancies, while
-          others rely on user intervention for resolution, in which case notifications can be sent to the user of the
-          monitoring tool. The notification methods can vary depending on specific implementation; popular ways to
-          notify user agents of API monitoring tools include Slack webhooks and SMS.
+        <p>
+          Every API monitoring tool must recognize and report discrepancies
+          between actual and expected response values. For monitoring to be
+          useful, it needs to provide actionable information about the status of
+          the API endpoints being monitored. Some tools may use self-healing
+          mechanisms to resolve these discrepancies, while others rely on user
+          intervention for resolution, in which case notifications can be sent
+          to the user of the monitoring tool. The notification methods can vary
+          depending on specific implementation; popular ways to notify user
+          agents of API monitoring tools include Slack webhooks and SMS.
         </p>
         <p>
-          While API monitoring tools have core commonalities, they are not generally one-size-fits-all products. There
-          are different use cases to account for, and services often offer different features. Knowing which features
-          to target for a company depends on which approach to API monitoring makes the most sense for their specific
-          use case. Let us now explore how these core functionalities are fine-tuned in different ways to fit
-          different use cases.
+          While API monitoring tools have core commonalities, they are not
+          generally one-size-fits-all products. There are different use cases to
+          account for, and services often offer different features. Knowing
+          which features to target for a company depends on which approach to
+          API monitoring makes the most sense for their specific use case. Let
+          us now explore how these core functionalities are fine-tuned in
+          different ways to fit different use cases.
         </p>
-        <h2 id="approaches-to-api-monitoring">4) Approaches to API Monitoring</h2>
-        <p>Below are examples of features commonly offered by API monitoring tools and which use cases they are best
-          suited to handle. These features typically work by changing the functionality of one or more of the steps
-          defined above.
+        <h2 id="approaches-to-api-monitoring">
+          4) Approaches to API Monitoring
+        </h2>
+        <p>
+          Below are examples of features commonly offered by API monitoring
+          tools and which use cases they are best suited to handle. These
+          features typically work by changing the functionality of one or more
+          of the steps defined above.
         </p>
         <h3 id="multi-step-tests">4.1) Multi-Step Tests</h3>
         <div class="img-wrapper">
           <img src="./images/graphics/multi-step.png" alt="Multi-Step" />
         </div>
-        <p>Multi-step tests allow for tests to be linked to each other. This way, a subsequent test can refer to values
-          from the responses to previous tests. In the context of the four steps of API monitoring, with multi-step
-          tests, the user now defines the previous values they wish to access, and the execution of the test must
-          execute tests in sequence and track state. This is typically used when different services of an application
-          need to communicate with one another in sequence over API calls to complete common functionality, such as an
-          API endpoint requiring authentication through a token.<sup><a href="#footnote-8">8</a></sup> API call chaining like this is particularly prevalent
-          with a microservices architecture.
+        <p>
+          Multi-step tests allow for tests to be linked to each other. This way,
+          a subsequent test can refer to values from the responses to previous
+          tests. In the context of the four steps of API monitoring, with
+          multi-step tests, the user now defines the previous values they wish
+          to access, and the execution of the test must execute tests in
+          sequence and track state. This is typically used when different
+          services of an application need to communicate with one another in
+          sequence over API calls to complete common functionality, such as an
+          API endpoint requiring authentication through a token.<sup
+            ><a href="#footnote-8">8</a></sup
+          >
+          API call chaining like this is particularly prevalent with a
+          microservices architecture.
         </p>
         <p>
-          A trade-off of this approach is that multi-step tests must be run sequentially and depend on each other,
-          which can make tests inefficient and possibly more error-prone.
+          A trade-off of this approach is that multi-step tests must be run
+          sequentially and depend on each other, which can make tests
+          inefficient and possibly more error-prone.
         </p>
         <h3 id="parallel-tests">4.2) Parallel Tests</h3>
         <div class="img-wrapper">
           <img src="./images/graphics/parallel.png" alt="parallel" />
         </div>
-        <p>API monitoring tools that offer parallel tests allow many tests to be run simultaneously. In the context of
-          the four steps of API monitoring, with parallel tests, the execution of tests occurs in isolated sandboxes.
-          If these tests are being sent to the same endpoint, this feature can be used for load testing to see how an
-          application responds to many requests received in a short period of time. If these tests are being sent to
-          different endpoints, this feature can save time when running a large number of tests.<sup><a href="#footnote-9">9</a></sup>
+        <p>
+          API monitoring tools that offer parallel tests allow many tests to be
+          run simultaneously. In the context of the four steps of API
+          monitoring, with parallel tests, the execution of tests occurs in
+          isolated sandboxes. If these tests are being sent to the same
+          endpoint, this feature can be used for load testing to see how an
+          application responds to many requests received in a short period of
+          time. If these tests are being sent to different endpoints, this
+          feature can save time when running a large number of tests.<sup
+            ><a href="#footnote-9">9</a></sup
+          >
         </p>
-        <p>One trade-off to this approach is that when tests are executed in parallel, it is much more challenging to
-          set up complex API tests, and those with prerequisites typically require setup with user-defined scripting.
-          Additionally, orchestrating parallel tests requires provisioning multiple resources to carry out execution
-          simultaneously.
+        <p>
+          One trade-off to this approach is that when tests are executed in
+          parallel, it is much more challenging to set up complex API tests, and
+          those with prerequisites typically require setup with user-defined
+          scripting. Additionally, orchestrating parallel tests requires
+          provisioning multiple resources to carry out execution simultaneously.
         </p>
         <h3 id="geo-location-based-tests">4.3) Geo-Location Based Tests</h3>
         <div class="img-wrapper">
           <img src="./images/graphics/geo-new.png" alt="geo" />
         </div>
         <p>
-          Applications with global users may want to test the performance of their APIs in varying geographical
-          locations. Monitoring tools that offer this allow for specifying different locations for requests to
-          originate. When considering the four steps of API monitoring, with geo-location-based tests, scheduling
-          includes selecting locations rather than just times, and execution occurs in different locations. This
-          provides insight into how an API is performing for varied users, particularly that response time is
-          acceptable and response status codes are as expected. This helps to better diagnose if an issue is
-          network-related, and is especially helpful for public-facing APIs that users interact with directly.<sup><a href="#footnote-10">10</a></sup>
+          Applications with global users may want to test the performance of
+          their APIs in varying geographical locations. Monitoring tools that
+          offer this allow for specifying different locations for requests to
+          originate. When considering the four steps of API monitoring, with
+          geo-location-based tests, scheduling includes selecting locations
+          rather than just times, and execution occurs in different locations.
+          This provides insight into how an API is performing for varied users,
+          particularly that response time is acceptable and response status
+          codes are as expected. This helps to better diagnose if an issue is
+          network-related, and is especially helpful for public-facing APIs that
+          users interact with directly.<sup><a href="#footnote-10">10</a></sup>
         </p>
         <p>
-          A trade-off of this approach is that resources must be provisioned and managed in each location tests are to
-          be executed.
+          A trade-off of this approach is that resources must be provisioned and
+          managed in each location tests are to be executed.
         </p>
         <h3 id="ci-cd-integration-tests">4.4) CI/CD Integration Tests</h3>
         <div class="img-wrapper">
           <img src="./images/graphics/ci_cd.png" alt="CI/CD" />
         </div>
-        <p>API monitoring tools can also allow integration with CI/CD pipelines, often by linking collections to
-          multiple environments and setting deployment triggers that automatically run tests in these environments in
-          response to new builds. In the four steps of API monitoring, with CI/CD integration, the scheduling involves
-          deployment triggers rather than time-based scheduling, and the execution can occur in different
-          environments. This is helpful to ensure that API integrations do not break amidst frequent codebase changes.<sup><a href="#footnote-11">11</a></sup>
-          Often, CI/CD integration tests are used with APIs that have internal endpoints that other mission-critical
-          components rely on. 
+        <p>
+          API monitoring tools can also allow integration with CI/CD pipelines,
+          often by linking collections to multiple environments and setting
+          deployment triggers that automatically run tests in these environments
+          in response to new builds. In the four steps of API monitoring, with
+          CI/CD integration, the scheduling involves deployment triggers rather
+          than time-based scheduling, and the execution can occur in different
+          environments. This is helpful to ensure that API integrations do not
+          break amidst frequent codebase changes.<sup
+            ><a href="#footnote-11">11</a></sup
+          >
+          Often, CI/CD integration tests are used with APIs that have internal
+          endpoints that other mission-critical components rely on.
         </p>
         <p>
-          One trade-off of this approach is that CI/CD integrated tests only check that endpoints are functional at
-          the point of deployment and do not provide insight into API availability across time.
+          One trade-off of this approach is that CI/CD integrated tests only
+          check that endpoints are functional at the point of deployment and do
+          not provide insight into API availability across time.
         </p>
         <h3 id="finding-the-right-approach">4.5) Finding the Right Approach</h3>
-        <p>Each of these approaches is useful for different applications, though care must be taken to choose the best
-          tool for one’s specific requirements. For instance, consider two applications that both publish their own
-          public-facing APIs: one frequently deploys updates to their codebase but only markets their API in one
-          region, while the other deploys new versions infrequently but offers its APIs to users in several different
-          geographic locations. Where one may benefit from CI/CD integrated API monitoring, the other may benefit more
-          from geo-location-based monitoring.
+        <p>
+          Each of these approaches is useful for different applications, though
+          care must be taken to choose the best tool for one’s specific
+          requirements. For instance, consider two applications that both
+          publish their own public-facing APIs: one frequently deploys updates
+          to their codebase but only markets their API in one region, while the
+          other deploys new versions infrequently but offers its APIs to users
+          in several different geographic locations. Where one may benefit from
+          CI/CD integrated API monitoring, the other may benefit more from
+          geo-location-based monitoring.
         </p>
         <p>
-          It is worth noting this is not an exhaustive list since with new innovations there are new needs and ways to
-          monitor APIs. These simply form some of the broader categories of API monitoring approaches. In our case, we
-          were searching for an API monitoring solution capable of monitoring multiple API endpoints that rely on
-          multi-step workflows and require high availability.
+          It is worth noting this is not an exhaustive list since with new
+          innovations there are new needs and ways to monitor APIs. These simply
+          form some of the broader categories of API monitoring approaches. In
+          our case, we were searching for an API monitoring solution capable of
+          monitoring multiple API endpoints that rely on multi-step workflows
+          and require high availability.
         </p>
         <h2 id="existing-solutions">5) Existing Solutions</h2>
         <h3 id="open-source-solutions">5.1) Open-Source Solutions</h3>
-        <p>There are different API monitoring tools currently on the market that offer different features depending on
-          their use case. 
-        </p>
-        <p>One example is Postman’s Newman CLI tool. This tool can be used for running collections that are created in
-          Postman. As a CLI tool, this allows for increased flexibility in how groups of tests, or collections, are
-          run. For example, this tool can be integrated with others, incorporated into a CI/CD pipeline, or used as a
-          Node.js library. Because of this flexibility, features such as parallel collection runs and multi-step tests
-          can be configured, although they do require writing and maintaining additional code.
+        <p>
+          There are different API monitoring tools currently on the market that
+          offer different features depending on their use case.
         </p>
         <p>
-          The trade-off for increased flexibility with this tool is ease of use. Because this is a command line tool,
-          there is no GUI to interact with. Also, there is a disjointed experience using Newman because tests are
+          One example is Postman’s Newman CLI tool. This tool can be used for
+          running collections that are created in Postman. As a CLI tool, this
+          allows for increased flexibility in how groups of tests, or
+          collections, are run. For example, this tool can be integrated with
+          others, incorporated into a CI/CD pipeline, or used as a Node.js
+          library. Because of this flexibility, features such as parallel
+          collection runs and multi-step tests can be configured, although they
+          do require writing and maintaining additional code.
+        </p>
+        <p>
+          The trade-off for increased flexibility with this tool is ease of use.
+          Because this is a command line tool, there is no GUI to interact with.
+          Also, there is a disjointed experience using Newman because tests are
           created in Postman and then exported into Newman.
         </p>
         <h3 id="commercial-solutions">5.2) Commercial Solutions</h3>
         <p>
-          Various companies offer SaaS solutions. These tools are generally robust with many features and even provide
-          customer support to help troubleshoot issues. However, many of these features are often behind paywalls and
-          may or may not be open-source.
+          Various companies offer SaaS solutions. These tools are generally
+          robust with many features and even provide customer support to help
+          troubleshoot issues. However, many of these features are often behind
+          paywalls and may or may not be open-source.
         </p>
         <p>
-          One commercial solution we looked at is Checkly. This tool has an easy-to-use GUI with extensive dashboards
-          to monitor the results of running tests. However, Checkly does not offer support for multi-step testing out
-          of the box. Instead, tests are considered an isolated unit, and users can write setup and teardown scripts
-          to achieve the functionality of multi-step tests. However, this does require additional code to write and
-          maintain.
+          One commercial solution we looked at is Checkly. This tool has an
+          easy-to-use GUI with extensive dashboards to monitor the results of
+          running tests. However, Checkly does not offer support for multi-step
+          testing out of the box. Instead, tests are considered an isolated
+          unit, and users can write setup and teardown scripts to achieve the
+          functionality of multi-step tests. However, this does require
+          additional code to write and maintain.
         </p>
         <p>
-          Testfully is another commercial solution we looked at; this tool comes very close to what we desired.
-          However, as a commercial solution, it is not open source, so users must be comfortable with a lack of
-          transparency, as well as sacrificing some control over their data. Also, features like Slack integration for
-          notifications, short intervals between test or collection runs, and long-term data retention are locked
-          behind higher payment tiers.
+          Testfully is another commercial solution we looked at; this tool comes
+          very close to what we desired. However, as a commercial solution, it
+          is not open source, so users must be comfortable with a lack of
+          transparency, as well as sacrificing some control over their data.
+          Also, features like Slack integration for notifications, short
+          intervals between test or collection runs, and long-term data
+          retention are locked behind higher payment tiers.
         </p>
         <div class="img-wrapper">
-          <img src="./images/graphics/comp_no_skopos.png" alt="existing solutions" />
+          <img
+            src="./images/graphics/comp_no_skopos.png"
+            alt="existing solutions"
+          />
         </div>
-        <h3 id="a-solution-for-our-use-case">5.3) A Solution For Our Use Case</h3>
-        <p>As a reminder, we wanted an API monitoring tool that allowed us to monitor multi-step API workflows requiring
-          high availability.
+        <h3 id="a-solution-for-our-use-case">
+          5.3) A Solution For Our Use Case
+        </h3>
+        <p>
+          As a reminder, we wanted an API monitoring tool that allowed us to
+          monitor multi-step API workflows requiring high availability.
         </p>
         <div class="img-wrapper">
-          <img src="./images/graphics/multi-parallel.png" alt="existing solutions" />
+          <img
+            src="./images/graphics/multi-parallel.png"
+            alt="existing solutions"
+          />
         </div>
         <p>
-          An essential requirement for us was the ability to run multi-step tests in collections. Within a collection,
-          tests could be dependent on each other and executed sequentially. Separate groups, however, could be run in
-          parallel. This would allow collections to be run more quickly and decrease compute time. For example, if an
-          API workflow has 10 requests with 200ms of latency for each request, running this collection of tests
-          sequentially would take around 2 seconds. If you need to test 50 different workflows, that would take 100
-          seconds to run collections sequentially. This creates a hard limit for the frequency of running collections
-          that may exceed acceptable downtime.
+          An essential requirement for us was the ability to run multi-step
+          tests in collections. Within a collection, tests could be dependent on
+          each other and executed sequentially. Separate groups, however, could
+          be run in parallel. This would allow collections to be run more
+          quickly and decrease compute time. For example, if an API workflow has
+          10 requests with 200ms of latency for each request, running this
+          collection of tests sequentially would take around 2 seconds. If you
+          need to test 50 different workflows, that would take 100 seconds to
+          run collections sequentially. This creates a hard limit for the
+          frequency of running collections that may exceed acceptable downtime.
         </p>
         <p>
-          Another key requirement for us was ease of use; we wanted a tool that allowed developers to implement their
-          API tests and monitor the results with minimal onboarding.
+          Another key requirement for us was ease of use; we wanted a tool that
+          allowed developers to implement their API tests and monitor the
+          results with minimal onboarding.
         </p>
         <p>
-          All the tools we looked at only fulfilled a subset of our requirements. For example, <strong>Newman
-          CLI</strong> could set up
-          multi-step tests that could run in parallel, but it did not have the ease of use we wanted. Using Newman
-          required a developer to write their own test scripts, and collections had to be created in Postman and then
-          exported to use in Newman. <strong>Checkly</strong> had an easy-to-use GUI, but implementing multi-step
-          functionality
-          required a developer to write their own setup and teardown scripts on each test. <strong>Testfully</strong>
-          came the closest
-          to satisfying most of our requirements, but it locked its functionality behind high monthly subscription
-          costs. We wanted an open-source solution. Ultimately, none of these tools matched our use case, so we set
-          out to build our own.
+          All the tools we looked at only fulfilled a subset of our
+          requirements. For example, <strong>Newman CLI</strong> could set up
+          multi-step tests that could run in parallel, but it did not have the
+          ease of use we wanted. Using Newman required a developer to write
+          their own test scripts, and collections had to be created in Postman
+          and then exported to use in Newman. <strong>Checkly</strong> had an
+          easy-to-use GUI, but implementing multi-step functionality required a
+          developer to write their own setup and teardown scripts on each test.
+          <strong>Testfully</strong>
+          came the closest to satisfying most of our requirements, but it locked
+          its functionality behind high monthly subscription costs. We wanted an
+          open-source solution. Ultimately, none of these tools matched our use
+          case, so we set out to build our own.
         </p>
         <h2 id="introducing-skopos">6) Introducing Skopos</h2>
         <p>
-          Skopos is an open-source API monitoring tool designed for multi-step API testing and running collections of
-          tests in parallel, with a user-friendly interface. We designed Skopos intending to monitor multi-step API
-          workflows that needed to be highly available. With Skopos’ GUI, it is possible to set up multi-step API
-          tests and schedule them to run in short intervals, for example, every minute. Additionally, if several
-          collections are scheduled to run simultaneously, they can run in parallel.
+          Skopos is an open-source API monitoring tool designed for multi-step
+          API testing and running collections of tests in parallel, with a
+          user-friendly interface. We designed Skopos intending to monitor
+          multi-step API workflows that needed to be highly available. With
+          Skopos’ GUI, it is possible to set up multi-step API tests and
+          schedule them to run in short intervals, for example, every minute.
+          Additionally, if several collections are scheduled to run
+          simultaneously, they can run in parallel.
         </p>
         <div class="img-wrapper">
           <img src="./images/graphics/deploy.png" alt="existing solutions" />
         </div>
         <p>
-          Skopos is not designed for CI/CD integration; since we created Skopos with a focus on monitoring API
-          endpoints in production, CI/CD integration was not central to our goal. Additionally, Skopos lacks any
-          user-defined scripting. While this sacrifices some flexibility in how tests can be defined and executed, we
-          felt expecting a user to write their own scripts would compromise our vision of an easy-to-use tool.
+          Skopos is not designed for CI/CD integration; since we created Skopos
+          with a focus on monitoring API endpoints in production, CI/CD
+          integration was not central to our goal. Additionally, Skopos lacks
+          any user-defined scripting. While this sacrifices some flexibility in
+          how tests can be defined and executed, we felt expecting a user to
+          write their own scripts would compromise our vision of an easy-to-use
+          tool.
         </p>
         <h3 id="deploying-skopos">6.1) Deploying Skopos</h3>
-        <p>
-          Using Skopos requires:
-        </p>
+        <p>Using Skopos requires:</p>
         <ul>
           <li>An AWS account</li>
           <li>npm installed</li>
-          <li>The AWS CLI installed and configured (Skopos will use the locally configured AWS account)</li>
+          <li>
+            The AWS CLI installed and configured (Skopos will use the locally
+            configured AWS account)
+          </li>
           <li>The AWS CDK command line tool installed</li>
         </ul>
         <p>
-          To install Skopos, run ‘npm install -g skopos’. Then, running ‘skopos deploy’ will deploy Skopos on the
-          user’s AWS account using the AWS CDK. Once this is completed, a URL will be supplied to access the
-          application’s GUI. Through this URL, the user can interact with the React front end hosted in an S3 bucket.
+          To install Skopos, run ‘npm install -g skopos’. Then, running ‘skopos
+          deploy’ will deploy Skopos on the user’s AWS account using the AWS
+          CDK. Once this is completed, a URL will be supplied to access the
+          application’s GUI. Through this URL, the user can interact with the
+          React front end hosted in an S3 bucket.
         </p>
         <h3 id="using-skopos">6.2) Using Skopos</h3>
-        <p>As an API monitoring tool, Skopos incorporates the core functionalities of defining, scheduling, executing,
-          and notifying. Here is a look at how this is implemented with Skopos.
+        <p>
+          As an API monitoring tool, Skopos incorporates the core
+          functionalities of defining, scheduling, executing, and notifying.
+          Here is a look at how this is implemented with Skopos.
         </p>
         <h4 id="how-test-definition-works">6.2.1) How Test Definition Works</h4>
         <div class="img-wrapper">
           <video autoplay muted loop>
-            <source src="./images/videos/skopos-definition.mp4" type="video/mp4">
+            <source
+              src="./images/videos/skopos-definition.mp4"
+              type="video/mp4"
+            />
           </video>
         </div>
         <p>A user can define a test in the following way:</p>
-        <ol class='define-test-steps'>
-          <li>From the main menu, click the ‘Add Collection’ button to create a collection to group requests, and
-            enter a name for the collection
+        <ol class="define-test-steps">
+          <li>
+            From the main menu, click the ‘Add Collection’ button to create a
+            collection to group requests, and enter a name for the collection
           </li>
           <li>
-            <p>
-              On the collection screen, click the ‘Add Request’ button
-            </p>
-            <ul style='list-style-type: "a"'>
+            <p>On the collection screen, click the ‘Add Request’ button</p>
+            <ul style="list-style-type: 'a'">
               <li>
-                To use values from previous steps, use variables (<code>@{{}}</code>) to reference the exact value from
-                previous requests. For instance, <code>@{{step1.body.sample}}</code> references the value stored in the
-                <code>sample</code> property of the body received in response to the request defined in step 1.
+                To use values from previous steps, use variables
+                (<code>@{{}}</code>) to reference the exact value from previous
+                requests. For instance,
+                <code>@{{step1.body.sample}}</code> references the value stored
+                in the <code>sample</code> property of the body received in
+                response to the request defined in step 1.
               </li>
             </ul>
           </li>
-          <li>In the form that opens, specify the necessary details for the API request the test will make</li>
           <li>
-            To specify assertions, select the ‘Assertions’ tab in the form and then click the ‘Add Assertion’
-            button
+            In the form that opens, specify the necessary details for the API
+            request the test will make
+          </li>
+          <li>
+            To specify assertions, select the ‘Assertions’ tab in the form and
+            then click the ‘Add Assertion’ button
             <ul>
               <li>
-                Select from the drop-down the specific fields to be validated for the assertion. The options
-                are:
+                Select from the drop-down the specific fields to be validated
+                for the assertion. The options are:
                 <ol>
                   <li>Status Code</li>
                   <li>Latency</li>
@@ -551,9 +799,10 @@
                 </ol>
               </li>
               <li>
-                To make assertions on the response body or headers, specify the specific property in the
-                text
-                box that pops up as you select headers or body. For instance, <code>body.id</code> references the <code>id</code>
+                To make assertions on the response body or headers, specify the
+                specific property in the text box that pops up as you select
+                headers or body. For instance, <code>body.id</code> references
+                the <code>id</code>
                 property of the body object
               </li>
             </ul>
@@ -562,22 +811,33 @@
         <h4 id="how-test-execution-works">6.2.2) How Test Execution Works</h4>
         <div class="img-wrapper">
           <video autoplay muted loop>
-            <source src="./images/videos/skopos-execution.mp4" type="video/mp4">
+            <source
+              src="./images/videos/skopos-execution.mp4"
+              type="video/mp4"
+            />
           </video>
         </div>
-        <p>When a collection is selected, to run that collection immediately, a user can click the ‘Run Collection’
-          button. Internally, this sends a request to the collection runner to run the collection. Once test execution
-          has been completed, the results of the execution are displayed. To see the results of past collection runs,
-          click the ‘History’ button in the collection. Tests can also be executed automatically on a schedule.
+        <p>
+          When a collection is selected, to run that collection immediately, a
+          user can click the ‘Run Collection’ button. Internally, this sends a
+          request to the collection runner to run the collection. Once test
+          execution has been completed, the results of the execution are
+          displayed. To see the results of past collection runs, click the
+          ‘History’ button in the collection. Tests can also be executed
+          automatically on a schedule.
         </p>
         <h4 id="how-scheduling-works">6.2.3) How Scheduling Works</h4>
         <div class="img-wrapper">
           <video autoplay muted loop>
-            <source src="./images/videos/skopos-scheduling.mp4" type="video/mp4">
+            <source
+              src="./images/videos/skopos-scheduling.mp4"
+              type="video/mp4"
+            />
           </video>
         </div>
-        <p>Tests are scheduled at the collection level. A user can set up a monitoring schedule in the following
-          way:
+        <p>
+          Tests are scheduled at the collection level. A user can set up a
+          monitoring schedule in the following way:
         </p>
         <ol>
           <li>Open the sidebar and select ‘Monitors’</li>
@@ -585,12 +845,18 @@
           <li>
             In the form that open, set desired configuration options:
             <ol>
-              <li>Specify often to run the collection (for example, every 1 minute)</li>
-              <li>Select collections to add to this Monitor. When the scheduling rule triggers, all specified
-                collections will have their tests executed in parallel
+              <li>
+                Specify often to run the collection (for example, every 1
+                minute)
               </li>
-              <li>Select which notification methods should be used for this monitor, and provide appropriate
-                contact details for each method
+              <li>
+                Select collections to add to this Monitor. When the scheduling
+                rule triggers, all specified collections will have their tests
+                executed in parallel
+              </li>
+              <li>
+                Select which notification methods should be used for this
+                monitor, and provide appropriate contact details for each method
               </li>
             </ol>
           </li>
@@ -598,105 +864,156 @@
         <h4 id="how-notification-works">6.2.4) How Notification Works</h4>
         <div class="img-wrapper">
           <video autoplay muted loop>
-            <source src="./images/videos/skopos-notification.mp4" type="video/mp4">
+            <source
+              src="./images/videos/skopos-notification.mp4"
+              type="video/mp4"
+            />
           </video>
         </div>
-        <p>When assertions fail, notifications can be sent via email, Slack, or PagerDuty.</p>
         <p>
-          Having seen how API monitoring with Skopos works and what it can do, we can now explore the design decisions
-          and engineering challenges that went into building this tool, starting with Skopos’ core functionality.
-        </p>
-        <h2 id="building-our-core-application">7) Building Our Core Application</h2>
-        <p>
-          We started by building a proof of concept for running multi-step tests, which would be the core functionality
-          of our API monitoring tool.
-        </p>
-        <h3 id="building-the-definition-functionality">7.1) Building the Definition Functionality</h3>
-        <p>
-          Test definition was a natural first step for us to tackle since all subsequent functionality of an API
-          monitoring tool depended on having a test to execute in the first place. For our core application, we
-          focused on facilitating test definition through a GUI and defining multi-step tests.
-        </p>
-        <h4 id="definition-design-decisions">7.1.1) Definition Design Decisions</h4>
-        <p>
-          When we designed the test definition functionality, one of the first decisions we made was to use React for
-          the application's front end. Via text fields and drop-down menus, this React front-end provided a GUI for
-          the user to input the information required to define a test.
+          When assertions fail, notifications can be sent via email, Slack, or
+          PagerDuty.
         </p>
         <p>
-          To enable multistep tests, we chose to group individual tests into collections, which would be the central
-          functional unit of our application. A collection could be associated with many tests, while a test (referred
-          to as ‘request’ in our schema) could only be associated with one collection, and the tests in one collection
-          could not rely on tests in other collections. When run, tests in a collection would be executed
-          sequentially, and tests would have an associated step number that indicated when they would be executed in
-          relation to the other tests.
+          Having seen how API monitoring with Skopos works and what it can do,
+          we can now explore the design decisions and engineering challenges
+          that went into building this tool, starting with Skopos’ core
+          functionality.
+        </p>
+        <h2 id="building-our-core-application">
+          7) Building Our Core Application
+        </h2>
+        <p>
+          We started by building a proof of concept for running multi-step
+          tests, which would be the core functionality of our API monitoring
+          tool.
+        </p>
+        <h3 id="building-the-definition-functionality">
+          7.1) Building the Definition Functionality
+        </h3>
+        <p>
+          Test definition was a natural first step for us to tackle since all
+          subsequent functionality of an API monitoring tool depended on having
+          a test to execute in the first place. For our core application, we
+          focused on facilitating test definition through a GUI and defining
+          multi-step tests.
+        </p>
+        <h4 id="definition-design-decisions">
+          7.1.1) Definition Design Decisions
+        </h4>
+        <p>
+          When we designed the test definition functionality, one of the first
+          decisions we made was to use React for the application's front end.
+          Via text fields and drop-down menus, this React front-end provided a
+          GUI for the user to input the information required to define a test.
+        </p>
+        <p>
+          To enable multistep tests, we chose to group individual tests into
+          collections, which would be the central functional unit of our
+          application. A collection could be associated with many tests, while a
+          test (referred to as ‘request’ in our schema) could only be associated
+          with one collection, and the tests in one collection could not rely on
+          tests in other collections. When run, tests in a collection would be
+          executed sequentially, and tests would have an associated step number
+          that indicated when they would be executed in relation to the other
+          tests.
         </p>
         <h4 id="defining-multi-step-tests">7.1.2) Defining Multi-Step Tests</h4>
         <p>
-          Our chief implementation challenge at the test definition stage concerned how to define a test such that when
-          it is later executed as a part of a collection, it can reference response values from previous tests in that
-          collection.
+          Our chief implementation challenge at the test definition stage
+          concerned how to define a test such that when it is later executed as
+          a part of a collection, it can reference response values from previous
+          tests in that collection.
         </p>
         <p>
-          To solve this problem, we first needed a reliable method of flagging to the application that “this value
-          should reference another value” that was still human-readable and simple enough for a user to take advantage
-          of. Here we took inspiration from JavaScript’s template literal string interpolation syntax, where in the
-          string <code><span>`Hello</span> ${variable}<span>`</span></code>, the $ symbol and curly brackets indicate that whatever is between the curly
-          brackets is a variable whose value should be interpolated into the string. In our case, we decided to use
-          <code>@{{}}</code> as our variable template flag - an @ symbol, followed by a double set of curly brackets.
+          To solve this problem, we first needed a reliable method of flagging
+          to the application that “this value should reference another value”
+          that was still human-readable and simple enough for a user to take
+          advantage of. Here we took inspiration from JavaScript’s template
+          literal string interpolation syntax, where in the string
+          <code><span>`Hello</span> ${variable}<span>`</span></code
+          >, the $ symbol and curly brackets indicate that whatever is between
+          the curly brackets is a variable whose value should be interpolated
+          into the string. In our case, we decided to use <code>@{{}}</code> as
+          our variable template flag - an @ symbol, followed by a double set of
+          curly brackets.
         </p>
         <div class="img-wrapper">
-          <img src="./images/graphics/architecure-use-prev-values.drawio.png" alt="existing solutions" />
+          <img
+            src="./images/graphics/architecure-use-prev-values.drawio.png"
+            alt="existing solutions"
+          />
         </div>
         <p>
-          Once we had established the data model and logic for test definition and implemented a basic front-end user
-          interface to create tests, we needed to store and fetch the resulting data.
+          Once we had established the data model and logic for test definition
+          and implemented a basic front-end user interface to create tests, we
+          needed to store and fetch the resulting data.
         </p>
         <h3 id="data-storage-and-fetching">7.2) Data Storage and Fetching</h3>
         <p>
-          Since we aimed to eventually implement scheduling — which would allow tests to execute automatically on short
-          intervals — we anticipated frequently querying this data to execute the tests and display the results.
-          Therefore, the efficiency of these operations was of some concern.
+          Since we aimed to eventually implement scheduling — which would allow
+          tests to execute automatically on short intervals — we anticipated
+          frequently querying this data to execute the tests and display the
+          results. Therefore, the efficiency of these operations was of some
+          concern.
         </p>
-        <h4 id='efficiently-fetching-and-storing-data'>7.2.1) Efficiently Fetching and Storing Data</h4>
+        <h4 id="efficiently-fetching-and-storing-data">
+          7.2.1) Efficiently Fetching and Storing Data
+        </h4>
         <p>
-          We had detailed our data model in a relational way and were able to easily implement the schema with
-          PostgreSQL. However, as we were developing our definition and execution components, we often had to return
-          to our data model and modify or tweak our schema in some way, so we decided to use Prisma to simplify
-          initializing database schema and migrating schema.
+          We had detailed our data model in a relational way and were able to
+          easily implement the schema with PostgreSQL. However, as we were
+          developing our definition and execution components, we often had to
+          return to our data model and modify or tweak our schema in some way,
+          so we decided to use Prisma to simplify initializing database schema
+          and migrating schema.
         </p>
-        <p>As we progressed in development, working with REST endpoints was limiting. Sometimes, we were fetching
-          resources from multiple endpoints (under-fetching), and other times we were fetching more resources than
-          necessary (over-fetching).
+        <p>
+          As we progressed in development, working with REST endpoints was
+          limiting. Sometimes, we were fetching resources from multiple
+          endpoints (under-fetching), and other times we were fetching more
+          resources than necessary (over-fetching).
         </p>
         <div class="img-wrapper">
           <img src="./images/graphics/fetching.png" alt="existing solutions" />
         </div>
-        <p>So we began adjusting our queries and endpoints to target only the data we
-          needed. Still, the queries were growing too complex for us to comfortably work with, and the custom
-          endpoints departed from REST implementation.
+        <p>
+          So we began adjusting our queries and endpoints to target only the
+          data we needed. Still, the queries were growing too complex for us to
+          comfortably work with, and the custom endpoints departed from REST
+          implementation.
         </p>
         <p>
-          To simplify our queries and avoid over or under-fetching of data, we integrated GraphQL into our data stack.
-          Specifically, we added Apollo Server to our backend app server. Any components that would need to
-          communicate with the database could then use Apollo Client, and the backend running Apollo Server would act
-          as the single gateway to the database. Our final data stack consisted of a PostgreSQL database connected to
-          a backend server running Prisma and GraphQL via Apollo Server.
+          To simplify our queries and avoid over or under-fetching of data, we
+          integrated GraphQL into our data stack. Specifically, we added Apollo
+          Server to our backend app server. Any components that would need to
+          communicate with the database could then use Apollo Client, and the
+          backend running Apollo Server would act as the single gateway to the
+          database. Our final data stack consisted of a PostgreSQL database
+          connected to a backend server running Prisma and GraphQL via Apollo
+          Server.
         </p>
         <div class="img-wrapper">
           <img src="./images/graphics/data_stack.png" alt="Our data stack" />
         </div>
         <h4 id="further-optimizations">7.2.2) Further Optimizations</h4>
-        <p>Once we had our data stack established, we considered some further optimizations we could make:</p>
+        <p>
+          Once we had our data stack established, we considered some further
+          optimizations we could make:
+        </p>
         <ul>
           <li>
             Adding indexes
             <ul>
               <li>
-                We implemented indexes on foreign key columns because complex table joins were slowing down the
-                queries. Adding indexes on the foreign key columns sped up the joins.
+                We implemented indexes on foreign key columns because complex
+                table joins were slowing down the queries. Adding indexes on the
+                foreign key columns sped up the joins.
                 <div class="img-wrapper">
-                  <img src="./images/graphics/indexes.png" alt="An example of one of our indexes" />
+                  <img
+                    src="./images/graphics/indexes.png"
+                    alt="An example of one of our indexes"
+                  />
                 </div>
               </li>
             </ul>
@@ -705,8 +1022,9 @@
             Pagination
             <ul>
               <li>
-                We implemented pagination for collection runs, as a significant amount of data could be
-                requested depending on the frequency with which collections are executed.
+                We implemented pagination for collection runs, as a significant
+                amount of data could be requested depending on the frequency
+                with which collections are executed.
               </li>
             </ul>
           </li>
@@ -714,162 +1032,622 @@
             Caching
             <ul>
               <li>
-                Apollo Client stores the results of GraphQL queries in a local in-memory cache. We were able
-                to take advantage of this to improve the performance of our React front end and cut down on
-                the number of network requests we would have to send as a user navigated around the UI.
+                Apollo Client stores the results of GraphQL queries in a local
+                in-memory cache. We were able to take advantage of this to
+                improve the performance of our React front end and cut down on
+                the number of network requests we would have to send as a user
+                navigated around the UI.
               </li>
             </ul>
           </li>
         </ul>
         <p>
-          Now that we were able to define tests and store and query the tests’ data, we needed to be able to execute
-          the tests.
+          Now that we were able to define tests and store and query the tests’
+          data, we needed to be able to execute the tests.
         </p>
         <h3 id="multi-step-test-execution">7.3) Multi-Step Test Execution</h3>
-        <p>Multi-step tests require running tests in sequence while keeping track of previous responses. Therefore, we
-          had to process requests to access previous values, send new requests, save the response to a collection of
-          responses, and finally check if the assertions passed for the response. Furthermore, if there were any
-          errors in the process, we wanted to handle the error differently based on where the error occurred.
+        <p>
+          Multi-step tests require running tests in sequence while keeping track
+          of previous responses. Therefore, we had to process requests to access
+          previous values, send new requests, save the response to a collection
+          of responses, and finally check if the assertions passed for the
+          response. Furthermore, if there were any errors in the process, we
+          wanted to handle the error differently based on where the error
+          occurred.
         </p>
-        <h4 id="execution-design-decisions">7.3.1) Execution Design Decisions</h4>
-        <p>Our main task here was to build a component that would handle running through the tests in a collection and execute them in sequence with all associated pre- and post-processing required. We appropriately termed this component the ‘collection runner.’</p>
+        <h4 id="execution-design-decisions">
+          7.3.1) Execution Design Decisions
+        </h4>
+        <p>
+          Our main task here was to build a component that would handle running
+          through the tests in a collection and execute them in sequence with
+          all associated pre- and post-processing required. We appropriately
+          termed this component the ‘collection runner.’
+        </p>
         <div class="img-wrapper">
-          <img src="./images/graphics/state-machine.png" alt="visualization of state machine execution flow" />
+          <img
+            src="./images/graphics/state-machine.png"
+            alt="visualization of state machine execution flow"
+          />
         </div>
-        <p>For the collection runner, we decided to use a state machine to keep track of the complex state we would have to navigate during the execution of a collection. A state machine helps declaratively model application logic by explicitly defining the states the application can exist in, the events that trigger changes between these states, and the transitions which represent the actions taken while moving from one state to another.<sup><a href="#footnote-12">12</a></sup> A state machine would help us visualize the different paths through the stages of execution. It would also help us track, update, and pass around context easily through the different states of running a collection, such as referencing past responses and updating a request with interpolated values.</p>
-        <p>To implement a state machine, we used XState, a JavaScript library to create, manage, and interpret state machines. There was a learning curve, but we felt it was worthwhile.</p>
-        <h4 id="building-the-collection-runner">7.3.2) Building the Collection Runner</h4>
-        <p>When building the collection runner, our main challenge was structuring the collection runner module so that the code was comprehensible and efficient and took proper advantage of XState.</p>
-        <p>To begin with, we needed the collection runner to run on demand when triggered by user interactions or, eventually, a schedule. To that end, we added a simple Express server to the collection runner that would constantly run and listen for requests.</p>
-        <p>Next, we knew that executing a collection full of multi-step tests would require a series of steps to be performed upon each test, specifically processing the tests, executing the tests, and checking the assertions tests were complete. Each of these steps would, in turn, require its own substeps and different context values relevant to that step. Implementing all of this as one top-level state machine in XState would create a tangled labyrinth of states and context. Instead, for each test, the parent machine could cycle through a series of invoked child state machines; this would separate responsibilities for each execution task and isolate context values to the appropriate steps.</p>
+        <p>
+          For the collection runner, we decided to use a state machine to keep
+          track of the complex state we would have to navigate during the
+          execution of a collection. A state machine helps declaratively model
+          application logic by explicitly defining the states the application
+          can exist in, the events that trigger changes between these states,
+          and the transitions which represent the actions taken while moving
+          from one state to another.<sup><a href="#footnote-12">12</a></sup> A
+          state machine would help us visualize the different paths through the
+          stages of execution. It would also help us track, update, and pass
+          around context easily through the different states of running a
+          collection, such as referencing past responses and updating a request
+          with interpolated values.
+        </p>
+        <p>
+          To implement a state machine, we used XState, a JavaScript library to
+          create, manage, and interpret state machines. There was a learning
+          curve, but we felt it was worthwhile.
+        </p>
+        <h4 id="building-the-collection-runner">
+          7.3.2) Building the Collection Runner
+        </h4>
+        <p>
+          When building the collection runner, our main challenge was
+          structuring the collection runner module so that the code was
+          comprehensible and efficient and took proper advantage of XState.
+        </p>
+        <p>
+          To begin with, we needed the collection runner to run on demand when
+          triggered by user interactions or, eventually, a schedule. To that
+          end, we added a simple Express server to the collection runner that
+          would constantly run and listen for requests.
+        </p>
+        <p>
+          Next, we knew that executing a collection full of multi-step tests
+          would require a series of steps to be performed upon each test,
+          specifically processing the tests, executing the tests, and checking
+          the assertions tests were complete. Each of these steps would, in
+          turn, require its own substeps and different context values relevant
+          to that step. Implementing all of this as one top-level state machine
+          in XState would create a tangled labyrinth of states and context.
+          Instead, for each test, the parent machine could cycle through a
+          series of invoked child state machines; this would separate
+          responsibilities for each execution task and isolate context values to
+          the appropriate steps.
+        </p>
         <div class="img-wrapper">
-          <img src="./images/graphics/architecure-x-state.drawio.png" alt="Flow of XState state machine logic" />
+          <img
+            src="./images/graphics/architecure-x-state.drawio.png"
+            alt="Flow of XState state machine logic"
+          />
         </div>
-        <p>The diagram above illustrates the final process we settled on to execute a collection of tests: </p>
+        <p>
+          The diagram above illustrates the final process we settled on to
+          execute a collection of tests:
+        </p>
         <ol>
-          <li>The Express server receives a POST request with ‘collectionId' as a parameter.</li>
-          <li>The main Collection Runner state machine is invoked by the Express server and begins running. It uses the received collection ID to query that collection’s tests from the GraphQL server and loops through the list, interacting with each test in turn.</li>
-          <li>The first child state machine invoked is the Request Processor state machine. This prepares the HTTP request that will be sent to the API endpoint to be tested. For instance, it interpolates referenced multi-step values into the request.</li>
-          <li>The second child state machine in the cycle is the Request Runner state machine, which sends the HTTP request to the API endpoint.</li>
-          <li>The final child state machine involved in executing a single test is the Assertion Runner state machine, which uses the API response to evaluate assertions defined on the test.</li>
+          <li>
+            The Express server receives a POST request with ‘collectionId' as a
+            parameter.
+          </li>
+          <li>
+            The main Collection Runner state machine is invoked by the Express
+            server and begins running. It uses the received collection ID to
+            query that collection’s tests from the GraphQL server and loops
+            through the list, interacting with each test in turn.
+          </li>
+          <li>
+            The first child state machine invoked is the Request Processor state
+            machine. This prepares the HTTP request that will be sent to the API
+            endpoint to be tested. For instance, it interpolates referenced
+            multi-step values into the request.
+          </li>
+          <li>
+            The second child state machine in the cycle is the Request Runner
+            state machine, which sends the HTTP request to the API endpoint.
+          </li>
+          <li>
+            The final child state machine involved in executing a single test is
+            the Assertion Runner state machine, which uses the API response to
+            evaluate assertions defined on the test.
+          </li>
         </ol>
-        <p>Once all tests in a collection have been executed, the collection run is complete.</p>
-        <p>At this point, we had Skopos able to define and execute multi-step tests but unable to perform parallel testing, scheduling, or notifying. We decided to solve most of these problems at an infrastructure level.</p>
-        <h2 id="building-our-cloud-infrastructure">8) Building Our Cloud Infrastructure</h2>
-        <h3 id="migrating-our-core-application-to-the-cloud">8.1) Migrating Our Core Application to the Cloud</h3>
-        <p>Our cloud provider of choice was AWS, and the first step of taking advantage of cloud infrastructure involved moving to the cloud what we had already developed locally; we set up a Virtual Private Cloud (VPC) and began evaluating how to best accomplish this.</p>
-        <p>Some of these decisions were simple because we built Skopos with reliability in mind: </p>
+        <p>
+          Once all tests in a collection have been executed, the collection run
+          is complete.
+        </p>
+        <p>
+          At this point, we had Skopos able to define and execute multi-step
+          tests but unable to perform parallel testing, scheduling, or
+          notifying. We decided to solve most of these problems at an
+          infrastructure level.
+        </p>
+        <h2 id="building-our-cloud-infrastructure">
+          8) Building Our Cloud Infrastructure
+        </h2>
+        <h3 id="migrating-our-core-application-to-the-cloud">
+          8.1) Migrating Our Core Application to the Cloud
+        </h3>
+        <p>
+          Our cloud provider of choice was AWS, and the first step of taking
+          advantage of cloud infrastructure involved moving to the cloud what we
+          had already developed locally; we set up a Virtual Private Cloud (VPC)
+          and began evaluating how to best accomplish this.
+        </p>
+        <p>
+          Some of these decisions were simple because we built Skopos with
+          reliability in mind:
+        </p>
         <ul>
-          <li>Since our React front end was essentially static content decoupled from the rest of the application, we hosted it with an S3 Bucket.</li>
-          <li>We ran our backend app server on a container housed on an EC2 instance through Amazon ECS (Elastic Container Service), so it could scale independently if handling many GraphQL queries.</li>
-          <li>For the PostgreSQL database, we used Amazon RDS (Relational Database Service) to allow the database to scale as needed.</li>
+          <li>
+            Since our React front end was essentially static content decoupled
+            from the rest of the application, we hosted it with an S3 Bucket.
+          </li>
+          <li>
+            We ran our backend app server on a container housed on an EC2
+            instance through Amazon ECS (Elastic Container Service), so it could
+            scale independently if handling many GraphQL queries.
+          </li>
+          <li>
+            For the PostgreSQL database, we used Amazon RDS (Relational Database
+            Service) to allow the database to scale as needed.
+          </li>
         </ul>
         <div class="img-wrapper">
-          <img src="./images/graphics/definition-architecture-diagram.png" alt="Definition components architecture diagram" />
+          <img
+            src="./images/graphics/definition-architecture-diagram.png"
+            alt="Definition components architecture diagram"
+          />
         </div>
-        <p>The execution component, however, required more careful consideration since we needed a way to run collections in parallel. Processing all collections on one virtual machine (VM), such as an Amazon EC2 instance, would not scale and would compromise the ability to run tests on a frequent schedule.</p>
+        <p>
+          The execution component, however, required more careful consideration
+          since we needed a way to run collections in parallel. Processing all
+          collections on one virtual machine (VM), such as an Amazon EC2
+          instance, would not scale and would compromise the ability to run
+          tests on a frequent schedule.
+        </p>
         <h3 id="parallel-test-execution">8.2) Test Execution in Parallel</h3>
-        <p>If running all collections on one single-tenant VM was the issue, then the simplest solution would be to provision multiple such VMs, each hosting its own collection runner process. This approach had the benefit of simplicity and reliability: a load balancer could direct traffic to available collection runner VMs, and if any collection runners suffered outages, then traffic could simply be routed to those still available. </p>
-        <p>However, it would still be a single-tenant solution which would be cumbersome for us for two reasons: </p>
+        <p>
+          If running all collections on one single-tenant VM was the issue, then
+          the simplest solution would be to provision multiple such VMs, each
+          hosting its own collection runner process. This approach had the
+          benefit of simplicity and reliability: a load balancer could direct
+          traffic to available collection runner VMs, and if any collection
+          runners suffered outages, then traffic could simply be routed to those
+          still available.
+        </p>
+        <p>
+          However, it would still be a single-tenant solution which would be
+          cumbersome for us for two reasons:
+        </p>
         <ol>
           <li>Each VM would have to be manually managed</li>
-          <li>The relatively lightweight collection runner process would not utilize the full resources of even the cheapest Amazon EC2 instance.</li>
+          <li>
+            The relatively lightweight collection runner process would not
+            utilize the full resources of even the cheapest Amazon EC2 instance.
+          </li>
         </ol>
         <div class="img-wrapper">
-          <img src="./images/graphics/tenancy.001.png" alt="Single-tenancy vs multi-tenancy" />
+          <img
+            src="./images/graphics/tenancy.001.png"
+            alt="Single-tenancy vs multi-tenancy"
+          />
         </div>
-        <p>An alternative approach was to run the collection runner process inside a container. One benefit of cloud infrastructure is the ability to take advantage of multi-tenancy, where multiple instances of an application can share the same computing resources.<sup><a href="#footnote-13">13</a></sup> By using containers, two main multi-tenant solutions opened up to us.</p>
+        <p>
+          An alternative approach was to run the collection runner process
+          inside a container. One benefit of cloud infrastructure is the ability
+          to take advantage of multi-tenancy, where multiple instances of an
+          application can share the same computing resources.<sup
+            ><a href="#footnote-13">13</a></sup
+          >
+          By using containers, two main multi-tenant solutions opened up to us.
+        </p>
         <div class="img-wrapper">
-          <img src="./images/graphics/ecs-vs-fargate.png" alt="AWS ECS vs AWS Fargate" />
+          <img
+            src="./images/graphics/ecs-vs-fargate.png"
+            alt="AWS ECS vs AWS Fargate"
+          />
         </div>
         <h5>Amazon ECS on EC2</h5>
-        <p>The first option was to host the containers through Amazon Elastic Container Service (ECS) on EC2 instances. With ECS, each EC2 instance could house multiple containers. One trade-off of this option was that we would still have to provision and manage VMs, but the resources of those VMs could be shared amongst many collection runner processes.</p>
+        <p>
+          The first option was to host the containers through Amazon Elastic
+          Container Service (ECS) on EC2 instances. With ECS, each EC2 instance
+          could house multiple containers. One trade-off of this option was that
+          we would still have to provision and manage VMs, but the resources of
+          those VMs could be shared amongst many collection runner processes.
+        </p>
         <h5>AWS Fargate</h5>
-        <p>The second option was to employ AWS Fargate to host collection runner instances on serverless containers. In this case, as a serverless container service managed by AWS, Fargate would abstract away the complexity of managing host VMs; our containers would still be sharing resources with other applications, but AWS would manage the specifics of when and where to spin up or shut down the containers.</p>
-        <p>Fargate, though, had two main drawbacks to its use for us: </p>
+        <p>
+          The second option was to employ AWS Fargate to host collection runner
+          instances on serverless containers. In this case, as a serverless
+          container service managed by AWS, Fargate would abstract away the
+          complexity of managing host VMs; our containers would still be sharing
+          resources with other applications, but AWS would manage the specifics
+          of when and where to spin up or shut down the containers.
+        </p>
+        <p>Fargate, though, had two main drawbacks to its use for us:</p>
         <ol>
-          <li>While Fargate can autoscale, waiting to 'spin up' new Fargate containers could be inefficient, especially for schedules with short intervals between collection runs.</li>
-          <li>Running collections required executing many async function calls and HTTP requests; since Fargate was a pay-as-you-go service, this would waste compute time and lead to unnecessary expenses.</li>
+          <li>
+            While Fargate can autoscale, waiting to 'spin up' new Fargate
+            containers could be inefficient, especially for schedules with short
+            intervals between collection runs.
+          </li>
+          <li>
+            Running collections required executing many async function calls and
+            HTTP requests; since Fargate was a pay-as-you-go service, this would
+            waste compute time and lead to unnecessary expenses.
+          </li>
         </ol>
-        <p>Ultimately, we decided on running collection runner containers on EC2 instances through ECS. Since our use case focused on small windows between collection runs, the multi-tenant solution of hosting multiple persistent containers on an EC2 instance would provide a cost-effective way to achieve parallel collection runs.</p>
+        <p>
+          Ultimately, we decided on running collection runner containers on EC2
+          instances through ECS. Since our use case focused on small windows
+          between collection runs, the multi-tenant solution of hosting multiple
+          persistent containers on an EC2 instance would provide a
+          cost-effective way to achieve parallel collection runs.
+        </p>
         <div class="img-wrapper">
-          <img src="./images/graphics/execution-architecture-diagram.png" alt="Execution components architecture diagram" />
+          <img
+            src="./images/graphics/execution-architecture-diagram.png"
+            alt="Execution components architecture diagram"
+          />
         </div>
-        <p>With parallel test execution successfully implemented, we moved on to automating the execution of tests.</p>
-        <h3 id="building-the-scheduling-functionality">8.3) Building the Scheduling Functionality</h3>
-        <h4 id="scheduling-design-decisions">8.3.1) Scheduling Design Decisions</h4>
-        <p>With scheduling, we wanted to allow collections to run automatically on user-defined time intervals, such as every 5 minutes or every hour. Although allowing the user to specify their desired schedule was a simple matter of updating the front-end UI, how to manage those schedules on the backend required more consideration.</p>
-        <p>Specifically, we needed a solution that permitted schedules to be modified or deleted at will and could also communicate with the collection runner component to reliably trigger execution of tests as dictated by active schedules.</p>
+        <p>
+          With parallel test execution successfully implemented, we moved on to
+          automating the execution of tests.
+        </p>
+        <h3 id="building-the-scheduling-functionality">
+          8.3) Building the Scheduling Functionality
+        </h3>
+        <h4 id="scheduling-design-decisions">
+          8.3.1) Scheduling Design Decisions
+        </h4>
+        <p>
+          With scheduling, we wanted to allow collections to run automatically
+          on user-defined time intervals, such as every 5 minutes or every hour.
+          Although allowing the user to specify their desired schedule was a
+          simple matter of updating the front-end UI, how to manage those
+          schedules on the backend required more consideration.
+        </p>
+        <p>
+          Specifically, we needed a solution that permitted schedules to be
+          modified or deleted at will and could also communicate with the
+          collection runner component to reliably trigger execution of tests as
+          dictated by active schedules.
+        </p>
         <h5>Cron Jobs</h5>
-        <p>The first option was to run cron jobs from a Node.js process inside a docker container or EC2 instance. This approach would not require any additional infrastructure since the cron job logic could be co-located with the backend or collection runners.</p>
-        <p>However, this approach would have significant drawbacks: </p>
+        <p>
+          The first option was to run cron jobs from a Node.js process inside a
+          docker container or EC2 instance. This approach would not require any
+          additional infrastructure since the cron job logic could be co-located
+          with the backend or collection runners.
+        </p>
+        <p>However, this approach would have significant drawbacks:</p>
         <ol>
-          <li>Co-locating scheduling logic with existing components would undermine that component’s single responsibility, resulting in more complex code and troubleshooting.</li>
-          <li>Coupling functionality like this would introduce a significant vulnerability in that any failure of the Node process housing the cron job would compromise the execution of scheduled collection runs.</li>
+          <li>
+            Co-locating scheduling logic with existing components would
+            undermine that component’s single responsibility, resulting in more
+            complex code and troubleshooting.
+          </li>
+          <li>
+            Coupling functionality like this would introduce a significant
+            vulnerability in that any failure of the Node process housing the
+            cron job would compromise the execution of scheduled collection
+            runs.
+          </li>
         </ol>
         <h5>EventBridge</h5>
-        <p>While these issues could be sidestepped by building an entirely separate scheduling component that could run the Node.js cron jobs, that seemed like reinventing the wheel when we had a more straightforward, infrastructure-level solution we could leverage: Amazon EventBridge. EventBridge is a serverless event bus that can receive and route events based on user-defined rules, and these rules can include cron expressions that cause them to trigger on a schedule.</p>
+        <p>
+          While these issues could be sidestepped by building an entirely
+          separate scheduling component that could run the Node.js cron jobs,
+          that seemed like reinventing the wheel when we had a more
+          straightforward, infrastructure-level solution we could leverage:
+          Amazon EventBridge. EventBridge is a serverless event bus that can
+          receive and route events based on user-defined rules, and these rules
+          can include cron expressions that cause them to trigger on a schedule.
+        </p>
         <div class="img-wrapper">
-          <img src="./images/graphics/scheduling-architecture-diagram.png" alt="Scheduling components architecture diagram" />
+          <img
+            src="./images/graphics/scheduling-architecture-diagram.png"
+            alt="Scheduling components architecture diagram"
+          />
         </div>
-        <p>While EventBridge would still add a component to our architecture, it would decouple scheduling data from existing processes and prevent a loss of data were those to fail, and it would save us from needing to build an entire scheduling component ourselves from scratch. Since our aim with Skopos was to provide a fault-tolerant API monitoring tool, we decided to use EventBridge.</p>
-        <h4 id="scheduling-implementation-challenge">8.3.2) Scheduling Implementation Challenge</h4>
-        <p>While implementing scheduling with EventBridge, we discovered that communication between the collection runner and EventBridge was somewhat problematic because they were not using the same communication protocol. The mismatch resulted from the collection runner running on HTTP while EventBridge required traffic on HTTPS.</p>
-        <p>If we wished EventBridge to still communicate directly with a collection runner, we would need the collection runner containers to maintain SSL certifications to allow for communication via HTTPS. This would avoid the need for any additional infrastructure. However, arranging for SSL certification for the collection runners’ containers would have introduced a number of its own complex engineering decisions just to address this one issue; we chose to look for a different solution in order to focus more time on other parts of our infrastructure.</p>
-        <p>On the other hand, we could design a Lambda function to act as an intermediary between EventBridge and the collection runner. This would be fairly simple to set up and maintain without the additional steps that come with registering domains and SSL certificates. However, we would be using HTTP in this case, which would not be as secure as HTTPS.</p>
+        <p>
+          While EventBridge would still add a component to our architecture, it
+          would decouple scheduling data from existing processes and prevent a
+          loss of data were those to fail, and it would save us from needing to
+          build an entire scheduling component ourselves from scratch. Since our
+          aim with Skopos was to provide a fault-tolerant API monitoring tool,
+          we decided to use EventBridge.
+        </p>
+        <h4 id="scheduling-implementation-challenge">
+          8.3.2) Scheduling Implementation Challenge
+        </h4>
+        <p>
+          While implementing scheduling with EventBridge, we discovered that
+          communication between the collection runner and EventBridge was
+          somewhat problematic because they were not using the same
+          communication protocol. The mismatch resulted from the collection
+          runner running on HTTP while EventBridge required traffic on HTTPS.
+        </p>
+        <p>
+          If we wished EventBridge to still communicate directly with a
+          collection runner, we would need the collection runner containers to
+          maintain SSL certifications to allow for communication via HTTPS. This
+          would avoid the need for any additional infrastructure. However,
+          arranging for SSL certification for the collection runners’ containers
+          would have introduced a number of its own complex engineering
+          decisions just to address this one issue; we chose to look for a
+          different solution in order to focus more time on other parts of our
+          infrastructure.
+        </p>
+        <p>
+          On the other hand, we could design a Lambda function to act as an
+          intermediary between EventBridge and the collection runner. This would
+          be fairly simple to set up and maintain without the additional steps
+          that come with registering domains and SSL certificates. However, we
+          would be using HTTP in this case, which would not be as secure as
+          HTTPS.
+        </p>
         <div class="img-wrapper">
-          <img src="./images/graphics/eventbridge-flow.png" alt="Lambda function acts as intermediary between EventBridge and Collection Runner" />
+          <img
+            src="./images/graphics/eventbridge-flow.png"
+            alt="Lambda function acts as intermediary between EventBridge and Collection Runner"
+          />
         </div>
-        <p>We decided the Lambda function was the better option. The communication in question was to occur entirely inside our VPC between EventBridge and the trusted code of our collection runner component, so we did not anticipate using HTTP rather than HTTPS to impose a security risk.</p>
-        <p>Now that we were able to schedule monitors that would regularly execute collection runs, the last piece of core API monitoring functionality to implement was notification.</p>
-        <h3 id="building-the-notification-functionality">8.4) Building the Notification Functionality</h3>
-        <h4 id="notification-design-decisions">8.4.1) Notification Design Decisions</h4>
-        <p>AWS Simple Notification Service (SNS) was an easy choice for us to use for notifications. SNS had an effective setup for sending notifications to various services, such as PagerDuty and email. We were able to use the AWS SDK to integrate notification functionality.</p>
+        <p>
+          We decided the Lambda function was the better option. The
+          communication in question was to occur entirely inside our VPC between
+          EventBridge and the trusted code of our collection runner component,
+          so we did not anticipate using HTTP rather than HTTPS to impose a
+          security risk.
+        </p>
+        <p>
+          Now that we were able to schedule monitors that would regularly
+          execute collection runs, the last piece of core API monitoring
+          functionality to implement was notification.
+        </p>
+        <h3 id="building-the-notification-functionality">
+          8.4) Building the Notification Functionality
+        </h3>
+        <h4 id="notification-design-decisions">
+          8.4.1) Notification Design Decisions
+        </h4>
+        <p>
+          AWS Simple Notification Service (SNS) was an easy choice for us to use
+          for notifications. SNS had an effective setup for sending
+          notifications to various services, such as PagerDuty and email. We
+          were able to use the AWS SDK to integrate notification functionality.
+        </p>
         <div class="img-wrapper">
-          <img src="./images/graphics/notification-architecture-diagram.png" alt="Notification components architecture diagram" />
+          <img
+            src="./images/graphics/notification-architecture-diagram.png"
+            alt="Notification components architecture diagram"
+          />
         </div>
-        <p>When a monitoring schedule was defined, SNS topics and subscribers were created using middleware in our backend application. In the collection runner, certain failure states would then publish a message to the appropriate SNS topic.</p>
-        <h4 id="notification-implementation-challenge">8.4.2) Notification Implementation Challenges</h4>
-        <p>We wanted to provide functionality for sending notifications to Slack. However, Slack webhooks require a specific JSON body with a <code>text</code> property that SNS is not able to add. There are various workarounds for this, such as publishing a message to a subscribed Lambda function that sends a request to the webhook with the correct body. In our case, since our implementation goal was simple in that we just needed to send a basic POST request to the Slack webhook URL, rather than set up an extra Lambda function we decided to send these notifications with a different method. If a Slack webhook URL is added by the user, it is saved to the database when the monitor is created. The collection runner then saves the webhook URL to its state and sends a post request to that endpoint with the appropriate body if an error occurs.</p>
-        <p>Once notification was successfully implemented, Skopos featured each of the core API monitoring functionalities we defined earlier. We can now review its completed architecture to appreciate how each piece of Skopos fits together.</p>
-        <h3 id="final-architecture-overview">8.5) Final Architecture Overview</h3>
+        <p>
+          When a monitoring schedule was defined, SNS topics and subscribers
+          were created using middleware in our backend application. In the
+          collection runner, certain failure states would then publish a message
+          to the appropriate SNS topic.
+        </p>
+        <h4 id="notification-implementation-challenge">
+          8.4.2) Notification Implementation Challenges
+        </h4>
+        <p>
+          We wanted to provide functionality for sending notifications to Slack.
+          However, Slack webhooks require a specific JSON body with a
+          <code>text</code> property that SNS is not able to add. There are
+          various workarounds for this, such as publishing a message to a
+          subscribed Lambda function that sends a request to the webhook with
+          the correct body. In our case, since our implementation goal was
+          simple in that we just needed to send a basic POST request to the
+          Slack webhook URL, rather than set up an extra Lambda function we
+          decided to send these notifications with a different method. If a
+          Slack webhook URL is added by the user, it is saved to the database
+          when the monitor is created. The collection runner then saves the
+          webhook URL to its state and sends a post request to that endpoint
+          with the appropriate body if an error occurs.
+        </p>
+        <p>
+          Once notification was successfully implemented, Skopos featured each
+          of the core API monitoring functionalities we defined earlier. We can
+          now review its completed architecture to appreciate how each piece of
+          Skopos fits together.
+        </p>
+        <h3 id="final-architecture-overview">
+          8.5) Final Architecture Overview
+        </h3>
         <div class="img-wrapper">
-          <img src="./images/graphics/architecure-full-architecture-detail.drawio.png" alt="Complete architecture diagram" />
+          <img
+            src="./images/graphics/architecure-full-architecture-detail.drawio.png"
+            alt="Complete architecture diagram"
+          />
         </div>
-        <p>The application's backend, running in a container on an EC2 instance, uses GraphQL to act as a gateway between Skopos' PostgreSQL database running on RDS and the rest of the app. When a monitoring schedule is created for a collection, a rule is registered with EventBridge. When the EventBridge rule is triggered, it will send a message to a Lambda function, which will communicate with the collection runner component to begin the execution of the collection's tests. A collection run can also be initiated manually from the front end. The collection runner component is itself a cluster of collection runner processes running in containers managed by ECS and housed on an EC2 instance, with load balancing to direct execution tasks to available processes. When assertions fail, or errors occur, notifications are sent out via SNS.</p>
-        <p>We narrowed down the scope of Skopos for our specific use case. However, going forward, there are additional features we would like to include as well as improvements we would like to make to our current implementation.</p>
+        <p>
+          The application's backend, running in a container on an EC2 instance,
+          uses GraphQL to act as a gateway between Skopos' PostgreSQL database
+          running on RDS and the rest of the app. When a monitoring schedule is
+          created for a collection, a rule is registered with EventBridge. When
+          the EventBridge rule is triggered, it will send a message to a Lambda
+          function, which will communicate with the collection runner component
+          to begin the execution of the collection's tests. A collection run can
+          also be initiated manually from the front end. The collection runner
+          component is itself a cluster of collection runner processes running
+          in containers managed by ECS and housed on an EC2 instance, with load
+          balancing to direct execution tasks to available processes. When
+          assertions fail, or errors occur, notifications are sent out via SNS.
+        </p>
+        <p>
+          We narrowed down the scope of Skopos for our specific use case.
+          However, going forward, there are additional features we would like to
+          include as well as improvements we would like to make to our current
+          implementation.
+        </p>
         <h2 id="future-plans-for-skopos">9) Future Plans for Skopos</h2>
-        <p>More could be added to Skopos to provide a more robust API monitoring tool. Some features we would like to explore in the future include: </p>
+        <p>
+          More could be added to Skopos to provide a more robust API monitoring
+          tool. Some features we would like to explore in the future include:
+        </p>
         <ul>
-          <li>Generating random data (called fuzz data) for different inputs based on specific criteria would allow for testing edge cases that were not previously considered.</li>
-          <li>Running API requests in a sandbox environment to troubleshoot specific requests in isolation. </li>
-          <li>Smart notifications could prevent repeat notifications for the same issue or could escalate the degree of severity for the alert depending on defined importance.</li>
+          <li>
+            Generating random data (called fuzz data) for different inputs based
+            on specific criteria would allow for testing edge cases that were
+            not previously considered.
+          </li>
+          <li>
+            Running API requests in a sandbox environment to troubleshoot
+            specific requests in isolation.
+          </li>
+          <li>
+            Smart notifications could prevent repeat notifications for the same
+            issue or could escalate the degree of severity for the alert
+            depending on defined importance.
+          </li>
         </ul>
         <h2 id="references">10) References</h2>
         <section id="citations">
           <h3 id="footnotes">10.1) Footnotes</h3>
           <ol>
-            <li id="footnote-1">Keerthi Iyengar et al., “What It Really Takes to Capture the Value of Apis,” McKinsey &amp; Company (McKinsey &amp; Company, February 13, 2020), <a href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/what-it-really-takes-to-capture-the-value-of-apis">https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/what-it-really-takes-to-capture-the-value-of-apis</a>.</li>
-            <li id="footnote-2">Broadcom Inc., “Building an API Monitoring Practice,” Broadcom, 2020, <a href="https://docs.broadcom.com/doc/building-an-api-monitoring-practice">https://docs.broadcom.com/doc/building-an-api-monitoring-practice</a>.</li>
-            <li id="footnote-3">Gergely Orosz, “As It's Been ~3 Years, Figured I'll Answer ‘What Caused the Uber Eats Glitch That Allowed Ordering Free Food for a Weekend in India?",” Twitter, March 13, 2022, <a href="https://twitter.com/GergelyOrosz/status/1502947315279187979">https://twitter.com/GergelyOrosz/status/1502947315279187979</a>.</li>
-            <li id="footnote-4">David Singleton, “Root Cause Analysis: Significantly Elevated Error Rates on 2019‑07‑10,” Stripe, July 12, 2019, <a href="https://stripe.com/rcas/2019-07-10">https://stripe.com/rcas/2019-07-10</a>.</li>
-            <li id="footnote-5">Julie Verhage and Bloomberg, “Stripe Outage Smacked Businesses for Two Hours,” Fortune, July 11, 2019, <a href="https://fortune.com/2019/07/11/stripe-outage-technology-payment-processing/">https://fortune.com/2019/07/11/stripe-outage-technology-payment-processing/</a>.</li>
-            <li id="footnote-6">Chris Baraniuk, “Twitter Network down for Many Users after Technical Fault,” BBC News, January 19, 2016, <a href="https://www.bbc.com/news/technology-35351154">https://www.bbc.com/news/technology-35351154</a>.</li>
-            <li id="footnote-7">Splunk, “What Is API Monitoring?,” Splunk, March 1, 2022, <a href="https://www.splunk.com/en_us/data-insider/what-is-api-monitoring.html">https://www.splunk.com/en_us/data-insider/what-is-api-monitoring.html</a>.</li>
-            <li id="footnote-8">Datadog, “Multistep API Tests,” Datadog Infrastructure and Application Monitoring, <a href="https://docs.datadoghq.com/synthetics/multistep/">https://docs.datadoghq.com/synthetics/multistep/</a>.</li>
-            <li id="footnote-9">Gerie Owen, “How and Why to Do Parallel Testing,” TechTarget, October 14, 2020, <a href="https://www.techtarget.com/searchsoftwarequality/tip/How-and-why-to-do-parallel-testing">https://www.techtarget.com/searchsoftwarequality/tip/How-and-why-to-do-parallel-testing</a>.</li>
-            <li id="footnote-10">Kevin Farnham, “Why Location Matters in API Performance Testing,” API Science, April 6, 2020, <a href="https://www.apiscience.com/blog/why-location-matters-in-api-performance-testing/">https://www.apiscience.com/blog/why-location-matters-in-api-performance-testing/</a>.</li>
-            <li id="footnote-11">Brandon Cox, “5 Software Testing Strategies to Build into Your CI/CD Pipeline,” Red Hat, June 1, 2022, <a href="https://www.redhat.com/architect/test-applications-cicd-pipeline">https://www.redhat.com/architect/test-applications-cicd-pipeline</a>.</li>
-            <li id="footnote-12">Sabit Ololade, “Using State Machine to Write Bug-Free Code,” DeepSource, April 7, 2021, <a href="https://deepsource.io/blog/using-state-machine-to-write-bug-free-code/">https://deepsource.io/blog/using-state-machine-to-write-bug-free-code/</a>.</li>
-            <li id="footnote-13">Chris Brook, Paul Roberts, and Nate Lord, “Saas: Single Tenant vs Multi-Tenant - What's the Difference?,” Digital Guardian, November 28, 2022, <a href="https://digitalguardian.com/blog/saas-single-tenant-vs-multi-tenant-whats-difference">https://digitalguardian.com/blog/saas-single-tenant-vs-multi-tenant-whats-difference</a>.</li>
+            <li id="footnote-1">
+              Keerthi Iyengar et al., “What It Really Takes to Capture the Value
+              of Apis,” McKinsey &amp; Company (McKinsey &amp; Company, February
+              13, 2020),
+              <a
+                href="https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/what-it-really-takes-to-capture-the-value-of-apis"
+                >https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/what-it-really-takes-to-capture-the-value-of-apis</a
+              >.
+            </li>
+            <li id="footnote-2">
+              Broadcom Inc., “Building an API Monitoring Practice,” Broadcom,
+              2020,
+              <a
+                href="https://docs.broadcom.com/doc/building-an-api-monitoring-practice"
+                >https://docs.broadcom.com/doc/building-an-api-monitoring-practice</a
+              >.
+            </li>
+            <li id="footnote-3">
+              Gergely Orosz, “As It's Been ~3 Years, Figured I'll Answer ‘What
+              Caused the Uber Eats Glitch That Allowed Ordering Free Food for a
+              Weekend in India?",” Twitter, March 13, 2022,
+              <a
+                href="https://twitter.com/GergelyOrosz/status/1502947315279187979"
+                >https://twitter.com/GergelyOrosz/status/1502947315279187979</a
+              >.
+            </li>
+            <li id="footnote-4">
+              David Singleton, “Root Cause Analysis: Significantly Elevated
+              Error Rates on 2019‑07‑10,” Stripe, July 12, 2019,
+              <a href="https://stripe.com/rcas/2019-07-10"
+                >https://stripe.com/rcas/2019-07-10</a
+              >.
+            </li>
+            <li id="footnote-5">
+              Julie Verhage and Bloomberg, “Stripe Outage Smacked Businesses for
+              Two Hours,” Fortune, July 11, 2019,
+              <a
+                href="https://fortune.com/2019/07/11/stripe-outage-technology-payment-processing/"
+                >https://fortune.com/2019/07/11/stripe-outage-technology-payment-processing/</a
+              >.
+            </li>
+            <li id="footnote-6">
+              Chris Baraniuk, “Twitter Network down for Many Users after
+              Technical Fault,” BBC News, January 19, 2016,
+              <a href="https://www.bbc.com/news/technology-35351154"
+                >https://www.bbc.com/news/technology-35351154</a
+              >.
+            </li>
+            <li id="footnote-7">
+              Splunk, “What Is API Monitoring?,” Splunk, March 1, 2022,
+              <a
+                href="https://www.splunk.com/en_us/data-insider/what-is-api-monitoring.html"
+                >https://www.splunk.com/en_us/data-insider/what-is-api-monitoring.html</a
+              >.
+            </li>
+            <li id="footnote-8">
+              Datadog, “Multistep API Tests,” Datadog Infrastructure and
+              Application Monitoring,
+              <a href="https://docs.datadoghq.com/synthetics/multistep/"
+                >https://docs.datadoghq.com/synthetics/multistep/</a
+              >.
+            </li>
+            <li id="footnote-9">
+              Gerie Owen, “How and Why to Do Parallel Testing,” TechTarget,
+              October 14, 2020,
+              <a
+                href="https://www.techtarget.com/searchsoftwarequality/tip/How-and-why-to-do-parallel-testing"
+                >https://www.techtarget.com/searchsoftwarequality/tip/How-and-why-to-do-parallel-testing</a
+              >.
+            </li>
+            <li id="footnote-10">
+              Kevin Farnham, “Why Location Matters in API Performance Testing,”
+              API Science, April 6, 2020,
+              <a
+                href="https://www.apiscience.com/blog/why-location-matters-in-api-performance-testing/"
+                >https://www.apiscience.com/blog/why-location-matters-in-api-performance-testing/</a
+              >.
+            </li>
+            <li id="footnote-11">
+              Brandon Cox, “5 Software Testing Strategies to Build into Your
+              CI/CD Pipeline,” Red Hat, June 1, 2022,
+              <a
+                href="https://www.redhat.com/architect/test-applications-cicd-pipeline"
+                >https://www.redhat.com/architect/test-applications-cicd-pipeline</a
+              >.
+            </li>
+            <li id="footnote-12">
+              Sabit Ololade, “Using State Machine to Write Bug-Free Code,”
+              DeepSource, April 7, 2021,
+              <a
+                href="https://deepsource.io/blog/using-state-machine-to-write-bug-free-code/"
+                >https://deepsource.io/blog/using-state-machine-to-write-bug-free-code/</a
+              >.
+            </li>
+            <li id="footnote-13">
+              Chris Brook, Paul Roberts, and Nate Lord, “Saas: Single Tenant vs
+              Multi-Tenant - What's the Difference?,” Digital Guardian, November
+              28, 2022,
+              <a
+                href="https://digitalguardian.com/blog/saas-single-tenant-vs-multi-tenant-whats-difference"
+                >https://digitalguardian.com/blog/saas-single-tenant-vs-multi-tenant-whats-difference</a
+              >.
+            </li>
           </ol>
           <h3 id="documentation">10.2) Documentation</h3>
-          <ul class='documentation-list'>
-            <li>Apollo Graph Inc., Apollo Docs, <a href="https://www.apollographql.com/docs/apollo-server/">https://www.apollographql.com/docs/apollo-server/</a>.</li>
-            <li>XState, XState Docs, December 5, 2022, <a href="https://xstate.js.org/docs/">https://xstate.js.org/docs/</a>.</li>
-            <li>AWS, “What Is Amazon Elastic Container Service?,” Amazon Web Services Inc., <a href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html">https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html</a>.</li>
-            <li>AWS, “What Is Amazon EventBridge?,” Amazon Web Services Inc., <a href="https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html">https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html</a>.</li>
-            <li>AWS, “What is Amazon SNS?,” Amazon Web Services Inc., <a href="https://docs.aws.amazon.com/sns/latest/dg/welcome.html">https://docs.aws.amazon.com/sns/latest/dg/welcome.html</a>.</li>
+          <ul class="documentation-list">
+            <li>
+              Apollo Graph Inc., Apollo Docs,
+              <a href="https://www.apollographql.com/docs/apollo-server/"
+                >https://www.apollographql.com/docs/apollo-server/</a
+              >.
+            </li>
+            <li>
+              XState, XState Docs, December 5, 2022,
+              <a href="https://xstate.js.org/docs/"
+                >https://xstate.js.org/docs/</a
+              >.
+            </li>
+            <li>
+              AWS, “What Is Amazon Elastic Container Service?,” Amazon Web
+              Services Inc.,
+              <a
+                href="https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html"
+                >https://docs.aws.amazon.com/AmazonECS/latest/developerguide/Welcome.html</a
+              >.
+            </li>
+            <li>
+              AWS, “What Is Amazon EventBridge?,” Amazon Web Services Inc.,
+              <a
+                href="https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html"
+                >https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html</a
+              >.
+            </li>
+            <li>
+              AWS, “What is Amazon SNS?,” Amazon Web Services Inc.,
+              <a href="https://docs.aws.amazon.com/sns/latest/dg/welcome.html"
+                >https://docs.aws.amazon.com/sns/latest/dg/welcome.html</a
+              >.
+            </li>
           </ul>
         </section>
       </section>
@@ -877,144 +1655,369 @@
     <section id="our-team">
       <h1>Our Team</h1>
       <p>
-        We are looking for opportunities. If you like our project, feel free to reach out!
+        We are looking for opportunities. If you like our project, feel free to
+        reach out!
       </p>
-      <ul class='team'>
+      <ul class="team">
         <li class="individual">
-          <img src="images/icons/nykaela_avatar.jpeg" alt="Nykaela Dodson"/>
+          <img src="images/icons/nykaela_avatar.jpeg" alt="Nykaela Dodson" />
           <h3 id="nykaela">Nykaela Dodson</h3>
           <p>Orange County, California</p>
           <ul class="social-icons">
             <li>
-              <a href="mailto:nykaelad@gmail.com" target="_blank" aria-label="Nykaela email link">
-                <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/>
+              <a
+                href="mailto:nykaelad@gmail.com"
+                target="_blank"
+                aria-label="Nykaela email link"
+              >
+                <svg
+                  class="social-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"
+                  />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://github.com/nykaeladodson" target="_blank" aria-label="Nykaela Github link">
-                <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+              <a
+                href="https://github.com/nykaeladodson"
+                target="_blank"
+                aria-label="Nykaela Github link"
+              >
+                <svg
+                  class="social-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
+                  />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://nykaeladodson.github.io/" target="_blank" aria-label="Nykaela personal website link">
-                <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M16.36 14c.08-.66.14-1.32.14-2c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2c0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2c0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2c0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/>
+              <a
+                href="https://nykaeladodson.github.io/"
+                target="_blank"
+                aria-label="Nykaela personal website link"
+              >
+                <svg
+                  class="social-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M16.36 14c.08-.66.14-1.32.14-2c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2c0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2c0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2c0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"
+                  />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/nykaela-dodson-057146110/" target="_blank" aria-label="Nykaela LinkedIn link">
-                <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/>
+              <a
+                href="https://www.linkedin.com/in/nykaela-dodson-057146110/"
+                target="_blank"
+                aria-label="Nykaela LinkedIn link"
+              >
+                <svg
+                  class="social-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"
+                  />
                 </svg>
               </a>
             </li>
           </ul>
         </li>
         <li class="individual">
-          <img src="images/icons/hans_avatar.jpg" alt="Hans Elde"/>
+          <img src="images/icons/hans_avatar.jpg" alt="Hans Elde" />
           <h3 id="hans">Hans Elde</h3>
           <p>Seattle, Washington</p>
           <ul class="social-icons">
             <li>
-              <a href="mailto:email@hanselde.com" target="_blank" aria-label="Hans email link">
-                <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/>
+              <a
+                href="mailto:email@hanselde.com"
+                target="_blank"
+                aria-label="Hans email link"
+              >
+                <svg
+                  class="social-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"
+                  />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://github.com/eldehan" target="_blank" aria-label="Hans Github link">
-                <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+              <a
+                href="https://github.com/eldehan"
+                target="_blank"
+                aria-label="Hans Github link"
+              >
+                <svg
+                  class="social-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
+                  />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://www.hanselde.com/" target="_blank" aria-label="Hans personal website link">
-                <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M16.36 14c.08-.66.14-1.32.14-2c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2c0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2c0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2c0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/>
+              <a
+                href="https://www.hanselde.com/"
+                target="_blank"
+                aria-label="Hans personal website link"
+              >
+                <svg
+                  class="social-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M16.36 14c.08-.66.14-1.32.14-2c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2c0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2c0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2c0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"
+                  />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/hans-elde/" target="_blank" aria-label="Hans LinkedIn Link">
-                <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/>
+              <a
+                href="https://www.linkedin.com/in/hans-elde/"
+                target="_blank"
+                aria-label="Hans LinkedIn Link"
+              >
+                <svg
+                  class="social-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"
+                  />
                 </svg>
               </a>
             </li>
           </ul>
         </li>
         <li class="individual">
-          <img src="images/icons/kathy_avatar.png" alt="Katherine Ebel"/>
+          <img src="images/icons/kathy_avatar.png" alt="Katherine Ebel" />
           <h3 id="kathy">Katherine Ebel</h3>
           <p>Green Cove Springs, Florida</p>
           <ul class="social-icons">
             <li>
-              <a href="mailto:hello@katherineebel.com" target="_blank" aria-label="Katherine email link">
-                <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/>
+              <a
+                href="mailto:hello@katherineebel.com"
+                target="_blank"
+                aria-label="Katherine email link"
+              >
+                <svg
+                  class="social-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"
+                  />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://github.com/KatherineEbel" target="_blank" aria-label="Katherine Github link">
-                <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+              <a
+                href="https://github.com/KatherineEbel"
+                target="_blank"
+                aria-label="Katherine Github link"
+              >
+                <svg
+                  class="social-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
+                  />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://katherineebel.com" target="_blank" aria-label="Katherine personal website link">
-                <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M16.36 14c.08-.66.14-1.32.14-2c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2c0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2c0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2c0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/>
+              <a
+                href="https://katherineebel.com"
+                target="_blank"
+                aria-label="Katherine personal website link"
+              >
+                <svg
+                  class="social-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M16.36 14c.08-.66.14-1.32.14-2c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2c0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2c0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2c0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"
+                  />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://linkedin.com/in/kathyebel" target="_blank" aria-label="Katherine LinkedIn link">
-                <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/>
+              <a
+                href="https://linkedin.com/in/kathyebel"
+                target="_blank"
+                aria-label="Katherine LinkedIn link"
+              >
+                <svg
+                  class="social-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"
+                  />
                 </svg>
               </a>
             </li>
           </ul>
         </li>
         <li class="individual">
-          <img src="images/icons/gagan_avatar.jpg" alt="Gagan Sapkota"/>
+          <img src="images/icons/gagan_avatar.jpg" alt="Gagan Sapkota" />
           <h3 id="gagan">Gagan Sapkota</h3>
           <p>California</p>
           <ul class="social-icons">
             <li>
-              <a href="mailto:gagan.sapkota@proton.me" target="_blank" aria-label="Gagan email link">
-                <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"/>
+              <a
+                href="mailto:gagan@sapkota.dev"
+                target="_blank"
+                aria-label="Gagan email link"
+              >
+                <svg
+                  class="social-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m20 8l-8 5l-8-5V6l8 5l8-5m0-2H4c-1.11 0-2 .89-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Z"
+                  />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://github.com/aham-oudeis" target="_blank" aria-label="Gagan Github Link">
-                <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"/>
+              <a
+                href="https://github.com/aham-oudeis"
+                target="_blank"
+                aria-label="Gagan Github Link"
+              >
+                <svg
+                  class="social-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
+                  />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://aham-oudeis.github.io/" target="_blank" aria-label="Gagan personal website link">
-                <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M16.36 14c.08-.66.14-1.32.14-2c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2c0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2c0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2c0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"/>
+              <a
+                href="https://gagan.sapkota.dev"
+                target="_blank"
+                aria-label="Gagan personal website link"
+              >
+                <svg
+                  class="social-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M16.36 14c.08-.66.14-1.32.14-2c0-.68-.06-1.34-.14-2h3.38c.16.64.26 1.31.26 2s-.1 1.36-.26 2m-5.15 5.56c.6-1.11 1.06-2.31 1.38-3.56h2.95a8.03 8.03 0 0 1-4.33 3.56M14.34 14H9.66c-.1-.66-.16-1.32-.16-2c0-.68.06-1.35.16-2h4.68c.09.65.16 1.32.16 2c0 .68-.07 1.34-.16 2M12 19.96c-.83-1.2-1.5-2.53-1.91-3.96h3.82c-.41 1.43-1.08 2.76-1.91 3.96M8 8H5.08A7.923 7.923 0 0 1 9.4 4.44C8.8 5.55 8.35 6.75 8 8m-2.92 8H8c.35 1.25.8 2.45 1.4 3.56A8.008 8.008 0 0 1 5.08 16m-.82-2C4.1 13.36 4 12.69 4 12s.1-1.36.26-2h3.38c-.08.66-.14 1.32-.14 2c0 .68.06 1.34.14 2M12 4.03c.83 1.2 1.5 2.54 1.91 3.97h-3.82c.41-1.43 1.08-2.77 1.91-3.97M18.92 8h-2.95a15.65 15.65 0 0 0-1.38-3.56c1.84.63 3.37 1.9 4.33 3.56M12 2C6.47 2 2 6.5 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2Z"
+                  />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/gagan-sapkota-50724a238/" target="_blank" aria-label="Gagan LinkedIn link">
-                <svg class="social-svg" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
-                  <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"/>
+              <a
+                href="https://www.linkedin.com/in/gagan-sapkota"
+                target="_blank"
+                aria-label="Gagan LinkedIn link"
+              >
+                <svg
+                  class="social-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="2em"
+                  height="2em"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77Z"
+                  />
                 </svg>
               </a>
             </li>
