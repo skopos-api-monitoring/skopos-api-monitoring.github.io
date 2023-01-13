@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let elObject = {
       el,
       type: el.nodeName,
-      text: el.textContent.replace(/^.*\) /, ''),
+      text: el.textContent.trim().replace(/^.*\) /, ''),
       parentId: el.nodeName === 'H4' ? lastH3Id : lastH2Id
     }
     return elObject
