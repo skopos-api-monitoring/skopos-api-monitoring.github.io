@@ -1,4 +1,4 @@
-# 🏠 [Homepage](https://skopos-monitoring.github.io/)
+# 🏠 [Homepage](https://skopos-api-monitoring.github.io/)
 
 <p align="center">
   <img src="images/logos/SKOPOS_logo_inverted.png" />
@@ -7,4 +7,4 @@
 
 Skopos is an open-source API monitoring tool designed for testing multi-step API workflows and running multiple tests in parallel.
 
-# 🏠 [Homepage](https://skopos-monitoring.github.io/)
+# 🏠 [Homepage](https://skopos-api-monitoring.github.io/)
